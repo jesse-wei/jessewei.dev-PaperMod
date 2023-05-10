@@ -1,0 +1,4 @@
+/* Source: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma */
+.chroma {
+    background-color: unset !important;
+}

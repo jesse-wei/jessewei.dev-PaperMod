@@ -21,11 +21,12 @@ outputs:
     - RSS
     - JSON
 
+# https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Jesse Wei
   description: "Jesse Wei's personal website"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Jesse Wei, Blog, Portfolio, UNC, Computer Science, Mathematics, CS, University of North Carolina at Chapel Hill]
   # author: ["Me", "You"] # multiple authors
   author: "Jesse Wei"
   # Should be the image displayed when posting site link on socials
@@ -35,7 +36,7 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -48,22 +49,22 @@ params:
   hidemeta: false
   hideSummary: false
   showtoc: true
-  tocopen: false
+  math: true
 
   assets:
-    # disableHLJS: true # to disable highlight.js
+    disableHLJS: true # to disable highlight.js, using Hugo Chroma instead
     # disableFingerprinting: true
 
     # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#adding-custom-favicons
     # favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, safari-pinned-tab.svg supported
-    # favicon: "logo.png"
-    # favicon16x16: "logo_16.png"
-    # favicon32x32: "logo_32.png"
-    # apple_touch_icon: "<link / abs url>"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
     # safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Jesse Wei"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -75,7 +76,7 @@ params:
     imageUrl: "headshot.png"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: Headshot
+    imageTitle: Headshot of Jesse Wei
     buttons:
       - name: Posts
         url: posts
@@ -135,17 +136,14 @@ menu:
       name: tags
       url: /tags/
       weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
   highlight:
-    noClasses: false
+    # noClasses: false
     # anchorLineNos: true
-    # codeFences: true
-    # guessSyntax: true
-    # lineNos: true
-    # style: monokai
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: monokai
