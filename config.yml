@@ -32,7 +32,8 @@ params:
   # Should be the image displayed when posting site link on socials
   images: ["logo_outlined.png"]
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  # dark, light
+  defaultTheme: auto
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -52,7 +53,9 @@ params:
   math: true
 
   assets:
-    disableHLJS: true # to disable highlight.js, using Hugo Chroma instead
+    # To disable highlight.js, using Hugo Chroma instead
+    # https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+    disableHLJS: true
     # disableFingerprinting: true
 
     # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#adding-custom-favicons
@@ -70,13 +73,14 @@ params:
 
   # profile-mode
   profileMode:
-    enabled: true # needs to be explicitly set
+    # Needs to be explicitly set
+    enabled: true
     title: Jesse Wei
-    subtitle: "I'm pursuing a Master's in CS at UNC. **[read more](about)**"
-    imageUrl: "headshot.png"
+    subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](about)**"
+    imageUrl: "me.png"
     imageWidth: 120
     imageHeight: 120
-    imageTitle: Headshot of Jesse Wei
+    imageTitle: Picture of me
     buttons:
       - name: Posts
         url: posts
@@ -95,8 +99,6 @@ params:
       url: "https://www.linkedin.com/in/jessewei1/"
     - name: email
       url: "mailto:jesse@cs.unc.edu"
-    # - name: instagram
-    #   url: "https://www.instagram.com/jessew3102/"
 
   analytics:
     google:
@@ -116,7 +118,7 @@ params:
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
-  # for search
+  # For search
   # https://fusejs.io/api/options.html
   fuseOpts:
     isCaseSensitive: false
@@ -128,12 +130,16 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 1
     - identifier: categories
-      name: categories
+      name: Categories
       url: /categories/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
 

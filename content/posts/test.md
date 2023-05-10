@@ -29,3 +29,5 @@ This is display mode math:
 $$
 x=-b\pm\frac{\sqrt{b^2-4ac}}{2a}
 $$
+
+[A link](https://google.com)
