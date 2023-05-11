@@ -8,10 +8,21 @@ cover:
     caption: "Chebyshev points of the first kind and unit circle projection"
     hidden: false
     hiddenInSingle: false
+summary: "Newton, Lagrange, and barycentric interpolation. Point distributions (e.g., Chebyshev)."
+tags: ["Numerical Analysis", "MATH 566", "UNC"]
+showtoc: false
 ---
 
-[properties.pdf](assets/properties.pdf).
+## Paper
+
+* [properties.pdf](assets/properties.pdf)
+
+## Description
+
+Newton, Lagrange, and barycentric interpolation. Point distributions (e.g., Chebyshev).
 
 MATH 566 (Introduction to Numerical Analysis) group project #2.
+
+## Code
 
 {{< gist jesse-wei 0b2472f020b41b8767882291c536102c >}}

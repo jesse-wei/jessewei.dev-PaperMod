@@ -42,7 +42,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   ShowWordCount: true
-  ShowRssButtonInSectionTermList: true
+  ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -117,8 +117,8 @@ params:
 
   editPost:
     URL: "https://github.com/jesse-wei/hugo_quickstart/tree/main/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+    Text: "Source"
+    appendFilePath: true
 
   # For search
   # https://fusejs.io/api/options.html
@@ -140,14 +140,22 @@ menu:
       name: Projects
       url: /projects/
       weight: 2
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
+    - identifier: teaching
+      name: Teaching
+      url: /teaching/
+      weight: 3
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 4
+    # - identifier: categories
+    #   name: Categories
+    #   url: /categories/
+    #   weight: 10
+    # - identifier: tags
+    #   name: Tags
+    #   url: /tags/
+    #   weight: 20
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

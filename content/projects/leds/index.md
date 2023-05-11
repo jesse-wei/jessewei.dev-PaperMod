@@ -9,9 +9,13 @@ cover:
     hidden: true
     hiddenInSingle: true
 summary: "\"Touching wires and breadboards is good for the CS major.\""
+tags: ["Arduino", "Hardware"]
+showtoc: false
 ---
 
 {{< youtube hia_4dOh098 >}}
+
+## Code
 
 ```arduino
 // Pin 3: Input for reading button
@@ -44,3 +48,7 @@ void loop() {
   }
 }
 ```
+
+{{< rawhtml >}}
+<p align="center"><code>toggle.ino</code></p>
+{{< /rawhtml >}}

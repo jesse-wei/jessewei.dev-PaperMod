@@ -7,15 +7,18 @@ cover:
     alt: "SAPsim still picture"
     caption: "SAPsim still picture"
 summary: "Simulation of SAP (Simple As Possible computer) programs from COMP311 @ UNC. Enabled me to autograde and create COMP311's SAP programming assignment."
+tags: ["Python", "SAP", "COMP 311", "Computer Organization", "UNC"]
+showtoc: false
 ---
 
 ![SAPsim demo](img/SAPsim_demo.gif)
 
-{{< rawhtml >}}
-<p align="center">SAPsim demo</p>
-{{< /rawhtml >}}
+## Links
 
-[GitHub](https://github.com/jesse-wei/SAPsim).
+* [GitHub](https://github.com/jesse-wei/SAPsim)
+* [Documentation](https://sapsim.readthedocs.io)
+
+## Description
 
 Simulation of SAP (Simple As Possible computer) programs from COMP311 (Computer Organization) @ [UNC](https://unc.edu).
 
@@ -25,7 +28,9 @@ Installable via `pip install SAPsim`.
 
 Supports all instructions in the SAP instruction set.
 
-[SAP instruction set lecture slides](assets/SAP_slides_COMP311.pdf).
+## Figures
+
+[SAP instruction set lecture slides](assets/SAP_slides_COMP311.pdf)
 
 ![SAP instruction set](img/SAP_instruction_set.jpg)
 
