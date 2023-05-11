@@ -50,6 +50,7 @@ params:
   hidemeta: false
   hideSummary: false
   showtoc: true
+  tocopen: true
   math: true
 
   assets:
@@ -77,7 +78,7 @@ params:
     enabled: true
     title: Jesse Wei
     subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](about)**"
-    imageUrl: "me.png"
+    imageUrl: "me.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: Picture of me
@@ -109,8 +110,9 @@ params:
       SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
-    hiddenInList: true # hide on list pages and home
+    linkFullImages: true
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
   editPost:
@@ -134,6 +136,10 @@ menu:
       name: About
       url: /about/
       weight: 1
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 2
     - identifier: categories
       name: Categories
       url: /categories/

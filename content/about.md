@@ -11,7 +11,7 @@ editPost:
 ---
 
 {{< rawhtml >}}
-<img style="border-radius:50%;margin-left:auto;margin-right:auto;" width="50%" src="/me.png" alt="Picture of me">
+<img style="border-radius:50%;margin-left:auto;margin-right:auto;" width="50%" src="/me.jpg" alt="Picture of me">
 
 <p align="center">Hi! I'm Jesse Wei.</p>
 {{< /rawhtml >}}
@@ -24,12 +24,8 @@ I was a head UTA for COMP311 (23S, 22F). I was a UTA for COMP210 ([22Su](https:/
 
 A fun fact about me: I used to speedcube.
 
-<!-- {{< youtube QsaT23CZIpM >}} -->
-
 {{< rawhtml >}}
-
 <p align="center">
 <iframe width="240" height="240" src="https://www.youtube.com/embed/QsaT23CZIpM" title="Jesse's PB (9.04s)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </p>
-
 {{< /rawhtml >}}
