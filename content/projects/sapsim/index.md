@@ -7,7 +7,7 @@ cover:
     alt: "SAPsim still picture"
     caption: "SAPsim still picture"
 summary: "Simulation of SAP (Simple As Possible computer) programs from COMP311 @ UNC. Enabled me to autograde and create COMP311's SAP programming assignment."
-tags: ["Python", "SAP", "COMP 311", "Computer Organization", "UNC"]
+tags: ["Python", "SAP", "CLI", "COMP 311", "Computer Organization", "UNC"]
 showtoc: false
 ---
 

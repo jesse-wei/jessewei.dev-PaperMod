@@ -21,7 +21,7 @@ In 2023, I graduated from UNC with a B.S. in Mathematics and a B.S. in Computer 
 
 I was a head UTA for COMP311 (23S, 22F). I was a UTA for COMP210 ([22Su](https://www.cs.unc.edu/~kakiryan/teaching/summer-210/team/team.html)) and COMP110 ([22S](https://22s.comp110.com/resources/team.html), [21F](https://21f.comp110.com/resources/team.html), [21S](https://21s.comp110.com/resources/team.html)).
 
-A fun fact about me: I speedcube.
+A fun fact about me: I used to speedcube.
 
 {{< rawhtml >}}
 <p align="center">

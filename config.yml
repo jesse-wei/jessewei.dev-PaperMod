@@ -1,25 +1,20 @@
 baseURL: "https://jessewei.dev"
+languageCode: en-us
 title: Jesse Wei
 paginate: 5
 theme: PaperMod
 
 enableRobotsTXT: true
-buildDrafts: false
+buildDrafts: true
 buildFuture: false
 buildExpired: false
+pluralizeListTitles: false
 
 googleAnalytics: G-Q603T56FWT
 
 minify:
   disableXML: true
   minifyOutput: true
-
-# Source: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
 
 # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-variables/
 params:
@@ -28,7 +23,8 @@ params:
   description: "Jesse Wei's personal website"
   keywords: [Jesse Wei, Blog, Portfolio, UNC, Computer Science, Mathematics, CS, University of North Carolina at Chapel Hill]
   # author: ["Me", "You"] # multiple authors
-  author: "Jesse Wei"
+  # author is me, of course, but it doesn't need to be displayed
+  author: ""
   # Should be the image displayed when posting site link on socials
   images: ["logo_outlined.png"]
   DateFormat: "January 2, 2006"
@@ -54,7 +50,7 @@ params:
   math: true
 
   assets:
-    # To disable highlight.js, using Hugo Chroma instead
+    # Disables highlight.js, using Hugo Chroma instead
     # https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
     disableHLJS: true
     # disableFingerprinting: true
@@ -67,6 +63,7 @@ params:
     apple_touch_icon: "apple-touch-icon.png"
     # safari_pinned_tab: "<link / abs url>"
 
+  # Top left of site
   label:
     text: "Jesse Wei"
     icon: /apple-touch-icon.png
@@ -83,8 +80,6 @@ params:
     imageHeight: 120
     imageTitle: Picture of me
     buttons:
-      - name: Posts
-        url: posts
       - name: Tags
         url: tags
 
@@ -111,9 +106,12 @@ params:
 
   cover:
     linkFullImages: true
-    hidden: false # hide everywhere but not in structured data
-    hiddenInList: false # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    # Hide everywhere but not in structured data
+    hidden: false
+    # Hide in list view
+    hiddenInList: false
+    # Hide in single layout
+    hiddenInSingle: true
 
   editPost:
     URL: "https://github.com/jesse-wei/hugo_quickstart/tree/main/content"
@@ -130,6 +128,14 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
+
+# Source: https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#search-page
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 menu:
   main:
     - identifier: about
@@ -148,14 +154,6 @@ menu:
       name: Search
       url: /search/
       weight: 4
-    # - identifier: categories
-    #   name: Categories
-    #   url: /categories/
-    #   weight: 10
-    # - identifier: tags
-    #   name: Tags
-    #   url: /tags/
-    #   weight: 20
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true

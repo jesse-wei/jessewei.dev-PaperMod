@@ -6,7 +6,7 @@ cover:
     image: img/mips_emulator.jpg
     alt: "Image of MIPS Emulator running Rubik's project"
     caption: "MIPS Emulator running my Rubik's project"
-summary: "MIPS assembly emulator for COMP 541 (Digital Logic) final projects at UNC. Simulates memory-mapped I/O devices, including VGA display, accelerometer, and keyboard."
+summary: "MIPS assembly emulator for simulating COMP 541 (Digital Logic) final projects at UNC. Simulates memory-mapped I/O devices, including VGA display, accelerometer, and keyboard."
 tags: ["Java", "JavaFX", "SceneBuilder", "FXML", "GUI", "MIPS Assembly", "COMP 541", "Digital Logic", "UNC"]
 showtoc: false
 ---
@@ -19,7 +19,7 @@ showtoc: false
 
 ## Description
 
-MIPS assembly emulator for [COMP 541](https://comp541.web.unc.edu) (Digital Logic & Computer Design) final projects at UNC.
+MIPS assembly emulator for simulating [COMP 541](https://comp541.web.unc.edu) (Digital Logic and Computer Design) final projects at UNC.
 
 Runs any MIPS program using the 32 supported MIPS assembly instructions. Simulates memory-mapped I/O devices, including VGA display, accelerometer, and keyboard.
 
