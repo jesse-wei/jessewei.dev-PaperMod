@@ -9,6 +9,7 @@ cover:
     hidden: false
     hiddenInSingle: false
 summary: "UTA in Summer 2022."
+tags: ["COMP 210", "Data Structures and Analysis", "Java", "UNC"]
 weight: 2
 ---
 
@@ -24,7 +25,7 @@ I was a UTA for the course in Summer 2022.
 
 I held 6 quiz review sessions throughout the short summer semester.
 
-[Here] is a compilation of my review slides. Links to recordings are included.
+[Here](https://docs.google.com/presentation/d/12e1sxpIHf1mICBM6xSjnnCluqbAZQcE1cxS9P-yykdk/edit?usp=sharing) is a compilation of my review slides. Links to recordings are included.
 
 ### Assessments
 

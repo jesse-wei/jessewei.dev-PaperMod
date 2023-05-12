@@ -15,7 +15,7 @@ showtoc: false
 
 ## Description
 
-1900 MIPS assembly instructions running on a [SystemVerilog processor](#figures) built from spit and toothpicks in COMP 541 (Digital Logic and Computer Design).
+[1900](#figures) MIPS assembly instructions running on a [SystemVerilog processor](#figures) built from spit and toothpicks in COMP 541 (Digital Logic and Computer Design).
 
 Project grade: 100%
 
@@ -44,7 +44,7 @@ Extra credit: $\frac{4}{5}$
 ![Line count of Rubik's project](img/541_rubiks_stats.jpg)
 
 {{< rawhtml >}}
-<p align="center">Code line count (private repo)</p>
+<p align="center">Code line count - <code>imem.mem</code> is instruction memory</p>
 {{< /rawhtml >}}
 
 ![MIPS processor implemented in SystemVerilog](img/541_mips_processor.jpg)

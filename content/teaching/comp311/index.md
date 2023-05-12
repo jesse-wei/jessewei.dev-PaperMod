@@ -9,6 +9,7 @@ cover:
     hidden: false
     hiddenInSingle: false
 summary: "Head UTA in 23S and 22F. I anticipate being a graduate TA for the course in 23F."
+tags: ["COMP 311", "Computer Organization", "MIPS Assembly", "SAP", "Hardware", "Digital Logic", "UNC"]
 weight: 1
 ---
 

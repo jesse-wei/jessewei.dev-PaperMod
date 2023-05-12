@@ -9,6 +9,7 @@ draft: false
 #     hidden: false
 #     hiddenInSingle: false
 summary: "UTA in 22S, 21F, and 21S. Good times."
+tags: ["COMP 110", "Introduction to Programming", "Python", "UNC"]
 weight: 3
 ---
 

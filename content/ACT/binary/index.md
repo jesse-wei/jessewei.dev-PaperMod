@@ -2,7 +2,8 @@
 title: "Binary"
 date: 2021-11-01T12:00:00-04:00
 draft: false
-summary: "Binary counting system."
+summary: "Binary counting system. Unrelated to ACT but nowhere else to put this post."
+tags: ["ACT", "LaTeX"]
 ---
 
 Before we talk about binary, let's first go over the base-10 decimal system.
@@ -67,7 +68,7 @@ base-10. There's a special trick for binary subtraction called 2's complement. I
 
 Then the greatest number that can be stored in an `unsigned int` is $2^{32}-1 = 4294967295_{10}$.
 
-Proof: The greatest 32-digit base-2 value is $\underbrace{111...1}_{32}$.
+*Proof*. The greatest 32-digit base-2 value is $\underbrace{111...1}_{32}$.
 
 Consider $\underbrace{100...0}_{33}$, the number that is 1 greater.
 
@@ -96,7 +97,7 @@ how could you know where one number ends and another begins?
 
 ## Overflow
 
-Lastly, what would happen if we were to add 1 to $\underbrace{111...1}_{32}$, having just learned that
+Lastly, what would happen if we were to add 1 to the `unsigned int` $\underbrace{111...1}_{32}$, having just learned that
 
 an `unsigned int` cannot have a 33<sup>rd</sup> bit? The ALU of the computer adds 1, but the 33<sup>rd</sup>
 1 is discarded since it doesn't fit, leaving just $\underbrace{000...0}_{32} = 0$, an overflow error. Yikes.

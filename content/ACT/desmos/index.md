@@ -3,6 +3,7 @@ title: "Desmos"
 date: 2022-05-07T12:00:00-04:00
 draft: false
 summary: "Some Desmos links for learning geometric concepts."
+tags: ["ACT", "Math"]
 ---
 
 Some Desmos links for learning geometric concepts.

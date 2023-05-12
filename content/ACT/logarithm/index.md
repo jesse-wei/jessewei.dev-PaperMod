@@ -6,6 +6,7 @@ summary: "2-pg $\\LaTeX{}$ document."
 showtoc: false
 ShowReadingTime: false
 ShowWordCount: false
+tags: ["ACT", "Math", "LaTeX"]
 ---
 
 [logarithms.pdf](https://drive.google.com/file/d/16P6eSQHBtqZtPN4d0kqevMs7rbTaNETB/view?usp=share_link)

@@ -6,6 +6,7 @@ summary: "4-pg $\\LaTeX{}$ document."
 showtoc: false
 ShowReadingTime: false
 ShowWordCount: false
+tags: ["ACT", "Math", "LaTeX"]
 ---
 
 [matrix_basics.pdf](https://drive.google.com/file/d/1rq_r4xByfY3mgJmTyW6_NR016keb1rRu/view?usp=share_link)

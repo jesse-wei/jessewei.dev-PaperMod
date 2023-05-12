@@ -3,19 +3,20 @@ title: "Euler's Formula"
 date: 2022-05-01T12:00:00-04:00
 draft: false
 summary: "$e^{ix} = \\cos x + i \\sin x$. $e^{i\\pi} + 1 = 0$."
+tags: ["Math", "LaTeX"]
 ---
 
 ## Proof 1: By [Taylor series](https://en.wikipedia.org/wiki/Taylor_series)
 
 Here are the Maclaurin expansions [^1] for $\\cos(x), \\sin(x),$ and $e^y$.
 
-[^1]: A Maclaurin series is a Taylor series about the point 0. Also, $y$ is a dummy variable for simplicity here.
+[^1]: A Maclaurin series is a [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) about the point 0.
 
 $$\\begin{aligned} \\cos(x) &= \\sum\_{n=0}^{\\infty} \\frac{(-1)^n}{(2n)!} x^{2n} = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots\\\\ \\sin(x) &= \\sum\_{n=0}^{\\infty} \\frac{(-1)^n}{(2n+1)!} x^{2n+1} = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots\\\\ e^y &= \\sum\_{n=0}^{\\infty} \\frac{y^n}{n!} = 1 + y + \\frac{y^2}{2!} + \\frac{y^3}{3!} + \\frac{y^4}{4!} + \\cdots\\\\ \\end{aligned}$$
 
 Letting $y = ix$, we get [^2]
 
-$$\\begin{aligned} e^{ix} = \\sum\_{n=0}^{\\infty} \\frac{(ix)^n}{n!} = \\sum\_{n=0}^{\\infty}i^n\\frac{x^n}{n!} &= 1 + ix - \\frac{x^2}{2!} - i \\frac{x^3}{3!} + \\frac{x^4}{4!} + i \\frac{x^5}{5!} - \\frac{x^6}{6!} + \\cdots\\\\ &= \\left(1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\cdots\\right) + i\\left(x - \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\cdots\\right)\\\\ &= \\cos(x) + i\\sin(x) \\end{aligned}$$
+$$\\begin{aligned} e^{ix} = \\sum\_{n=0}^{\\infty} \\frac{(ix)^n}{n!} = \\sum\_{n=0}^{\\infty}i^n\\frac{x^n}{n!} &= 1 + ix - \\frac{x^2}{2!} - i \\frac{x^3}{3!} + \\frac{x^4}{4!} + i \\frac{x^5}{5!} - \\frac{x^6}{6!} + \\cdots\\\\ &= \\left(1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} + \\cdots\\right) + i\\left(x - \\frac{x^3}{3!} + \\frac{x^5}{5!} + \\cdots\\right)\\\\ &= \\cos(x) + i\\sin(x) \quad \blacksquare \\end{aligned}$$
 
 [^2]: It's just the $e^x$ expansion but with the powers of $i$ $(1, i, -1, -i, 1, \\ldots)$ as coefficients. We note that the only terms with $ \\pm i$ will have $n$ odd since $i^1=-i^3=i$, and vice versa for the terms without $i$. Also, we note that any two terms that are 2 apart will have opposite signs since they differ by $i^2=-1$.
 
@@ -25,7 +26,7 @@ $$\\begin{aligned} e^{ix} = \\sum\_{n=0}^{\\infty} \\frac{(ix)^n}{n!} = \\sum\_{
 
 The significance of this result is that on the complex plane [^3], $e^{i\\theta}$ represents a point that is a distance of one unit away from the origin $(0, 0)$. Varying $\\theta$ from $0$ to $2 \\pi$ results in the unit circle.
 
-[^3]: On the complex plane, the x axis represents all real numbers $\\mathbb{R}$ and the y axis represents all imaginary numbers $bi$ for $b \\in \\mathbb{R}$.
+[^3]: On the complex plane, the $x$ axis represents all real numbers $\\mathbb{R}$, and the $y$ axis represents all imaginary numbers $bi$ for $b \\in \\mathbb{R}$.
 
 The $\\theta$ parameter measures the counterclockwise angle the point makes with the positive x axis. At this point, since we're determining a point's position by its angle, we should wonder how this could be connected with polar coordinates.
 
@@ -43,16 +44,18 @@ Another solution is $f(x) = \\cos(x)+i\\sin(x)$ because$$\\frac{d}{dx}\\left(\\c
 
 and both functions satisfy $f(0) = 1$: $$f(0) = e^{i(0)} = \\cos(0) + i\\sin(0) = 1$$
 
-Hence, the functions are identical; that is, $e^{ix} = \\cos(x)+i\\sin(x)$
+Hence, the functions are identical; that is, $e^{ix} = \\cos(x)+i\\sin(x) \quad \blacksquare$
 
 ### Lemma 3 (Euler's identity): $e^{\\pi i} = -1$
+
+*Proof*.
 
 $$
 \begin{aligned} e^{\\pi i} &= \\cos(\\pi) + i\\sin(\\pi) \\\\ &= -1 + i(0)\\\\ &= -1\\\\ & \blacksquare \end{aligned}
 $$
 
-### $\\ln(-1)=i \\pi$
+### Lemma 4: $\\ln(-1)=i \\pi$
 
-Take the natural log of both sides of Euler's identity: $$ e^{\\pi i} = -1 \\implies \\pi i = \\ln(-1) $$
+*Proof*. Take the natural log of both sides of Euler's identity: $$ e^{\\pi i} = -1 \\implies \\pi i = \\ln(-1) \quad \blacksquare$$
 
 So then $\\ln(-23) = \\ln(-1) + \\ln(23) = \\pi i + \\ln(23)$.

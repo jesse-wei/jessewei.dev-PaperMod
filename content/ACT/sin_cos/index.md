@@ -3,6 +3,7 @@ title: "Symmetries between $\\sin$ and $\\cos$"
 date: 2022-06-04T12:00:00-04:00
 draft: false
 summary: ""
+tags: ["ACT", "Math", "LaTeX"]
 ---
 
 ## Geometry
@@ -67,15 +68,15 @@ To make this idea even more clear, you should take a look at this [circle animat
 
 ## Algebra
 
-There is an algebraic symmetry that is, in my opinion, as beautiful as the symmetries above. This symmetry also allows us to prove [$e^{ix} = \\cos x + i\\sin x$](exp(ix).html) for any $x$, which is also pretty beautiful.
+There is an algebraic symmetry that is, in my opinion, as beautiful as the symmetries above. This symmetry also allows us to prove [$e^{ix} = \\cos x + i\\sin x$](../eulers_formula/) for any $x$.
 
 ### Lemma 3: $\\cos x = 1 - \\frac{x^2}{2} + \\frac{x^4}{4!} - \\frac{x^6}{6!} + \\cdots$, and $\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\frac{x^7}{7!} + \\cdots$ [^5]
 
 [^5]: Note that the cosine expansion contains only even powers of $x$ (including $x^0 = 1$) divided by even factorials, and the sine expansion contains only odd powers of $x$ divided by odd factorials.
 
-*Proof*. Consider that the [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) [^6] expansion of $f(x)$ about the point $a$ is $$f(a)+f'(a)(x-a) + \\frac{f''(a)}{2!}(x-a)^2 + \\frac{f'''(a)}{3!}(x-a)^3 + \\cdots + \\frac{f^{(n)}}{n!}(x-a)^n + \\cdots$$
+*Proof*. Consider that the [Taylor series](https://en.wikipedia.org/wiki/Taylor_series) [^6] expansion of $f(x)$ about the point $a$ is $$f(a)+f'(a)(x-a) + \\frac{f''(a)}{2!}(x-a)^2 + \\frac{f'''(a)}{3!}(x-a)^3 + \\cdots + \\frac{f^{(n)}(a)}{n!}(x-a)^n + \\cdots$$
 
-The Maclaurin expansion is the Taylor series centered at $a=0$, so the Maclaurin expansion of $f(x)$ is $$f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\frac{f'''(0)}{3!}x^3 + \\cdots + \\frac{f^{(n)}}{n!}x^n + \\cdots$$
+The Maclaurin expansion is the Taylor series centered at $a=0$, so the Maclaurin expansion of $f(x)$ is $$f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\frac{f'''(0)}{3!}x^3 + \\cdots + \\frac{f^{(n)}(0)}{n!}x^n + \\cdots$$
 
 Let $f(x) = \\cos x$. We know that [^7]
 

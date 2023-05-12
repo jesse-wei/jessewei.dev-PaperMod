@@ -20,7 +20,7 @@ showtoc: false
 
 ## Description
 
-Simulation of SAP (Simple As Possible computer) programs from COMP311 (Computer Organization) @ [UNC](https://unc.edu).
+Simulation of [SAP](#figures) (Simple As Possible computer) programs from COMP311 (Computer Organization) @ [UNC](https://unc.edu).
 
 Enabled me to autograde and create COMP311's SAP programming assignment.
 
@@ -30,7 +30,7 @@ Supports all instructions in the SAP instruction set.
 
 ## Figures
 
-[SAP instruction set lecture slides](assets/SAP_slides_COMP311.pdf)
+[SAP instruction set lecture slides](https://drive.google.com/file/d/1KxM6ov_dZCmehTCQkk0SMgzqG42s7reW/view?usp=share_link)
 
 ![SAP instruction set](img/SAP_instruction_set.jpg)
 
