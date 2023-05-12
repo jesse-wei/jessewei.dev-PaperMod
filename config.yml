@@ -23,9 +23,9 @@ params:
   description: "Jesse Wei's personal website"
   keywords: [Jesse Wei, Blog, Portfolio, UNC, Computer Science, Mathematics, CS, University of North Carolina at Chapel Hill]
   # author: ["Me", "You"] # multiple authors
-  # author is me, of course, but it doesn't need to be displayed
+  # author is me, of course, but it doesn't need to be displayed on the site
   author: ""
-  # Should be the image displayed when posting site link on socials
+  # Image displayed when posting site link on socials
   images: ["logo_outlined.png"]
   DateFormat: "January 2, 2006"
   # dark, light
@@ -47,6 +47,7 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+  # Enable KaTeX on every page by default
   math: true
 
   assets:
