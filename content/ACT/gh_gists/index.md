@@ -3,6 +3,8 @@ title: "GitHub Gists"
 date: 2022-05-07T13:00:00-04:00
 draft: false
 summary: "Some math-related GitHub gists."
+ShowReadingTime: false
+ShowWordCount: false
 tags: ["Math", "LaTeX"]
 ---
 

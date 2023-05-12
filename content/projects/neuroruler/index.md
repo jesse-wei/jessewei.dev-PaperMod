@@ -18,6 +18,7 @@ showtoc: false
 * [GitHub](https://github.com/NIRALUser/NeuroRuler)
 * [Team website](https://tarheels.live/comp523teamd/)
 * [Documentation](https://neuroruler.readthedocs.io)
+* [Full demo](https://www.youtube.com/watch?v=ZhSg5xwzbmo)
 
 ## Description
 
