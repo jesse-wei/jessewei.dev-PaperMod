@@ -21,12 +21,11 @@ hugo server
 ## Non-content files I changed
 
 * [config.yml](https://github.com/jesse-wei/jessewei.dev/blob/main/config.yml)
-  * Note: I created the directory with the command `hugo new site jessewei.dev -f yml` to use a YAML configuration file.
 * [layouts/partials](https://github.com/jesse-wei/jessewei.dev/blob/main/layouts/partials)
   * Comments indicate changes made.
 * [assets/css/extended/*.css](https://github.com/jesse-wei/jessewei.dev/tree/main/assets/css/extended)
   * For code syntax highlighting via [Hugo Chroma](https://gohugo.io/content-management/syntax-highlighting/) instead of [highlight.js](https://highlightjs.org) (default).
-* [.github/workflows/](https://github.com/jesse-wei/jessewei.dev/blob/main/.github/workflows/)
+* [.github/](https://github.com/jesse-wei/jessewei.dev/blob/main/.github)
 
 ## Resources
 

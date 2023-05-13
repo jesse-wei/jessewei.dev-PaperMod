@@ -11,7 +11,7 @@
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
 
-    <!-- Also hide Powered by on homepage -->
+    <!-- Also hide Powered by Hugo & PaperMod on homepage -->
     {{- if (ne .Title `Jesse Wei`)}}
     <span>
         Powered by
