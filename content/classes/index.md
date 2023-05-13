@@ -8,7 +8,7 @@ searchHidden: true
 robotsNoIndex: true
 ---
 
-You probably discovered this page because I gave you the link. This page is unlinked and unsearchable on my website. And surely no one reads the source code.
+You probably discovered this page because I gave you the link. This page is unlinked and unsearchable on my website. And surely no one reads the source code. If you did find it by reading the source code, you're a nerd.
 
 I give the link to people who want my advice as to what classes they should take.
 

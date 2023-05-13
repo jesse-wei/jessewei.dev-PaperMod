@@ -8,6 +8,6 @@ ShowReadingTime: false
 ShowWordCount: false
 ---
 
-My Discord username is rip wallet#0683
+My Discord username is rip wallet#0683. Feel free to add! Discord is my preferred method of communication.
 
-TODO: Change when Discord [migrates usernames](https://discord.com/blog/usernames).
+TODO: Change username when Discord [migrates usernames](https://discord.com/blog/usernames).
