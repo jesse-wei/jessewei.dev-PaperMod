@@ -43,7 +43,7 @@ params:
   disableSpecial1stPost: false
   disableScrollToTop: false
   # See https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: true
