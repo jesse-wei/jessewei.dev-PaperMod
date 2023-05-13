@@ -1,6 +1,7 @@
 ---
 title: "Jesse's Classes"
-date: 2023-05-11T17:31:51-04:00
+# No date, shouldn't be in Archives
+# date: 2023-05-11T17:31:51-04:00
 draft: false
 summary: "Information about all my classes, professors, and grades."
 searchHidden: true

@@ -50,6 +50,11 @@ params:
   tocopen: true
   # Enable KaTeX on every page by default
   math: true
+  # Without this, archive doesn't show all pages
+  # See https://github.com/adityatelange/hugo-PaperMod/issues/912
+  # And https://github.com/adityatelange/hugo-PaperMod/commit/fc87fc3a29e8e515dff866159601a734e3ad4a2f
+  # Note from https://github.com/adityatelange/hugo-PaperMod/issues/702 that post must have date to be archived
+  ShowAllPagesInArchive: true
 
   assets:
     # Disables highlight.js, using Hugo Chroma instead
@@ -84,6 +89,8 @@ params:
     buttons:
       - name: Tags
         url: tags
+      - name: Archives
+        url: archives
 
   # home-info mode
   homeInfoParams:

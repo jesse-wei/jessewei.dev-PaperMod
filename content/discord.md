@@ -1,6 +1,7 @@
 ---
 title: "Discord"
-date: 2023-05-12T20:35:58-04:00
+# No date, shouldn't be in Archives
+# date: 2023-05-12T20:35:58-04:00
 draft: false
 showToc: false
 ShowReadingTime: false
