@@ -23,7 +23,7 @@ I ask that you not give the link to this page to others without my permission ([
 | Class | Professor | Grade | Comments |
 | :---: | :-------: | :---: | :------: |
 |[COMP 110: Introduction to Programming](https://20f.comp110.com) (3)|[Kristopher Jordan](https://krisjordan.com)|A|The start of my CS major pipeline...|
-|MATH 233: Calculus III (4)|Elizabeth McLaughlin|A|Grade grubbed the A ngl... got a regrade on one question on the final exam, and it made the difference.|
+|MATH 233: Calculus of Functions of Several Variables (4)|Elizabeth McLaughlin|A|Grade grubbed the A ngl... got a regrade on one question on the final exam, and it made the difference.|
 |MATH 381: Discrete Mathematics (3)|Chad Kelterborn|A|Truly a Chad. I mention him in the footer of [Advanced ACT Math Concepts](../act/math/) (pg. 15).|
 |EDUC 101: First Year Thriving (2)|Charles Midthun|A|Only took it because some email said freshmen had to take some bogus classes. Not sure what would've happened if I didn't take it.|
 |SPHG 101: Exploring Public Health Fields (1)|Gregory Bocchino|PS|Pass/fail only class. BS class, same as EDUC 101.|
@@ -89,7 +89,7 @@ I ask that you not give the link to this page to others without my permission ([
 | Class | Professor | Grade | Comments |
 | :---: | :-------: | :---: | :------: |
 |[COMP 426: Modern Web Programming](https://github.com/comp426-2023-spring) (3)|[John Martin](https://johndmart.in)|A|Degree mill. You could get the entire class's work done in 8 hours. Everything on his [RMP](https://www.ratemyprofessors.com/professor/2591820) is true.|
-|[COMP 523: Software Engineering Lab](https://www.cs.unc.edu/~stotts/COMP523-s23/) (4)|[David Stotts](https://www.cs.unc.edu/~stotts/), [Louie Lu](https://www.cs.unc.edu/~louielu/) (coach), [Martin Styner](https://www.med.unc.edu/psych/directory/martin-styner/) (client)|A|My favorite class. [NeuroRuler](../projects/neuroruler/). I want to see the grade distribution so bad.|
+|[COMP 523: Software Engineering Laboratory](https://www.cs.unc.edu/~stotts/COMP523-s23/) (4)|[David Stotts](https://www.cs.unc.edu/~stotts/), [Louie Lu](https://www.cs.unc.edu/~louielu/) (coach), [Martin Styner](https://www.med.unc.edu/psych/directory/martin-styner/) (client)|A|My favorite class. [NeuroRuler](../projects/neuroruler/). I want to see the grade distribution so bad.|
 |MATH/COMP 662: Scientific Computation II (3)|[Jingfang Huang](https://huang.web.unc.edu)|A|[Statistics](img/662_distribution.pdf). [My grades](img/662_grades.pdf). Mickey Mouse, even though I skipped over MATH 661: Scientific Computation I.|
 |[COMP 730: Operating Systems](https://www.cs.unc.edu/~porter/courses/comp730/s23/) (3)|[Donald Porter](https://www.cs.unc.edu/~porter/)|A|Research-based class. Read papers and do research project (or COMP 630 labs). Madison carried my ass. Don't think I enjoy research very much... [Project grade distribution](img/730_project_distribution.jpg). [My grades](img/730_grades.pdf). Surely everyone got full points on the 75% participation (paper reviews) grade, so the only grade that would matter is the project grade. However, the grade doesn't matter for this sort of class. The research experience and connections do. Unfortunately, I failed at that.|
 |Head UTA for COMP 311|[Brent Munsell](https://cs.unc.edu/person/brent-munsell/)|N/A|[Statistics](img/311_distribution_23s.pdf). [SAPsim](../projects/sapsim/). [My contributions](../teaching/comp311/).|

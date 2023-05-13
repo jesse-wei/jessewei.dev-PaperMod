@@ -1,8 +1,8 @@
 baseURL: "https://jessewei.dev"
 languageCode: en-us
 title: Jesse Wei
-paginate: 5
 theme: PaperMod
+paginate: 5
 
 enableRobotsTXT: true
 buildDrafts: true
@@ -88,9 +88,9 @@ params:
     imageTitle: Picture of me
     buttons:
       - name: Tags
-        url: tags
+        url: /tags
       - name: Archives
-        url: archives
+        url: /archives
 
   # home-info mode
   homeInfoParams:
