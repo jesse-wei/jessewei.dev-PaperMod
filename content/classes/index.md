@@ -12,11 +12,9 @@ I give the link to people who want my advice as to what classes they should take
 
 I ask that you not give the link to this page to others without my permission ([ask me](mailto:jessew3102@gmail.com)).
 
-[My transcript](https://drive.google.com/file/d/1mmeDkZHGtWIeoFv_lmcrPVEAURVG3eJ4/view?usp=share_link), if you just want to see my classes and grades, not all my comments.
+[My transcript](https://drive.google.com/file/d/1w1XW71Ndxe7pt5q3Qcos6JIyZTOlpkYe/view?usp=share_link), if you just want to see my classes and grades, not all my comments.
 
 **GPA**: 3.878/4.0
-
-COMP426 grade is currently unreleased, but it's a guaranteed A lol.
 
 ## 20F (Math BS)
 

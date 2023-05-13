@@ -1,0 +1,48 @@
+# .github/workflows/run-htmltest.yml
+# (c) 2021 Robb Romans
+#
+# Run htmltest link checker on generated HTML output in dist/
+# https://github.com/wjdp/htmltest
+#
+# TODO: Add caching
+# TODO: Add persistent artifact only on test failure
+# TODO: Add a bot to add artifact into pull requests
+
+name: htmltest
+on: [workflow_call, pull_request]
+jobs:
+  htmltest:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive # Fetch Hugo themes
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+          extended: true
+      # TODO: Add cache step here
+      - name: Build Hugo
+        # Put the build output where the following steps can find it
+        # GITHUB_WORKSPACE
+        run: hugo -s site -d $GITHUB_WORKSPACE/dist
+      - name: Test HTML
+        # https://github.com/wjdp/htmltest-action/
+        # Don't fail the build on broken links
+        continue-on-error: true
+        uses: wjdp/htmltest-action@master
+        with:
+          # For consistency, use the same config file as for local builds
+          config: .htmltest.yml
+      - name: Archive htmltest results
+        uses: actions/upload-artifact@v3
+        # Note: Set ACTIONS_RUNTIME_TOKEN env variable to test with nektos/act
+        with:
+          name: htmltest-report
+          path: tmp/.htmltest/htmltest.log
+          retention-days: 7 # Default is 90 days

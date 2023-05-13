@@ -5,9 +5,6 @@ draft: false
 showToc: false
 ShowReadingTime: false
 ShowWordCount: false
-editPost:
-    URL: "https://github.com/jesse-wei/hugo_quickstart/tree/main/content/about.md"
-    appendFilePath: false
 ---
 
 {{< rawhtml >}}

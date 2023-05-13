@@ -19,8 +19,8 @@ showtoc: false
 
 ## Description
 
-MIPS assembly emulator for simulating [COMP 541](https://comp541.web.unc.edu) (Digital Logic and Computer Design) final projects at UNC.
+Cross-platform MIPS assembly emulator for simulating [COMP 541](https://comp541.web.unc.edu) (Digital Logic and Computer Design) final projects at UNC.
 
 Runs any MIPS program using the 32 supported MIPS assembly instructions. Simulates memory-mapped I/O devices, including VGA display, accelerometer, and keyboard.
 
-Made in collaboration with Madison Lester over Winter break 2022.
+Made in collaboration with Madison Lester over Winter break 2022. Ported from the [original MIPS emulator (C#, Windows-only)](https://github.com/jordanel/mips-emulator) made by Jordan Elliot et al.

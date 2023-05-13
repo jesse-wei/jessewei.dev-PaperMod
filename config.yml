@@ -42,6 +42,7 @@ params:
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
+  # See https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-features/#comments
   comments: false
   hidemeta: false
   hideSummary: false
@@ -115,7 +116,7 @@ params:
     hiddenInSingle: true
 
   editPost:
-    URL: "https://github.com/jesse-wei/hugo_quickstart/tree/main/content"
+    URL: "https://github.com/jesse-wei/jessewei.dev/tree/main/content"
     Text: "Source"
     appendFilePath: true
 
@@ -158,11 +159,20 @@ menu:
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
+# Source: https://gohugo.io/getting-started/configuration-markup/#highlight
+# Parameter meanings: https://gohugo.io/functions/highlight/
 markup:
   highlight:
-    # noClasses: false
-    # anchorLineNos: true
+    anchorLineNos: false
     codeFences: true
     guessSyntax: true
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
     lineNos: true
+    lineNumbersInTable: true
+    noClasses: true
+    noHl: false
     style: monokai
+    tabWidth: 4

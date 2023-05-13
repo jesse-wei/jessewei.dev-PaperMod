@@ -1,5 +1,5 @@
 ---
-title: "Symmetries between $\\sin$ and $\\cos$"
+title: "Symmetries Between $\\sin$ and $\\cos$"
 date: 2022-06-04T12:00:00-04:00
 draft: false
 summary: "Cool geometric and algebraic symmetries. Several embedded Desmos graphs."

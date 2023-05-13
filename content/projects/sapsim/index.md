@@ -6,7 +6,7 @@ cover:
     image: SAPsim_still_cropped.jpg
     alt: "SAPsim still picture"
     caption: "SAPsim still picture"
-summary: "Simulation of SAP (Simple As Possible computer) programs from COMP311 @ UNC. Enabled me to autograde and create COMP311's SAP programming assignment."
+summary: "Simulation of SAP (Simple-As-Possible computer) programs from COMP311 @ UNC. Enabled me to autograde and create COMP311's SAP programming assignment."
 tags: ["Python", "SAP", "CLI", "COMP 311", "Computer Organization", "UNC"]
 showtoc: false
 ---
@@ -20,7 +20,7 @@ showtoc: false
 
 ## Description
 
-Simulation of [SAP](#figures) (Simple As Possible computer) programs from COMP311 (Computer Organization) @ [UNC](https://unc.edu).
+Simulation of [SAP](#figures) (Simple-As-Possible computer) programs from COMP311 (Computer Organization) @ [UNC](https://unc.edu).
 
 Enabled me to autograde and create COMP311's SAP programming assignment.
 

@@ -1,0 +1,4 @@
+# Source: https://github.com/robb-romans/robb-sh-hugo/blob/main/.htmltest.yml
+DirectoryPath: "dist"
+# Hugo's directory structure triggers this:
+IgnoreDirectoryMissingTrailingSlash: true

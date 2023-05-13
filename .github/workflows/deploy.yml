@@ -27,11 +27,14 @@ defaults:
     shell: bash
 
 jobs:
+  htmltest:
+    uses: ./.github/workflows/htmltest.yml
   # Build job
   build:
+    needs: [htmltest]
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.108.0
+      HUGO_VERSION: 0.111.3
     steps:
       - name: Install Hugo CLI
         run: |
