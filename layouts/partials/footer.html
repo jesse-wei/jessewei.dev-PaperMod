@@ -1,9 +1,7 @@
-{{- if not (.Param "hideFooter") }}
+<!-- Display footer if not on homepage and hideFooter is false. -->
+{{- if and (ne .Title `Jesse Wei`) (not ( .Param "hideFooter")) }}
 <footer class="footer">
-    <!-- Hide social icons on homepage using .Title. -->
-    {{- if (ne .Title `Jesse Wei`)}}
     {{- partial "social_icons.html" site.Params.socialIcons -}}
-    {{- end }}
 
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
@@ -11,14 +9,11 @@
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
 
-    <!-- Also hide Powered by Hugo & PaperMod on homepage -->
-    {{- if (ne .Title `Jesse Wei`)}}
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
         <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
     </span>
-    {{- end }}
 </footer>
 {{- end }}
 

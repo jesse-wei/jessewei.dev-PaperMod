@@ -29,7 +29,9 @@ params:
   images: ["logo_outlined_6.png"]
   DateFormat: "January 2, 2006"
   # dark, light
-  defaultTheme: auto
+  # Use dark default because code blocks and comments look good on dark
+  # TODO: Use auto if I can make code blocks and comments use the website theme
+  defaultTheme: dark
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -49,6 +51,7 @@ params:
   showtoc: true
   tocopen: true
   # Enable KaTeX on every page by default
+  # If page local param math is false, then KaTeX will be disabled (see layouts/partials/extend_head.html)
   math: true
   # Without this, archive doesn't show all pages
   # See https://github.com/adityatelange/hugo-PaperMod/issues/912
@@ -68,7 +71,7 @@ params:
     # favicon16x16: "favicon-16x16.png"
     # favicon32x32: "favicon-32x32.png"
     # apple_touch_icon: "apple-touch-icon.png"
-    # safari_pinned_tab: "<link / abs url>"
+    # safari_pinned_tab: "safari-pinned-tab.svg"
 
   # Top left of site
   label:
@@ -81,7 +84,7 @@ params:
     # Needs to be explicitly set
     enabled: true
     title: Jesse Wei
-    subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](about)**"
+    subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](/about)**"
     imageUrl: "me.jpg"
     imageWidth: 150
     imageHeight: 150
