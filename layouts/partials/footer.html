@@ -1,6 +1,9 @@
 <!-- Display footer if not on homepage and hideFooter is false. -->
 {{- if and (ne .Title `Jesse Wei`) (not ( .Param "hideFooter")) }}
-<footer class="footer">
+<!-- Added padding-bottom: 10px;
+
+Don't do 0px in case the user needs to scroll (e.g., mobile view) -->
+<footer class="footer" style="padding-bottom: 10px;">
     {{- partial "social_icons.html" site.Params.socialIcons -}}
 
     {{- if site.Copyright }}
@@ -8,6 +11,9 @@
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
+
+    <!-- Add separator character -->
+    <span>•</span>
 
     <span>
         Powered by
