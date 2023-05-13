@@ -29,5 +29,4 @@ hugo server
   * For $\LaTeX{}$ support via [KaTeX](https://katex.org)
 * [assets/css/extended/*.css](https://github.com/jesse-wei/jessewei.dev/tree/main/assets/css/extended)
   * For code syntax highlighting via [Hugo Chroma](https://gohugo.io/content-management/syntax-highlighting/) instead of [highlight.js](https://highlightjs.org) (default)
-* [.github/workflows/deploy.yml](https://github.com/jesse-wei/jessewei.dev/blob/main/.github/workflows/deploy.yml)
-  * For automatic deployment to GitHub Pages, although my site is actually deployed on Netlify following the steps in the Getting Started With Hugo video above.
+* [.github/workflows/](https://github.com/jesse-wei/jessewei.dev/blob/main/.github/workflows/)

@@ -26,7 +26,7 @@ params:
   # author is me, of course, but it doesn't need to be displayed on the site
   author: ""
   # Image displayed when posting site link on socials
-  images: ["logo_outlined.png"]
+  images: ["logo_outlined_6.png"]
   DateFormat: "January 2, 2006"
   # dark, light
   defaultTheme: auto
@@ -59,10 +59,10 @@ params:
 
     # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#adding-custom-favicons
     # favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, safari-pinned-tab.svg supported
-    favicon: "favicon.ico"
-    favicon16x16: "favicon-16x16.png"
-    favicon32x32: "favicon-32x32.png"
-    apple_touch_icon: "apple-touch-icon.png"
+    # favicon: "favicon.ico"
+    # favicon16x16: "favicon-16x16.png"
+    # favicon32x32: "favicon-32x32.png"
+    # apple_touch_icon: "apple-touch-icon.png"
     # safari_pinned_tab: "<link / abs url>"
 
   # Top left of site
@@ -97,6 +97,8 @@ params:
       url: "https://www.linkedin.com/in/jessewei1/"
     - name: email
       url: "mailto:jesse@cs.unc.edu"
+    - name: discord
+      url: "discord/"
 
   analytics:
     google:

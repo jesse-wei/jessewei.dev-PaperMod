@@ -4,9 +4,10 @@ date: 2023-05-11T17:31:51-04:00
 draft: false
 summary: "Information about all my classes, professors, and grades."
 searchHidden: true
+robotsNoIndex: true
 ---
 
-You probably discovered this page because I gave you the link. This page is unlinked and unsearchable on my website.
+You probably discovered this page because I gave you the link. This page is unlinked and unsearchable on my website. And surely no one reads the source code.
 
 I give the link to people who want my advice as to what classes they should take.
 
