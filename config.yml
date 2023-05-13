@@ -108,7 +108,6 @@ params:
       url: "/discord"
 
   analytics:
-    # TODO: What's this?
     google:
       SiteVerificationTag: "XYZabc"
     bing:
