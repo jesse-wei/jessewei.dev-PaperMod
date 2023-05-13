@@ -78,8 +78,8 @@ params:
     title: Jesse Wei
     subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](about)**"
     imageUrl: "me.jpg"
-    imageWidth: 120
-    imageHeight: 120
+    imageWidth: 150
+    imageHeight: 150
     imageTitle: Picture of me
     buttons:
       - name: Tags
@@ -98,7 +98,7 @@ params:
     - name: email
       url: "mailto:jesse@cs.unc.edu"
     - name: discord
-      url: "discord/"
+      url: "discord"
 
   analytics:
     google:

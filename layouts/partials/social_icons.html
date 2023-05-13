@@ -1,0 +1,8 @@
+<div class="social-icons">
+    {{- range . }}
+    <!-- Added style="border-bottom: none;" to disable underline below social icon -->
+    <a style="border-bottom: none;" href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- end }}
+</div>
