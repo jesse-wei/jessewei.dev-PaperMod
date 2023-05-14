@@ -13,7 +13,7 @@ This website was created with the static site generator [Hugo](https://gohugo.io
 
 This website uses Google Analytics, which uses cookies. Please see [Google's Privacy Policy](https://policies.google.com/privacy), [Technologies](https://policies.google.com/technologies), and [How Google Uses Cookies](https://policies.google.com/technologies/cookies) for more information.
 
-Additionally, this website uses [Utterances](https://utteranc.es) for comments. Utterances uses cookies: Please see [Utterances' Privacy Policy](https://github.com/utterance/utterances/blob/master/PRIVACY-POLICY.md) for more information.
+Additionally, this website uses [giscus](https://giscus.app) for comments. giscus uses cookies: Please see [giscus' Privacy Policy](https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md) for more information.
 
 Lastly, this site remembers your theme preference (light or dark) in a cookie.
 
