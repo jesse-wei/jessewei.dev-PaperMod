@@ -75,7 +75,7 @@ params:
   # Top left of site
   label:
     text: "Jesse Wei"
-    icon: /apple-touch-icon.png
+    icon: /logo_filled_outlined_6.png
     iconHeight: 35
 
   # profile-mode
@@ -104,10 +104,10 @@ params:
       url: "https://github.com/jesse-wei"
     - name: linkedin
       url: "https://www.linkedin.com/in/jessewei1/"
-    - name: email
-      url: "mailto:jesse@cs.unc.edu"
     - name: discord
       url: "/discord"
+    - name: email
+      url: "mailto:jesse@cs.unc.edu"
 
   analytics:
     google:
@@ -123,7 +123,8 @@ params:
     hidden: false
     # Hide in list view
     hiddenInList: false
-    # Hide in single layout
+    # For most projects, I use a still cover image but the actual page has a video or GIF
+    # Therefore, hide cover in single layout
     hiddenInSingle: true
 
   editPost:
