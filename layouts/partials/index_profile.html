@@ -1,10 +1,7 @@
-<!-- Add margin on top and bottom since the index page shouldn't have social icons in footer.
-Push the footer down slightly in place of the social icons that would be in the footer. -->
-{{- if eq .Title `Jesse Wei` }}
-<div class="profile" style="margin-top: 22.75px; margin-bottom: 22.75px;">
-{{- else }}
-<div class="profile">
-{{- end }}
+<!-- Add margin on top and bottom since the index_profile page shouldn't have social icons in footer.
+It already has social icons in profile section.
+So, push the footer down slightly in place of the social icons that would be in the footer. -->
+<div class="profile" style="margin-top: 23px; margin-bottom: 23px;">
     {{- with site.Params.profileMode }}
     <div class="profile_inner">
         {{- if .imageUrl -}}
