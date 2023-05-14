@@ -6,8 +6,12 @@ draft: false
 showToc: false
 ShowReadingTime: false
 ShowWordCount: false
+editPost:
+    disabled: true
 ---
 
-My Discord username is rip wallet#0683. Feel free to add! Discord is my preferred method of communication.
+Feel free to add me on Discord! It's my preferred method of communication.
 
-TODO: Change username when Discord [migrates usernames](https://discord.com/blog/usernames).
+[Click here](https://discord.com/users/175082465671512064) to add me from the browser (you need to be logged in).
+
+Otherwise, add me via my Discord username, `rip wallet#0683`.
