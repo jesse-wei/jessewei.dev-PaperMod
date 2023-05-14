@@ -4,8 +4,8 @@ date: 2023-05-11T07:15:37-04:00
 draft: false
 cover:
     image: img/mips_processor_311.jpg
-    alt: "MIPS processor"
-    caption: "MIPS processor"
+    alt: "Single-cycle MIPS processor"
+    caption: "Single-cycle MIPS processor"
     hidden: false
     hiddenInSingle: false
 summary: "Head UTA in 23S and 22F. I anticipate being a graduate TA for the course in 23F."
