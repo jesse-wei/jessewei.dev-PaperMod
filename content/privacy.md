@@ -15,4 +15,6 @@ This website uses Google Analytics, which uses cookies. Please see [Google's Pri
 
 Additionally, this website uses [Utterances](https://utteranc.es) for comments. Utterances uses cookies: Please see [Utterances' Privacy Policy](https://github.com/utterance/utterances/blob/master/PRIVACY-POLICY.md) for more information.
 
+Lastly, this site remembers your theme preference (light or dark) in a cookie.
+
 It is possible that Hugo, PaperMod, and Netlify collect information in ways that I am not aware of. Apart from the information described here and data collection I am not aware of, no other information is collected, stored, or evaluated.
