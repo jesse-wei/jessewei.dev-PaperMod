@@ -1,9 +1,7 @@
 <!-- Display footer if not on homepage and hideFooter is false. -->
-{{- if and (ne .Title `Jesse Wei`) (not ( .Param "hideFooter")) }}
-<!-- Added padding-bottom: 10px;
-
-Don't do 0px in case the user needs to scroll (e.g., mobile view) -->
-<footer class="footer" style="padding-bottom: 10px;">
+{{- if and (ne .Title `JessedWei`) (not ( .Param "hideFooter")) }}
+<!-- Added padding-bottom: 20px; -->
+<footer class="footer" style="padding-bottom: 20px;">
     {{- partial "social_icons.html" site.Params.socialIcons -}}
 
     {{- if site.Copyright }}

@@ -5,7 +5,7 @@
     --main-width: 720px;
     --header-height: 60px;
     /* Changed this to make footer appear without scrollbar. Originally 60px. */
-    --footer-height: 136px;
+    --footer-height: 155px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
