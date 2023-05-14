@@ -8,7 +8,7 @@ cover:
     caption: "NeuroRuler computing circumference"
 summary: "Program that calculates head circumference from MRI data. 3D rotation, smoothing, and threshold options. Batch processes data via CLI. Imports and exports circumference and settings data."
 tags: ["Python", "Image Processing", "Medical Imaging", "GUI", "CLI", "COMP 523", "UNC"]
-showtoc: false
+tocopen: false
 ---
 
 ![NeuroRuler demo](img/nr_demo.gif)

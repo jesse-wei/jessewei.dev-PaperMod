@@ -21,8 +21,10 @@ hugo server
 ## Non-content files I changed
 
 * [config.yml](https://github.com/jesse-wei/jessewei.dev/blob/main/config.yml)
-* [layouts/partials](https://github.com/jesse-wei/jessewei.dev/blob/main/layouts/partials)
+* [layouts/partials/](https://github.com/jesse-wei/jessewei.dev/blob/main/layouts/partials)
   * Comments indicate changes made.
+* [assets/css/core/theme-vars.css](https://github.com/jesse-wei/jessewei.dev/blob/main/assets/css/core/theme-vars.css)
+  * Modified footer height.
 * [assets/css/extended/*.css](https://github.com/jesse-wei/jessewei.dev/tree/main/assets/css/extended)
   * For code syntax highlighting via [Hugo Chroma](https://gohugo.io/content-management/syntax-highlighting/) instead of [highlight.js](https://highlightjs.org) (default).
 * [.github/](https://github.com/jesse-wei/jessewei.dev/blob/main/.github)
@@ -31,4 +33,4 @@ hugo server
 
 * [Hugo Quick Start](https://gohugo.io/getting-started/quick-start)
 * [Getting Started With Hugo](https://www.youtube.com/watch?v=hjD9jTi_DQ4) (47:41)
-* [How to set up this blog](https://kpwn.de/2021/09/how-to-set-up-this-blog/)
+* [How to Set Up This Blog | kpwn.de](https://kpwn.de/2021/09/how-to-set-up-this-blog/)

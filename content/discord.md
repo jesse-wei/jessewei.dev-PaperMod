@@ -5,7 +5,6 @@ title: "Discord"
 draft: false
 showToc: false
 ShowReadingTime: false
-ShowWordCount: false
 editPost:
     disabled: true
 ---

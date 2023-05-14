@@ -5,7 +5,6 @@ draft: false
 summary: "4-pg $\\LaTeX{}$ document."
 showtoc: false
 ShowReadingTime: false
-ShowWordCount: false
 tags: ["ACT", "Math", "LaTeX"]
 ---
 

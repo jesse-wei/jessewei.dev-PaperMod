@@ -10,7 +10,7 @@ cover:
     hiddenInSingle: true
 summary: "\"Touching wires and breadboards is good for the CS major.\""
 tags: ["Arduino", "Hardware"]
-showtoc: false
+tocopen: false
 ---
 
 {{< youtube hia_4dOh098 >}}

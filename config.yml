@@ -23,8 +23,7 @@ params:
   description: "Jesse Wei's personal website"
   keywords: [Jesse Wei, Blog, Portfolio, UNC, Computer Science, Mathematics, CS, University of North Carolina at Chapel Hill]
   # author: ["Me", "You"] # multiple authors
-  # author is me, of course, but it doesn't need to be displayed on the site
-  author: ""
+  author: "Jesse Wei"
   # Image displayed when posting site link on socials
   images: ["logo_outlined_6.png"]
   DateFormat: "January 2, 2006"
@@ -39,7 +38,7 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: false
   UseHugoToc: true
   disableSpecial1stPost: false

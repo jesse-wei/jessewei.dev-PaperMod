@@ -5,7 +5,6 @@ draft: false
 summary: "I wrote this 20-pg ACT guide while in high school and update it every now and then."
 showtoc: false
 ShowReadingTime: false
-ShowWordCount: false
 tags: ["ACT", "Tutoring"]
 ---
 

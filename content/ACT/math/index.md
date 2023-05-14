@@ -5,7 +5,6 @@ draft: false
 summary: "17-pg $\\LaTeX{}$ document. I went through 5 ACT Math forms and wrote about all concepts I considered advanced."
 showtoc: false
 ShowReadingTime: false
-ShowWordCount: false
 tags: ["ACT", "Math", "LaTeX"]
 ---
 

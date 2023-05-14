@@ -2,8 +2,9 @@
 <!-- Added padding top and bottom 20px -->
 <footer class="footer" style="padding-bottom: 20px; padding-top: 20px;">
 
-    <!-- Don't display social icons in homepage footer -->
-    {{- if ne .Title `Jesse Wei` }}
+    <!-- Don't display social icons in homepage's footer
+    To check that a page is the homepage, check for equality of the site title and page title -->
+    {{- if ne .Site.Title .Title }}
     {{- partial "social_icons.html" site.Params.socialIcons -}}
     {{- end }}
 
@@ -13,13 +14,23 @@
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
 
-    <!-- Add separator character -->
-    <span>•</span>
 
+    <!-- Don't display Powered by Hugo & PaperMod on homepage -->
+    {{- if ne .Site.Title .Title }}
     <span>
+        <!-- Add separator character -->
+        •
         Powered by
-        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
-        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+        <!-- Remove target="_blank", which opens in new window or tab
+        Idk what noopener and noreferrer do, so I'll keep them -->
+        <a href="https://gohugo.io/" rel="noopener noreferrer">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener">PaperMod</a>
+    </span>
+    {{- end }}
+    <!-- Add Privacy Policy link on every page -->
+    <span>
+        •
+        <a href="/privacy">Privacy Policy</a>
     </span>
 </footer>
 {{- end }}
