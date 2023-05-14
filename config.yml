@@ -28,9 +28,7 @@ params:
   images: ["logo_outlined_6.png"]
   DateFormat: "January 2, 2006"
   # dark, light
-  # Use dark default because code blocks and comments look good on dark
-  # TODO: Use auto if I can make code blocks and comments use the website theme
-  defaultTheme: dark
+  defaultTheme: auto
   disableThemeToggle: false
 
   ShowReadingTime: true

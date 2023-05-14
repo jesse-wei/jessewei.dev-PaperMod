@@ -16,6 +16,8 @@ In 2023, I graduated with highest distinction from UNC with a B.S. in Mathematic
 
 I was a head UTA for COMP311 (23S, 22F). I was a UTA for COMP210 ([22Su](https://www.cs.unc.edu/~kakiryan/teaching/summer-210/team/team.html)) and COMP110 ([22S](https://22s.comp110.com/resources/team.html), [21F](https://21f.comp110.com/resources/team.html), [21S](https://21s.comp110.com/resources/team.html)).
 
+I live in [Apex](https://www.apexnc.org), North Carolina. I lived in [Lumberton](https://www.lumbertonnc.gov), North Carolina, for 10 years.
+
 A fun fact about me: I used to speedcube.
 
 {{< rawhtml >}}
