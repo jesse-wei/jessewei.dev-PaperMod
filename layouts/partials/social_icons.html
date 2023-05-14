@@ -1,5 +1,6 @@
-<!-- Added padding-bottom and top 0px. No padding within footer, just on the outside of the footer. -->
-<div class="social-icons" style="padding-bottom: 0px; padding-top: 0px;">
+<!-- Added padding-bottom: 0px;
+No gap between social icons and words in footer. However, maintain top padding because it's in homepage. -->
+<div class="social-icons" style="padding-bottom: 0px;">
     {{- range . }}
     <!-- Added style="border-bottom: none;" to disable underline below social icon -->
     <a style="border-bottom: none;" href="{{ trim .url " " }}" target="_blank" rel="noopener noreferrer me" title="{{ (.title | default .name) | title }}">

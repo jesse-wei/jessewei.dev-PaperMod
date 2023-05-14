@@ -5,7 +5,7 @@
     --main-width: 720px;
     --header-height: 60px;
     /* Changed this. Went to inspect element and found actual height of footer. */
-    --footer-height: 97.5px;
+    --footer-height: 109.5px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);
