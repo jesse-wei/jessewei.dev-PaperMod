@@ -1,4 +1,5 @@
 # Source: https://github.com/robb-romans/robb-sh-hugo/blob/main/.github/workflows/run-htmltest.yml
+# Modifications made have the word MODIFICATION near them
 
 # .github/workflows/run-htmltest.yml
 # (c) 2021 Robb Romans
