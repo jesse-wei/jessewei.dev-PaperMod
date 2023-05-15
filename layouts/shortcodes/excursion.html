@@ -1,0 +1,12 @@
+<!-- Source: https://github.com/KwnyPwny/hugo-blog/tree/main/layouts/shortcodes
+But doesn't work super well. Spacing messed up and code blocks don't work -->
+<div id="{{ .Get "anchor" }}" class="toc" style="margin-bottom: 20px; background: var(--theme);">
+    <details>
+        <summary>
+            <div class="details">{{ .Get "title" }}</div>
+        </summary>
+    <div class="inner">
+    {{ .Inner }}
+    </div>
+    </details>
+</div>

@@ -25,6 +25,7 @@ params:
   # author: ["Me", "You"] # multiple authors
   author: "Jesse Wei"
   # Image displayed when posting site link on socials
+  # For example, if you post the link to the site in Discord, this image will be displayed
   images: ["logo_outlined_6.png"]
   DateFormat: "January 2, 2006"
   # dark, light
@@ -70,7 +71,7 @@ params:
     # apple_touch_icon: "apple-touch-icon.png"
     # safari_pinned_tab: "safari-pinned-tab.svg"
 
-  # Top left of site
+  # Logo and name shown on top left of site
   label:
     text: "Jesse Wei"
     icon: /logo_filled_outlined_6.png
@@ -82,11 +83,13 @@ params:
     enabled: true
     title: Jesse Wei
     subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](/about)**"
-    imageUrl: "me.jpg"
+    imageUrl: "/me.jpg"
     imageWidth: 150
     imageHeight: 150
     imageTitle: Picture of me
     buttons:
+      - name: Posts
+        url: /posts
       - name: Tags
         url: /tags
       - name: Archives
@@ -121,8 +124,6 @@ params:
     hidden: false
     # Hide in list view
     hiddenInList: false
-    # For most projects, I use a still cover image but the actual page has a video or GIF
-    # Therefore, hide cover in single layout
     hiddenInSingle: true
 
   editPost:
@@ -180,6 +181,13 @@ markup:
     hl_inline: false
     lineAnchors: ""
     lineNoStart: 1
+    # highlight.js also doesn't use line numbers by default.
+    # The rationale is that doing so improves readability
+    # (https://highlightjs.readthedocs.io/en/latest/line-numbers.html).
+    # Therefore, I disable it by default.
+    # Note: It's possible to enable it on a specific code block by specifying
+    # ```{lineNos=true}
+    # ```
     lineNos: false
     lineNumbersInTable: true
     noClasses: true

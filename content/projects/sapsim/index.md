@@ -3,7 +3,7 @@ title: "SAPsim"
 date: 2023-02-28T18:08:42-04:00
 draft: false
 cover:
-    image: SAPsim_still_cropped.jpg
+    image: /SAPsim_still_cropped.jpg
     alt: "SAPsim still picture"
     caption: "SAPsim still picture"
 summary: "Simulation of SAP (Simple-As-Possible computer) programs from COMP311 @ UNC. Enabled me to autograde and create COMP311's SAP programming assignment."
