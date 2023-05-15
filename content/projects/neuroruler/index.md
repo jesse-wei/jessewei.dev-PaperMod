@@ -26,7 +26,7 @@ Cross-platform program that calculates head circumference from MRI data (`.nii`,
 
 Installable via `pip install NeuroRuler`. Further instructions available on [GitHub](https://github.com/NIRALUser/NeuroRuler#install).
 
-Made in [COMP 523](https://www.cs.unc.edu/~stotts/COMP523-s23/teams.html) (Software Engineering Lab) in collaboration with Madison Lester, Peifeng "Hank" He, and Eric Schneider for our client, [Professor Martin Styner](https://www.cs.unc.edu/~styner/).
+Made in [COMP 523](https://www.cs.unc.edu/~stotts/COMP523-s23/teams.html) (Software Engineering Lab) in collaboration with Madison Lester, Peifeng "Hank" He, and [Eric Schneider](https://eric-unc.tech) for our client, [Professor Martin Styner](https://www.cs.unc.edu/~styner/).
 
 ## Figures
 

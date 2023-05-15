@@ -25,7 +25,7 @@ This course will be beneficial both to students who want to pursue further studi
 
 ## My contributions
 
-I was a head UTA for COMP311 in 23S and 22F.
+I was a head UTA for COMP311 in 23S and 22F. When I graduated in 23S, I won the [Diane Pozefsky Learning Assistant Award](https://cs.unc.edu/about/awards/department-awards/pozefsky-la-award/) for my work.
 
 I anticipate being a graduate TA for the course in 23F.
 

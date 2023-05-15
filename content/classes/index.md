@@ -16,6 +16,8 @@ I ask that you not give the link to this page to others without my permission ([
 
 [My transcript](https://drive.google.com/file/d/1w1XW71Ndxe7pt5q3Qcos6JIyZTOlpkYe/view?usp=share_link), if you just want to see my classes and grades, not all my comments.
 
+[My Tar Heel Tracker](img/tht.pdf)
+
 **GPA**: 3.878/4.0
 
 ## 20F (Math BS)
@@ -56,7 +58,7 @@ I ask that you not give the link to this page to others without my permission ([
 |COMP 311: Computer Organization (3)|[Brent Munsell](https://cs.unc.edu/person/brent-munsell/)|A|[Statistics](img/311_distribution_22s.jpg). [My grades](img/311_grades.pdf). Among my favorite classes!|
 |COMP 550: Algorithms and Analysis (3)|[John Majikes](https://tarheels.live/johnmajikes/)|A|[My grades](img/550_grades.pdf). Mickey Mouse, completely autograded algorithms class without proofs 💀. Median grade A-; median final exam grade 95%. Considering how important algorithms is, this is terrible.|
 |MATH 548: Combinatorics (3)|[Ivan Cherednik](https://math.unc.edu/faculty-member/cherednik-ivan/)|A|Mickey mouse class. He showed everyone the entire class's grades (with names) in an Excel sheet at least 5 times lmao.|
-|STOR 535: Probability for Data Science (3)|[Nicolas Fraiman](https://fraiman.web.unc.edu)|A|[Statistics](img/535_distribution.jpg). [My grades](img/535_grades.pdf). This class satisfies any requirement STOR 435 does and is easier, imo. The coding assignments (which are easy) seem to replace some of the difficulty in STOR 435.|
+|STOR 535: Probability for Data Science (3)|[Nicolas Fraiman](https://fraiman.web.unc.edu)|A|[Statistics](img/535_distribution.jpg). [My grades](img/535_grades.pdf). This class satisfies any requirement STOR 435 does. Note from page 3 of my [THT](img/tht.pdf) that STOR 535 counts toward the COMP BS and the MATH BS. Imo, STOR 535 is easier, and the coding assignments, which are easy, seem to replace some of the difficulty in STOR 435.|
 |TA for [COMP 110](https://22s.comp110.com)|[Kris Jordan](https://krisjordan.com)|N/A|Good times.|
 
 ## 22SSI

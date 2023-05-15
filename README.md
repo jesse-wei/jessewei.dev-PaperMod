@@ -13,15 +13,17 @@ First, follow the steps in [Hugo Quick Start](https://gohugo.io/getting-started/
 Then, run the following commands:
 
 ```bash
-git clone https://github.com/jesse-wei/jessewei.dev.git --depth=1
+git clone --recurse-submodules --no-single-branch https://github.com/jesse-wei/jessewei.dev.git
 cd jessewei.dev
 hugo server
 ```
 
+`--recurse-submodules` will clone the PaperMod theme [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). In addition, you can clone with `--depth=1` to save disk space.
+
 ## Non-content files I changed
 
 * [config.yml](https://github.com/jesse-wei/jessewei.dev/blob/main/config.yml)
-* [layouts/partials/](https://github.com/jesse-wei/jessewei.dev/blob/main/layouts/partials)
+* [layouts/](https://github.com/jesse-wei/jessewei.dev/blob/main/layouts)
   * Comments indicate changes made.
 * [assets/css/core/theme-vars.css](https://github.com/jesse-wei/jessewei.dev/blob/main/assets/css/core/theme-vars.css)
   * Modified footer height.
