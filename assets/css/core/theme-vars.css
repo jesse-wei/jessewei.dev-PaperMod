@@ -5,8 +5,9 @@
     --main-width: 720px;
     --header-height: 60px;
     /* Changed this. Went to inspect element and found actual height of footer in Search page. */
-    /* Height of footer in homepage (no social icons) is 60 px, same as the header. */
     --footer-height: 104px;
+    /* Add new variable for height of footer without socials, such as on homepage (index_profile) */
+    --footer-no-socials-height: 60px;
     --radius: 8px;
     --theme: rgb(255, 255, 255);
     --entry: rgb(255, 255, 255);

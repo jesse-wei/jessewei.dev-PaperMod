@@ -382,11 +382,13 @@ In addition, comments show up in [GitHub Discussions](https://github.com/jesse-w
 
 ### Social icons in footer
 
-I added social icons to the footer, as in resource [^4]. However, doing so messed up spacing values. For example, a scrollbar appeared on the homepage and Search page even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
+I added social icons to the footer, as in resource [^4]. I sort of follow what it describes but make some of my own adjustments.
 
-In short, I modified CSS padding and margin in 4 files, as indicated by the blog post: `layouts/partials/footer.html`, `layouts/partials/index_profile.html`, `layouts/partials/social_icons.html`, and `assets/css/core/theme-vars.css`. The comments in each file describe the changes I made. Most comments in `social_icons.html` are for htmltest, described [below](#htmltest), so ignore those for now.
+As described there, adding social icons to footer messes with CSS spacing values. For example, a scrollbar appeared on the homepage and Search page (haven't solved this and don't plan to) even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
 
-I disabled footer social icons on the homepage because the homepage already has social icons. I added `margin-top` and `margin-bottom` to `index_profile.html` in place of the social icons that would be there.
+In short, I modified CSS in 4 files. `layouts/partials/footer.html`, `layouts/partials/social_icons.html`, `assets/css/core/theme-vars.css`, and `assets/css/common/profile-mode.css`. The comments in each file describe the changes I made. Most comments in `social_icons.html` are for htmltest, described [below](#htmltest), so ignore those for now.
+
+I disabled footer social icons on the homepage because the homepage already has social icons.
 
 ### Other footer changes
 
