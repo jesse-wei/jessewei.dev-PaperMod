@@ -25,26 +25,32 @@ This post is inspired by Konstantin's similarly-titled [blog post](https://kpwn.
 
 ## Resources
 
-Before proceeding, I'd like to share three excellent resources that I used and will reference throughout this post. My goal is to make the rest of this post self-contained, but if something doesn't make sense, please use these resources.
+Before proceeding, I'd like to share five excellent resources that I used and will reference throughout this post. The top three are crucial because they cover Hugo and PaperMod. The bottom two describe very specific features that I reference in [My website](#my-website).
+
+My goal is to make the rest of this post self-contained, but if something doesn't make sense, please use the first three resources.
 
 * [^1] [Hugo Quick Start](https://gohugo.io/getting-started/quick-start)
   * Super quick to read and follow along, < 5 min.
 * [^2] [Getting Started With Hugo](https://www.youtube.com/watch?v=hjD9jTi_DQ4) (47:41)
-* [^3] [PaperMod demo site](https://adityatelange.github.io/hugo-PaperMod/) and its [source](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
-
-The PaperMod demo site also serves as PaperMod's documentation.
+* [^3] [PaperMod demo site/documentation](https://adityatelange.github.io/hugo-PaperMod/) and its [source](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
+* [^4] [Konstantin's How to Set Up This Blog](https://kpwn.de/2021/09/how-to-set-up-this-blog/)
+* [^5] [Check links in Hugo with htmltest](https://robb.sh/posts/check-links-in-hugo-with-htmltest/)
 
 [^1]: [Hugo Quick Start](https://gohugo.io/getting-started/quick-start)
 
 [^2]: [Getting Started With Hugo](https://www.youtube.com/watch?v=hjD9jTi_DQ4)
 
-[^3]: [PaperMod demo site](https://adityatelange.github.io/hugo-PaperMod/) and its [source](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
+[^3]: [PaperMod demo site/documentation](https://adityatelange.github.io/hugo-PaperMod/) and its [source](https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite)
+
+[^4]: [Konstantin's How to Set Up This Blog](https://github.com/KwnyPwny/hugo-blog/tree/main/layouts/shortcodes)
+
+[^5]: [Check links in Hugo with htmltest](https://robb.sh/posts/check-links-in-hugo-with-htmltest/)
 
 ## Setup
 
-First, follow the steps [here](https://gohugo.io/installation/) to install Hugo. You should also have Git installed. [^4]
+First, follow the steps [here](https://gohugo.io/installation/) to install Hugo. You should also have Git installed. [^6]
 
-[^4]: I assume you already do, surely.
+[^6]: I assume you already do, surely.
 
 ### Clone/fork
 
@@ -367,7 +373,7 @@ In addition, comments show up in [GitHub Discussions](https://github.com/jesse-w
 
 ### Social icons in footer
 
-I added social icons to the footer. However, doing so messed up spacing values. For example, a scrollbar appeared on the homepage and Search page even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth [here](https://kpwn.de/2021/09/how-to-set-up-this-blog/#social-icons), under problem 2.
+I added social icons to the footer. However, doing so messed up spacing values. For example, a scrollbar appeared on the homepage and Search page even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
 
 In short, I modified CSS padding and margin in 4 files, as indicated by the blog post: `layouts/partials/footer.html`, `layouts/partials/index_profile.html`, `layouts/partials/social_icons.html`, and `assets/css/core/theme-vars.css`. The comments in each file describe the changes I made.
 
@@ -421,9 +427,9 @@ I disabled [highlight.js](https://highlightjs.org) (default) and enabled Hugo Ch
 
 I want to point out that I disabled line numbers by default for readability. Most code blocks you've seen so far have not had line numbers.
 
-However, you can enable line numbers for a specific code block, as shown in [baseof](#baseof), by adding `{lineNos=true}` to the code block. [^5]
+However, you can enable line numbers for a specific code block, as shown in [baseof](#baseof), by adding `{lineNos=true}` to the code block. [^7]
 
-[^5]: You might also be able to enable it by default in a specific post by adding it to front matter, but this didn't work for me.
+[^7]: You might also be able to enable it by default in a specific post by adding it to front matter, but this didn't work for me.
 
 ```html {lineNos=true}
 <!DOCTYPE html>
@@ -448,4 +454,4 @@ PaperMod automatically uses the Google Analytics script if `env` is `production`
 
 ### GitHub workflows
 
-I added ... finish this after deleting the deploy workflow
+I added a GH workflow for automatically checking links in my site. See `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5].

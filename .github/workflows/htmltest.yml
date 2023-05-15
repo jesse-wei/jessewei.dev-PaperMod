@@ -9,7 +9,7 @@
 # TODO: Add a bot to add artifact into pull requests
 
 name: htmltest
-on: [workflow_call, pull_request]
+on: [push, pull_request, workflow_call]
 jobs:
   htmltest:
     runs-on: ubuntu-latest
