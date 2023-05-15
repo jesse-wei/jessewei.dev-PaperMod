@@ -487,9 +487,9 @@ IgnoreURLs:
   # This is suboptimal because we ideally want to check the image URL without the #center suffix
 
   # Match internal image path ending in #center
-  - ".*\.(apng|gif|ico|cur|jpg|jpeg|jfif|pjpeg|pjp|png|svg)#center$"
+  - .*\.(apng|gif|ico|cur|jpg|jpeg|jfif|pjpeg|pjp|png|svg)#center$
   # Match external image URL ending in #center
-  - "(https:\/\/|http:\/\/|www\.).*\.[A-Za-z]+#center$"
+  - (https://|http://|www\.).*\.[A-Za-z]+#center$
 ```
 
 As you can tell by the comments, this is suboptimal and can lead to false negatives. I can think of two solutions.
