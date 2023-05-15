@@ -1,7 +1,7 @@
 ---
 title: "Overview of Hugo/PaperMod and Setting Up This Site"
 date: 2023-05-14T20:13:59-04:00
-draft: true
+draft: false
 cover:
     image: img/hugo-logo-wide.svg
     alt: "Hugo logo"
@@ -373,7 +373,7 @@ In addition, comments show up in [GitHub Discussions](https://github.com/jesse-w
 
 ### Social icons in footer
 
-I added social icons to the footer. However, doing so messed up spacing values. For example, a scrollbar appeared on the homepage and Search page even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
+I added social icons to the footer, as in resource [^4]. However, doing so messed up spacing values. For example, a scrollbar appeared on the homepage and Search page even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
 
 In short, I modified CSS padding and margin in 4 files, as indicated by the blog post: `layouts/partials/footer.html`, `layouts/partials/index_profile.html`, `layouts/partials/social_icons.html`, and `assets/css/core/theme-vars.css`. The comments in each file describe the changes I made.
 
@@ -455,3 +455,33 @@ PaperMod automatically uses the Google Analytics script if `env` is `production`
 ### GitHub workflows
 
 I added a GH workflow for automatically checking links in my site. See `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5].
+
+The output in GH Actions looks like this:
+
+```text
+act/sin_cos/index.html
+183
+  alt text empty --- act/sin_cos/index.html --> https://jessewei.dev/logo_filled_outlined_6.png
+184
+  hash does not exist --- act/sin_cos/index.html --> img/sincos-definition.jpg#center
+185
+  hash does not exist --- act/sin_cos/index.html --> img/sincos-identity-90.jpg#center
+186
+  hash does not exist --- act/sin_cos/index.html --> img/cos_derivatives.jpg#center
+187
+  Non-OK status: 999 --- act/sin_cos/index.html --> https://www.linkedin.com/in/jessewei1/
+188
+act/index.html
+189
+  alt text empty --- act/index.html --> https://jessewei.dev/logo_filled_outlined_6.png
+190
+  Non-OK status: 999 --- act/index.html --> https://www.linkedin.com/in/jessewei1/
+```
+
+Most of it is irrelevant information, which makes it a bit hard to read, but it has alerted me to some broken links.
+
+In `htmltest.yml`, I set `continue-on-error: true` because I don't think a broken link should cause the red X in GH Actions, especially because most links in the output aren't actually broken. I just check the output of the action every now and then.
+
+To make the output easier to read, I would like to fix or exclude the "alt text empty" message for the site logo at the top left and the "Non-OK status" for my LinkedIn social icon link. It is possible to [ignore content](https://github.com/wjdp/htmltest#see_no_evil-ignoring-content) in htmltest.
+
+However, the `#center` is how you center an image in Markdown in PaperMod. So that seems a bit hard to fix.
