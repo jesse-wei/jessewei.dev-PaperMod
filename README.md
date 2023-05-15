@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d745180-286f-4084-bd0e-046e2c5d22ef/deploy-status)](https://app.netlify.com/sites/cheerful-mousse-b9d87b/deploys)
+[![htmltest](https://github.com/jesse-wei/jessewei.dev/actions/workflows/htmltest.yml/badge.svg)](https://github.com/jesse-wei/jessewei.dev/actions/workflows/htmltest.yml)
 
 # [jessewei.dev](https://jessewei.dev)
 
@@ -8,7 +9,7 @@ My [old website](https://github.com/jesse-wei/jessewei.dev_old) was raw HTML/CSS
 
 ## Deploy locally
 
-First, follow the steps in [Hugo Quick Start](https://gohugo.io/getting-started/quick-start/#prerequisites) to install Hugo.
+First, [install Hugo](https://gohugo.io/installation/).
 
 Then, run the following commands:
 
@@ -18,7 +19,7 @@ cd jessewei.dev
 hugo server
 ```
 
-`--recurse-submodules` will clone the PaperMod theme [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). In addition, you can clone with `--depth=1` to save disk space.
+`--recurse-submodules` will clone the PaperMod [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). In addition, you can clone with `--depth=1` to save disk space.
 
 ## How I set up this site
 

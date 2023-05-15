@@ -287,7 +287,7 @@ Note that after compilation, files in `static/` are copied to the root directory
 
 ### Shortcodes
 
-I want to briefly mention [shortcodes](https://gohugo.io/content-management/shortcodes/). Quite a few of them are built in to Hugo/PaperMod, and they're very convenient.
+I want to briefly mention [shortcodes](https://gohugo.io/content-management/shortcodes/). Quite a few of them are [built in to Hugo](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) and PaperMod, and they're very convenient.
 
 I'll show a few examples. Note that when I show the code, I put a space between `{` and `<` so that the shortcode is parsed as text and not executed. To use it, remove that space.
 
