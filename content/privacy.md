@@ -7,6 +7,7 @@ comments: false
 showReadingTime: false
 editPost:
     disabled: true
+summary: "Privacy policy."
 ---
 
 This website was created with the static site generator [Hugo](https://gohugo.io) using the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme and is hosted on [Netlify](https://www.netlify.com).

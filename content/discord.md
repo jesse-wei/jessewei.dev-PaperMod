@@ -7,6 +7,7 @@ showToc: false
 ShowReadingTime: false
 editPost:
     disabled: true
+summary: "Link to my Discord profile and my Discord username."
 ---
 
 Feel free to add me on Discord! It's my preferred method of communication.
