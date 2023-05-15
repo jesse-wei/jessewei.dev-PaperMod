@@ -3,7 +3,7 @@ title: "Overview of Hugo/PaperMod and Setting Up This Site"
 date: 2023-05-14T20:13:59-04:00
 draft: false
 cover:
-    image: img/hugo-logo-wide.svg
+    image: img/hugo_logo_wide.svg
     alt: "Hugo logo"
     caption: "Hugo logo"
     hidden: false
@@ -109,6 +109,7 @@ jessewei.dev
 │       ├── comments.html
 │       ├── extend_head.html
 │       ├── footer.html
+│       ├── header.html
 │       ├── index_profile.html
 │       └── social_icons.html
 ├── static              Images, etc.
@@ -139,7 +140,7 @@ title: "How to Set Up This Website"
 date: 2023-05-14T20:13:59-04:00
 draft: true
 cover:
-    image: img/hugo-logo-wide.svg
+    image: img/hugo_logo_wide.svg
     alt: "Hugo logo"
     caption: "Hugo logo"
 summary: "This post details the steps I took and decisions I made in making my website using Hugo with the PaperMod theme."
@@ -302,6 +303,14 @@ I'll show a few examples. Note that when I show the code, I put a space between 
 <p align="center" style="color: red;"><strong>This is raw HTML</strong></p>
 {{< /rawhtml >}}
 
+#### Figure
+
+See the [htmltest](#htmltest) section for an example of a figure. Here's the code that generates it:
+
+```go-html-template
+{{ < figure src="img/htmltest.jpg" caption="htmltest GH action output" alt="htmltest GH action output" align="center">}}
+```
+
 #### YouTube embed
 
 ```go-html-template
@@ -375,7 +384,7 @@ In addition, comments show up in [GitHub Discussions](https://github.com/jesse-w
 
 I added social icons to the footer, as in resource [^4]. However, doing so messed up spacing values. For example, a scrollbar appeared on the homepage and Search page even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
 
-In short, I modified CSS padding and margin in 4 files, as indicated by the blog post: `layouts/partials/footer.html`, `layouts/partials/index_profile.html`, `layouts/partials/social_icons.html`, and `assets/css/core/theme-vars.css`. The comments in each file describe the changes I made.
+In short, I modified CSS padding and margin in 4 files, as indicated by the blog post: `layouts/partials/footer.html`, `layouts/partials/index_profile.html`, `layouts/partials/social_icons.html`, and `assets/css/core/theme-vars.css`. The comments in each file describe the changes I made. Most comments in `social_icons.html` are for htmltest, described [below](#htmltest), so ignore those for now.
 
 I disabled footer social icons on the homepage because the homepage already has social icons. I added `margin-top` and `margin-bottom` to `index_profile.html` in place of the social icons that would be there.
 
@@ -454,34 +463,22 @@ PaperMod automatically uses the Google Analytics script if `env` is `production`
 
 ### GitHub workflows
 
-I added a GH workflow for automatically checking links in my site. See `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5].
+#### htmltest
 
-The output in GH Actions looks like this:
+I added a GH workflow for automatically checking links in my site.
 
-```text
-act/sin_cos/index.html
-183
-  alt text empty --- act/sin_cos/index.html --> https://jessewei.dev/logo_filled_outlined_6.png
-184
-  hash does not exist --- act/sin_cos/index.html --> img/sincos-definition.jpg#center
-185
-  hash does not exist --- act/sin_cos/index.html --> img/sincos-identity-90.jpg#center
-186
-  hash does not exist --- act/sin_cos/index.html --> img/cos_derivatives.jpg#center
-187
-  Non-OK status: 999 --- act/sin_cos/index.html --> https://www.linkedin.com/in/jessewei1/
-188
-act/index.html
-189
-  alt text empty --- act/index.html --> https://jessewei.dev/logo_filled_outlined_6.png
-190
-  Non-OK status: 999 --- act/index.html --> https://www.linkedin.com/in/jessewei1/
-```
+{{< figure src="img/htmltest.jpg" caption="htmltest GH action output" alt="htmltest GH action output" align="center">}}
 
-Most of it is irrelevant information, which makes it a bit hard to read, but it has alerted me to some broken links.
+To enable, see `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5].
 
-In `htmltest.yml`, I set `continue-on-error: true` because I don't think a broken link should cause the red X in GH Actions, especially because most links in the output aren't actually broken. I just check the output of the action every now and then.
+There was originally >100 lines of garbage output. htmltest complained that the site logo's link at the top left had no alt text, and my LinkedIn link in social icons in the footer returned non-OK exit status 999. Since the header and footer are in all pages, this caused a lot of errors, which made the output unreadable.
 
-To make the output easier to read, I would like to fix or exclude the "alt text empty" message for the site logo at the top left and the "Non-OK status" for my LinkedIn social icon link. It is possible to [ignore content](https://github.com/wjdp/htmltest#see_no_evil-ignoring-content) in htmltest.
+I fixed this in `layouts/partials/header.html` by adding non-empty alt text to the logo and in `layouts/partials/social_icons.html` by excluding the LinkedIn link from htmltest using the `data-proofer-ignore` attribute, as specified in [htmltest's README](https://github.com/wjdp/htmltest#see_no_evil-ignoring-content).
 
-However, the `#center` is how you center an image in Markdown in PaperMod. So that seems a bit hard to fix.
+The top 3 links are ones I want to keep even though they don't actually work. So I manually ignored them in the post (not `layouts/`) using the `data-proofer-ignore` attribute in rawhtml. [^8]
+
+[^8]: TODO: Create shortcode for a link with `data-proofer-ignore` attribute.
+
+And the `#center` thing is how you can [center an image in Markdown syntax in PaperMod](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#centering-image-in-markdown). But since that causes htmltest to freak out, I now use the figure shortcode as I did in the image above (code provided [above](#figure)).
+
+Since all current links are now considered working by htmltest, I set `continue-on-error: false` in `htmltest.yml` so that GH Actions will notify me with a red X if I add a broken link or a link breaks.

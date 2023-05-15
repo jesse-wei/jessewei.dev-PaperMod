@@ -82,7 +82,7 @@ An alternative representation of $\underbrace{111...1}_{32}$ is `0xFFFFFFFF`. Th
 
 Why is this [important](https://www.engadget.com/2015-05-01-boeing-787-dreamliner-software-bug.html)?
 
-![Boeing bug](img/boeing.jpg#center)
+{{< figure src="img/boeing.jpg" caption="Boeing bug" alt="Boeing bug" align="center">}}
 
 Now you understand why Boeing 787 airplanes have this issue! It's a simple case of integer overflow. Computer
 memory is aligned in chunks, and in C and other programming languages, an `unsigned int` is specified

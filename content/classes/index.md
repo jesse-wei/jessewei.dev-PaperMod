@@ -6,6 +6,8 @@ draft: false
 summary: "Information about all my classes, professors, and grades."
 searchHidden: true
 robotsNoIndex: true
+# A comment would show up on GH Discussions
+comments: false
 ---
 
 You probably discovered this page because I gave you the link. This page is unlinked and unsearchable on my website. And surely no one reads the source code. If you did find it by reading the source code, you're a nerd.
@@ -24,7 +26,7 @@ I ask that you not give the link to this page to others without my permission ([
 
 | Class | Professor | Grade | Comments |
 | :---: | :-------: | :---: | :------: |
-|[COMP 110: Introduction to Programming](https://20f.comp110.com) (3)|[Kristopher Jordan](https://krisjordan.com)|A|The start of my CS major pipeline...|
+|{{< rawhtml >}}<a href="https://20f.comp110.com" data-proofer-ignore>COMP 110: Introduction to Programming</a> (3){{< /rawhtml >}}|[Kristopher Jordan](https://krisjordan.com)|A|The start of my CS major pipeline...|
 |MATH 233: Calculus of Functions of Several Variables (4)|Elizabeth McLaughlin|A|Grade grubbed the A ngl... got a regrade on one question on the final exam, and it made the difference.|
 |MATH 381: Discrete Mathematics (3)|Chad Kelterborn|A|Truly a Chad. I mention him in the footer of [Advanced ACT Math Concepts](../act/math/) (pg. 15).|
 |EDUC 101: First Year Thriving (2)|Charles Midthun|A|Only took it because some email said freshmen had to take some bogus classes. Not sure what would've happened if I didn't take it.|
@@ -46,7 +48,7 @@ I ask that you not give the link to this page to others without my permission ([
 | Class | Professor | Grade | Comments |
 | :---: | :-------: | :---: | :------: |
 |COMP 211: Systems Fundamentals (3)|[Brent Munsell](https://cs.unc.edu/person/brent-munsell/)|A|[Statistics](img/comp211_distribution.jpg). Did not use Vim while taking the class, but I'm addicted to Vim now.|
-|[COMP 301: Foundations of Programming](https://www.comp301.com/) (3)|[Aaron Smith](https://onsmith.com)|A|A legend, unfortunately capitalism 🤌|
+|{{< rawhtml >}}<a href="https://www.comp301.com" data-proofer-ignore>COMP 301: Foundations of Programming</a> (3){{< /rawhtml >}}|[Aaron Smith](https://onsmith.com)|A|A legend, unfortunately capitalism 🤌|
 |COMP 447: Quantum Computing (3)|[Jonathan Engel](https://users.physics.unc.edu/~engelj/)|A|Most interesting class at UNC. [Professor's textbook](https://drive.google.com/file/d/1co5lS9BTVhSF_yTzAoxvaozsRcpMhagw/view?usp=share_link).|
 |MATH 521: Advanced Calculus I (3)|[Shrawan Kumar](https://kumar.math.unc.edu)|C-|It's my own fault, and it's my biggest regret at UNC. This is among the most interesting math classes.|
 |TA for [COMP 110](https://21f.comp110.com)|[Kris Jordan](https://krisjordan.com)|N/A|Good times.|
@@ -56,7 +58,7 @@ I ask that you not give the link to this page to others without my permission ([
 | Class | Professor | Grade | Comments |
 | :---: | :-------: | :---: | :------: |
 |COMP 311: Computer Organization (3)|[Brent Munsell](https://cs.unc.edu/person/brent-munsell/)|A|[Statistics](img/311_distribution_22s.jpg). [My grades](img/311_grades.pdf). Among my favorite classes!|
-|COMP 550: Algorithms and Analysis (3)|[John Majikes](https://tarheels.live/johnmajikes/)|A|[My grades](img/550_grades.pdf). Mickey Mouse, completely autograded algorithms class without proofs 💀. Median grade A-; median final exam grade 95%. Considering how important algorithms is, this is terrible.|
+|{{< rawhtml >}}<a href="https://comp550.cs.unc.edu" data-proofer-ignore>COMP 550: Algorithms and Analysis</a> (3){{< /rawhtml >}}|[John Majikes](https://tarheels.live/johnmajikes/)|A|[My grades](img/550_grades.pdf). Mickey Mouse, completely autograded algorithms class without proofs 💀. Median grade A-; median final exam grade 95%. Considering how important algorithms is, this is terrible.|
 |MATH 548: Combinatorics (3)|[Ivan Cherednik](https://math.unc.edu/faculty-member/cherednik-ivan/)|A|Mickey mouse class. He showed everyone the entire class's grades (with names) in an Excel sheet at least 5 times lmao.|
 |STOR 535: Probability for Data Science (3)|[Nicolas Fraiman](https://fraiman.web.unc.edu)|A|[Statistics](img/535_distribution.jpg). [My grades](img/535_grades.pdf). This class satisfies any requirement STOR 435 does. Note from page 3 of my [THT](img/tht.pdf) that STOR 535 counts toward the COMP BS and the MATH BS. Imo, STOR 535 is easier, and the coding assignments, which are easy, seem to replace some of the difficulty in STOR 435.|
 |TA for [COMP 110](https://22s.comp110.com)|[Kris Jordan](https://krisjordan.com)|N/A|Good times.|
@@ -80,7 +82,7 @@ I ask that you not give the link to this page to others without my permission ([
 
 | Class | Professor | Grade | Comments |
 | :---: | :-------: | :---: | :------: |
-|[COMP 421: Files and Databases](https://comp421.cs.unc.edu/) (3)|[John Majikes](https://tarheels.live/johnmajikes/)|A|[My grades](img/421_grades.pdf). Majikes said he'd drop the lower midterm from day one. M1 was Mickey Mouse (median 85%), so no one cared about M2 (25% of class didn't attend). M2 was difficult but objectively not too bad in hindsight. Majikes won't be dropping midterms anymore. The final was Mickey Mouse, especially because it had 110 points (`grade = min(100, score)`). Overall, second easiest COMP elective after COMP426.|
+|{{< rawhtml >}}<a href="https://comp421.cs.unc.edu" data-proofer-ignore>COMP 421: Files and Databases</a> (3){{< /rawhtml >}}|[John Majikes](https://tarheels.live/johnmajikes/)|A|[My grades](img/421_grades.pdf). Majikes said he'd drop the lower midterm from day one. M1 was Mickey Mouse (median 85%), so no one cared about M2 (25% of class didn't attend). M2 was difficult but objectively not too bad in hindsight. Majikes won't be dropping midterms anymore. The final was Mickey Mouse, especially because it had 110 points (`grade = min(100, score)`). Overall, second easiest COMP elective after COMP426.|
 |[COMP 530: Operating Systems](https://www.cs.unc.edu/~porter/courses/comp530/f22/) (3)|[Donald Porter](https://www.cs.unc.edu/~porter/)|A|[Statistics](img/530_distribution.pdf). [My grades](img/530_grades.pdf). Hardest assignments in all my CS courses so far. Was beyond fortunate to have two unbelievably strong teammates, [Max Muoto](https://maxmuoto.com) and Madison Lester, by my side. *Plenty* of EC challenges in the labs to make up ground, especially since only ~15% of the class goes for EC, and the class is curved. Be strategic about which EC to do.|
 |[COMP 541: Digital Logic and Computer Design](https://comp541.web.unc.edu/) (4)|[Montek Singh](https://www.cs.unc.edu/~montek/)|A|[My grades](img/541_grades.pdf). [My project](../projects/rubiks_541/). Second favorite class at UNC, and Montek is an awesome teacher. 70% of the grade is guaranteed to be 100% or close if you put in the effort, so the tests have to be difficult.|
 |MATH 533: Elementary Theory of Numbers (3)|[Alexander Varchenko](https://varchenko.web.unc.edu)|A-|[My grades](img/533_grades.pdf). Most braindead Mickey Mouse math class at UNC. Much easier than MATH 381. Unfortunately, I goofed up on test 2. Should've gotten more sleep.|

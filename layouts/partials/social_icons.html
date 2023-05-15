@@ -2,7 +2,7 @@
 However, maintain padding-top because it's in the homepage (index_profile) under the subtitle. -->
 <div class="social-icons" style="padding-bottom: 0px;">
     {{- range . }}
-    <!-- Defined icon_name, taken from svg.html. -->
+    <!-- Define icon_name, taken from svg.html. -->
     {{- $icon_name := ( trim .name " " | lower )}}
     <!-- Added style="border-bottom: none;" to disable underline below social icon -->
     <!-- Removed target="_blank" and rel="noopener noreferrer" -->

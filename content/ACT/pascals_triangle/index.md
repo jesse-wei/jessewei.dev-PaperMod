@@ -28,11 +28,11 @@ This would also imply the coefficient of $xy^4$, $\\binom{5}{1}$, should be the 
 
 Knowing now that binomial coefficients $\\binom{n}{0}, \\binom{n}{1}, \\ldots ,\\binom{n}{n}$ are the coefficients of $(x+y)^n$, what if we arrange these binomial coefficients in a triangle like so:
 
-![Pascal's triangle with binomial coefficients](img/pascal-binoms.jpg#center)
+{{< figure src="img/pascal-binoms.jpg" caption="Pascal's triangle with binomial coefficients" alt="Pascal's triangle with binomial coefficients" align="center">}}
 
 Well, that doesn't look like much. But when we compute the numbers, we get
 
-![Pascal's triangle](img/pascal-nums.jpg#center)
+{{< figure src="img/pascal-nums.jpg" caption="Pascal's triangle" alt="Pascal's triangle" align="center">}}
 
 And hopefully you've seen this before, so you know that each number in the triangle is the sum of the two numbers above it! [^3] To reiterate, note that row $n$ matches the coefficients of $(x+y)^n$. See the following Mathematica code. [^4]
 

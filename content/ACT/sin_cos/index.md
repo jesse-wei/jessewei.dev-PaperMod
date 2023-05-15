@@ -14,7 +14,7 @@ We must start with the most basic definition.
 
 But it's definitely best to visualize:
 
-![Basic geometric definition of sine and cosine](img/sincos-definition.jpg#center)
+{{< figure src="img/sincos-definition.jpg" caption="Basic geometric definition of sine and cosine" alt="Basic geometric definition of sine and cosine" align="center">}}
 
 From the definitions, we get that the green side is $h\\cos \\theta$ because $\\cos \\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} \\implies \\text{adjacent} = h\\cos \\theta$. Similarly, the blue side is $h\\sin \\theta$. Letting $h=1$, the adjacent side is just $\\cos \\theta$, and the opposite side is $\\sin \\theta$. With this setup, we can show **Lemma 2**.
 
@@ -22,7 +22,7 @@ From the definitions, we get that the green side is $h\\cos \\theta$ because $\\
 
 *Proof*. Consider $\\alpha=\\frac{\\pi}{2}-\\theta$. In the triangle with hypotenuse 1, the green side is $\\cos \\theta = \\frac{\\text{adjacent}}{1}$. It is also $\\sin \\alpha = \\frac{\\text{opposite}}{1}$. Hence, $\\cos \\theta = \\sin(\\frac{\\pi}{2} - \\theta)$. Similar reasoning holds for the latter identity and for arbitrary $h$.
 
-![geometric proof of separation by 90 degrees](img/sincos-identity-90.jpg#center)
+{{< figure src="img/sincos-identity-90.jpg" caption="Geometric proof of separation by 90 degrees" alt="Geometric proof of separation by 90 degrees" align="center">}}
 
 Here's a Desmos graph where you can see the identity for yourself: [^1]
 
@@ -64,7 +64,7 @@ allowfullscreen></iframe>
 
 To make this idea even more clear, you should take a look at this [circle animation on Khan Academy](https://www.khanacademy.org/computer-programming/circle/4597064320155648). [^4]
 
-[^4]: ![Sine and cosine circle animation from Khan Academy](img/sincos-animation.jpg) A still screenshot of the animation [here](https://www.khanacademy.org/computer-programming/circle/4597064320155648).
+[^4]: {{< figure src="img/sincos-animation.jpg" caption="A still screenshot of unit circle animation on Khan Academy" alt="A still screenshot of unit circle animation on Khan Academy" align="center">}} [Link to animation](https://www.khanacademy.org/computer-programming/circle/4597064320155648)
 
 ## Algebra
 
@@ -80,7 +80,7 @@ The Maclaurin expansion is the Taylor series centered at $a=0$, so the Maclaurin
 
 Let $f(x) = \\cos x$. We know that [^7]
 
-![Derivatives of cosine](img/cos_derivatives.jpg#center)
+{{< figure src="img/cos_derivatives.jpg" caption="Derivatives of cosine" alt="Derivatives of cosine" align="center">}}
 
 Using that $\\cos(0) = 1$ and $\\sin(0) = 0$, we have that the first few terms of the Maclaurin series are $1 + 0x -\\frac{x^2}{2} + 0x^3 + \\frac{x^4}{4!}$. Now, we write the pattern: $$\\cos x = \\sum\_{n=0}^{\\infty} \\frac{(-1)^n}{2n!} x^{2n} $$
 
