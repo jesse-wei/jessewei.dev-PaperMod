@@ -2,9 +2,17 @@
 However, maintain padding-top because it's in the homepage (index_profile) under the subtitle. -->
 <div class="social-icons" style="padding-bottom: 0px;">
     {{- range . }}
+    <!-- Defined icon_name, taken from svg.html. -->
+    {{- $icon_name := ( trim .name " " | lower )}}
     <!-- Added style="border-bottom: none;" to disable underline below social icon -->
     <!-- Removed target="_blank" and rel="noopener noreferrer" -->
-    <a style="border-bottom: none;" href="{{ trim .url " " }}" rel="me" title="{{ (.title | default .name) | title }}">
+    <!-- Also, if the icon/link is linkedin, then use data-proofer-ignore attribute to exclude the LinkedIn
+    link from htmltest. The link would return non-OK status 999, which makes htmltest freak out. -->
+    <a style="border-bottom: none;" href="{{ trim .url " " }}" rel="me" title="{{ (.title | default .name) | title }}"
+    {{- if eq $icon_name "linkedin" -}}
+    data-proofer-ignore
+    {{- end -}}
+    >
         {{ partial "svg.html" . }}
     </a>
     {{- end }}
