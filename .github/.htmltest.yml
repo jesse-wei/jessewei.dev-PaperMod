@@ -3,3 +3,11 @@
 DirectoryPath: "dist"
 # Hugo's directory structure triggers this:
 IgnoreDirectoryMissingTrailingSlash: true
+IgnoreURLs:
+  # Ignore <img src="*#center"> for centered images in PaperMod, which would cause "hash not found"
+  # This is suboptimal because we ideally want to check the image URL without the #center suffix
+
+  # Match internal image path ending in #center
+  - ".*\\.(apng|gif|ico|cur|jpg|jpeg|jfif|pjpeg|pjp|png|svg)#center$"
+  # Match external image URL ending in #center
+  - "(https:\/\/|http:\/\/|www\\.).*\\.[A-Za-z]+#center$"

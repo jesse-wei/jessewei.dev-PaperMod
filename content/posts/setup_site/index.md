@@ -479,6 +479,42 @@ The top 3 links are ones I want to keep even though they don't actually work. So
 
 [^8]: TODO: Create shortcode for a link with `data-proofer-ignore` attribute.
 
-And the `#center` thing is how you can [center an image in Markdown syntax in PaperMod](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#centering-image-in-markdown). But since that causes htmltest to freak out, I now use the figure shortcode as I did in the image above (code provided [above](#figure)).
+And the `#center` thing is how you can [center an image in Markdown syntax in PaperMod](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#centering-image-in-markdown). `#center` also gets appended to an image URL if you use `align="center"` in figure shortcode. But since this causes htmltest to freak out, I added this to `.htmltest.yml`:
 
-Since all current links are now considered working by htmltest, I set `continue-on-error: false` in `htmltest.yml` so that GH Actions will notify me with a red X if I add a broken link or a link breaks.
+```yml
+IgnoreURLs:
+  # Ignore <img src="*#center"> for centered images in PaperMod, which would cause "hash not found"
+  # This is suboptimal because we ideally want to check the image URL without the #center suffix
+
+  # Match internal image path ending in #center
+  - ".*\.(apng|gif|ico|cur|jpg|jpeg|jfif|pjpeg|pjp|png|svg)#center$"
+  # Match external image URL ending in #center
+  - "(https:\/\/|http:\/\/|www\.).*\.[A-Za-z]+#center$"
+```
+
+As you can tell by the comments, this is suboptimal and can lead to false negatives. I can think of two solutions.
+
+1. Modify htmltest to ignore specific hashes but check the rest of the URL [^9]
+2. Modify PaperMod to center the image without appending `#center`
+
+[^9]: This would ignore any URL with `#center` suffix, not just image URLs.
+
+Lastly, instead of `continue-on-error: true` from resource [^5], I use `if: always()`.
+
+```yml
+- name: Test HTML
+  # MODIFICATION: Don't use continue-on-error (see below)
+  # https://github.com/wjdp/htmltest-action/
+  uses: wjdp/htmltest-action@master
+  with:
+    # For consistency, use the same config file as for local builds
+    config: ./.github/.htmltest.yml
+- name: Archive htmltest results
+  # MODIFICATION
+  # Archive result even if Test HTML fails
+  # Use if: always() instead of continue-on-error, as in the original file
+  # Source: https://stackoverflow.com/questions/62045967/github-actions-is-there-a-way-to-continue-on-error-while-still-getting-correct
+  if: always()
+```
+
+`if: always()` will cause logging to occur even if Test HTML fails. `continue-on-error: true` would do the same. However, `continue-on-error: true` would cause GH Actions to display a green checkmark when Test HTML fails, which is misleading.
