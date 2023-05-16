@@ -11,7 +11,7 @@
 # TODO: Add persistent artifact only on test failure
 # TODO: Add a bot to add artifact into pull requests
 
-name: Test HTML links
+name: Test links
 # MODIFICATION
 on: [push, pull_request, workflow_call]
 jobs:
