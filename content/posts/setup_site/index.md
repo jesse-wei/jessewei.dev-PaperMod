@@ -7,13 +7,13 @@ cover:
     alt: "Hugo logo"
     caption: "Hugo logo"
     hidden: false
-summary: "This post provides an overview of Hugo (PaperMod theme) and details the steps I took in setting up website."
+summary: "This post provides an overview of Hugo (PaperMod theme) and details the steps I took in setting up this website."
 tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfolio"]
 ---
 
 ## Introduction
 
-This post was written with two audiences in mind: people who are new to Hugo and people with Hugo experience. If you're new to Hugo, then I recommend reading this post from start to finish. If you have experience with Hugo, then I recommend skimming this post. Specifically, I would read [Clone/fork](#clonefork) for setup instructions and then skip over the Hugo/PaperMod overview to get to [My website](#my-website), which describes specific features of my website.
+This post was written with two audiences in mind: people who are new to Hugo and people with Hugo experience. If you're new to Hugo, then I recommend reading this post from start to finish. If you have experience with Hugo, then I recommend skimming. Specifically, I would read [Clone/fork](#clonefork) for setup instructions and then skip over the [Hugo/PaperMod overview](#overview-of-hugo-and-papermod) to get to [My website](#my-website), which describes specific features of my website. Please see the Table of Contents above if you haven't already.
 
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
@@ -25,7 +25,7 @@ This post is inspired by Konstantin's similarly-titled [blog post](https://kpwn.
 
 ## Resources
 
-Before proceeding, I'd like to share five excellent resources that I used and will reference throughout this post. The top three are crucial because they cover Hugo and PaperMod. The bottom two describe very specific features that I reference in [My website](#my-website).
+Before proceeding, I'd like to share five excellent resources that I used and reference throughout this post. The top three are crucial because they cover Hugo and PaperMod. The bottom two describe very specific features that I reference in [My website](#my-website).
 
 My goal is to make the rest of this post self-contained, but if something doesn't make sense, please use the first three resources.
 

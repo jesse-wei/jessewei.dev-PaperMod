@@ -23,9 +23,9 @@ I was a UTA for the course in Summer 2022.
 
 ### Review
 
-I held 6 quiz review sessions throughout the short summer semester.
+I held 5 quiz review sessions throughout the short summer semester.
 
-[Here](https://docs.google.com/presentation/d/12e1sxpIHf1mICBM6xSjnnCluqbAZQcE1cxS9P-yykdk/edit?usp=sharing) is a compilation of my review slides. Links to recordings are included.
+[Compilation of my review slides](https://docs.google.com/presentation/d/12e1sxpIHf1mICBM6xSjnnCluqbAZQcE1cxS9P-yykdk/edit?usp=sharing). Links to recordings are included.
 
 ### Assessments
 

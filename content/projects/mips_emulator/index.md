@@ -19,7 +19,7 @@ tocopen: false
 
 ## Description
 
-Cross-platform MIPS assembly emulator for simulating [COMP 541](https://comp541.web.unc.edu) (Digital Logic and Computer Design) final projects at UNC.
+Cross-platform MIPS assembly emulator for simulating [COMP 541](https://comp541.web.unc.edu) (Digital Logic and Computer Design) final projects.
 
 Runs any MIPS program using the 32 supported MIPS assembly instructions. Simulates memory-mapped I/O devices, including VGA display, accelerometer, and keyboard.
 
