@@ -292,6 +292,33 @@ I don't have very many images here because I prefer to group images with the pos
 
 Note that after compilation, files in `static/` are copied to the root directory `/`. So, when accessing a file in `static/`, you should prepend a `/` to the file path. For example, the image `static/1.jpg` should be accessed as `/1.jpg`. In practice, I've found that the leading `/` can often be omitted. Just know that something like `/static/1.jpg` won't work.
 
+### Logo
+
+Site logos are configured in two places in the config.
+
+```yml
+params:
+  # Image displayed when posting site link on socials
+  # For example, if you post the link to the site in Discord, this image will be displayed
+  images: ["logo_outlined_6.png"]
+
+  # ...
+
+  # Logo and name shown on top left of site
+  label:
+    text: "Jesse Wei"
+    icon: /logo_filled_outlined_6.png
+    iconHeight: 35
+```
+
+It's pretty self-explanatory. I do want to show an example of where the `images:` logo is displayed.
+
+{{< figure src="img/social_logo.jpg" caption="params.images displayed when posting website link in Discord" alt="params.images displayed when posting website link in Discord" align="center">}}
+
+### Favicons
+
+See the [PaperMod documentation](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#adding-custom-favicons). [favicon.io](https://favicon.io) is very convenient for generating favicons!
+
 ### Shortcodes
 
 I want to briefly mention [shortcodes](https://gohugo.io/content-management/shortcodes/). Quite a few of them are [built in to Hugo](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) and PaperMod, and they're very convenient.
@@ -312,11 +339,13 @@ I'll show a few examples. Note that when I show the code, I put a space between 
 
 #### Figure
 
-See the [htmltest](#htmltest) section for an example of a figure. Here's the code that generates it:
+See [above](#logo) for an example of a figure. Here's the code that generates it:
 
 ```go-html-template
-{{ < figure src="img/htmltest.jpg" caption="htmltest GH action output" alt="htmltest GH action output" align="center">}}
+{{ < figure src="img/social_logo.jpg" caption="params.images displayed when posting website link in Discord" alt="params.images displayed when posting website link in Discord" align="center">}}
 ```
+
+[Hugo documentation](https://gohugo.io/content-management/shortcodes/#figure)
 
 #### YouTube embed
 
@@ -326,6 +355,8 @@ See the [htmltest](#htmltest) section for an example of a figure. Here's the cod
 
 {{< youtube hjD9jTi_DQ4 >}}
 
+[Hugo documentation](https://gohugo.io/content-management/shortcodes/#youtube)
+
 #### GitHub gist
 
 ```go-html-template
@@ -333,6 +364,8 @@ See the [htmltest](#htmltest) section for an example of a figure. Here's the cod
 ```
 
 {{< gist jesse-wei 0b2472f020b41b8767882291c536102c >}}
+
+[Hugo documentation](https://gohugo.io/content-management/shortcodes/#figure)
 
 ### Deploy
 
@@ -424,7 +457,7 @@ I removed `target=_blank` and `rel="noopener noreferrer"` because [links should 
 
 I added a privacy policy page and a link to it in the footer.
 
-Lastly, I removed "Powered by Hugo and PaperMod" in the homepage specifically to keep it minimal
+Lastly, I removed "Powered by Hugo and PaperMod" in the homepage specifically to keep it minimal.
 
 ### Single
 
