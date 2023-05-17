@@ -76,7 +76,7 @@ Its value is $1 \times 2^{32}$, hence $\underbrace{111...1}_{32} = 2^{32} - 1$. 
 
 ## Hexadecimal (base-16)
 
-An alternative representation of $\underbrace{111...1}_{32}$ is `0xFFFFFFFF`. The `0x` prefix indicates [hexadecimal](https://learn.sparkfun.com/tutorials/hexadecimal/all#:~:text=Hexadecimal%20is%20a%20base%2D16,value%20you%27re%20used%20to.), which is a base-16 counting system with symbols `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F]`. Each hex digit represents 4 binary digits because $2^4=16$.
+An alternative representation of $\underbrace{111...1}_{32}$ is `0xFFFFFFFF`. The `0x` prefix indicates {{< rawhtml >}}<a href="https://learn.sparkfun.com/tutorials/hexadecimal/all#:~:text=Hexadecimal%20is%20a%20base%2D16" data-proofer-ignore>hexadecimal</a>{{< /rawhtml >}}, which is a base-16 counting system with symbols `[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F]`. Each hex digit represents 4 binary digits because $2^4=16$.
 
 ## Application
 
