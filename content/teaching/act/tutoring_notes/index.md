@@ -8,11 +8,11 @@ tags: ["ACT", "Tutoring"]
 
 * 2022-06-04 (G&L)
   * [Math E25](https://drive.google.com/file/d/1Rv-uoJf2GoVGSzVr3pSjbZOVe8qzdlh4/view?usp=sharing)
-  * [Sine and cosine symmetries](/act/sin_cos)
+  * [Sine and cosine symmetries](../sin_cos)
   * [Conditional probability trick question](https://www.smh.com.au/politics/federal/in-dumb-luck-we-can-trust-20120127-1qldb.html)
 * 2022-05-28 (G&L)
   * [Math Z08](https://drive.google.com/file/d/1iwmlCQg9238y1ceVeSzZJlqg0LvuIkLQ/view?usp=sharing)
-  * [Pascal's triangle](/act/pascals_triangle)
+  * [Pascal's triangle](../pascals_triangle)
 * 2022-05-22 (A&A)
   * [Review](https://drive.google.com/file/d/1WUBGmeMI4gPJIalZb740zxszT_mhGbqf/view?usp=sharing)
 * 2022-05-07 (G&L)

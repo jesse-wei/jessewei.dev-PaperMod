@@ -82,11 +82,11 @@ In addition, if you notice some specific feature of my website that I don't expl
 
 ## Overview of Hugo and PaperMod
 
-Skip or skim this section if you're already familiar with Hugo and PaperMod (e.g., if you read/watched the [resources](#resources)). I describe specific features of my website in [My website](#my-website).
+Skim this section or skip to [My website](#my-website) if you're already familiar with Hugo and PaperMod (e.g., if you read/watched the [resources](#resources)).
 
 ### Repo structure
 
-Please read [Hugo's directory structure](https://gohugo.io/getting-started/directory-structure/) and at least the top part of [Hugo's content organization](https://gohugo.io/content-management/organization/) for a general overview of Hugo's directory structure. I'll describe more in-depth below.
+Please read [Hugo's directory structure](https://gohugo.io/getting-started/directory-structure/) (3 min) and the top part of [Hugo's content organization](https://gohugo.io/content-management/organization/) (1 min) for a general overview of Hugo's directory structure. I'll describe more in-depth below.
 
 Here's the structure of my repository. I omit unimportant stuff and stuff I don't use, and certainly changes will be made, but this is all the important stuff:
 
@@ -97,19 +97,19 @@ jessewei.dev
 ├── config.yml              Site-wide configuration file
 ├── content
 │   ├── about.md
-│   ├── act
 │   ├── archives.md
 │   ├── classes
 │   ├── discord.md
-│   ├── posts
+│   ├── posts               List layout
 │   ├── privacy.md
-│   ├── projects
+│   ├── projects            List layout
 │   ├── search.md
-│   └── teaching
+│   └── teaching            List layout
+│       └── act             List layout within list layout
 ├── layouts                 Overrides PaperMod/layouts
-│   ├── _default
+│   ├── _default            Layout of entire pages (specifically, the <main> element)
 │   │   └── single.html
-│   └── partials
+│   └── partials            Layout of components of a page
 │       ├── comments.html
 │       ├── extend_head.html
 │       ├── footer.html
@@ -124,7 +124,7 @@ jessewei.dev
     └── PaperMod
 ```
 
-There are 4 crucial parts of the repo: config, content, layouts and assets, and static.
+There are 4 crucial parts of the repo: `config`, `content`, `layouts` and `assets`, and `static`.
 
 ### `config.yml`
 
@@ -220,7 +220,7 @@ Does this mean all pages have the same `<head>` code?
 
 Nope, notice one last thing on line 9: conditionals! By checking the values of some variables, we can conditionally insert HTML code. Lines 9-14 just insert some classes, but it's also possible to insert entire HTML snippets or partials. So although all pages have the same template for `<head>`, the actual `<head>` code depends on parameters.
 
-On lines 16 and 20, we see partials defining the header and footer of a page. In the middle is `<main>` for the content of a page.
+On lines 16 and 20, we see partials defining the header and footer of a page. In the middle is `<main>` for the content of a page. All files in `_default` except `baseof.html` define `<main>`.
 
 #### single
 
@@ -254,9 +254,11 @@ A portion of `single.html` is below.
 
 Notice this code goes in the `"main"` block from line 17 of `baseof.html`. You could inspect element this page to confirm. The code is quite intuitive, so you should be able to see how this code (in addition to front matter and site variables) causes certain elements to appear at the top of this page.
 
-#### Changing layout
+#### Specifying layout of a page
 
-You should rarely have to manually set the `layout` of a page. Most pages are singles. You can see an example of a list layout at my [projects](/projects/) page. However, I did not specify this layout manually: It's automatically a list layout because `projects/` has directories but no `index.md` file.
+You should rarely have to manually specify the `layout` of a page in front matter. Hugo determines whether a page is a single or list by directory structure. Most pages should be singles, of course.
+
+You can see an example of a list layout at my [projects](/projects/) page. However, I did not specify this layout manually: It's automatically a list layout because `projects/` has directories but no `index.md` file.
 
 ```text
 content/projects
@@ -268,9 +270,9 @@ content/projects
 └── sapsim
 ```
 
-I have two pages where I manually set the layout. One is [Search](/search), and the other is [Archives](/archives).
+I have two pages where I manually set the layout in front matter. One is [Search](/search), and the other is [Archives](/archives).
 
-Here's the front matter of `search.md`.
+Here's the front matter of `search.md`, and it's similar for `archives.md`.
 
 ```md
 ---
@@ -280,7 +282,7 @@ summary: "search"
 ---
 ```
 
-And similar for `archives.md`.
+This topic is further described in [Content](#content-1).
 
 ### `static/`
 
@@ -348,13 +350,18 @@ I think I use reasonable values, and I use comments to explain decisions I consi
 
 ### Content
 
-There are a few single pages in `content/`.
+This section is a continuation of [Specifying layout of a page](#specifying-layout-of-a-page).
 
-For a list layout (e.g., my [Teaching](/teaching) page), see the structure of `content/teaching/`.
+Let's look more closely at the structure of `content/teaching`, which is a list layout.
 
 ```text
 content/teaching
-├── act.md
+├── act               List layout within list layout
+│   ├── _index.md     Note, _index.md, not index.md!
+│   ├── binary
+│   ├── desmos
+│   ├── eulers_formula
+│   ├── ...
 ├── comp110
 │   ├── img
 │   └── index.md
@@ -367,7 +374,11 @@ content/teaching
     └── review
 ```
 
-My Teaching page has a list layout because `teaching/` doesn't have an `index.md`. Besides the single `act.md`, the rest of the content is in directories with an `index.md` file and images in `img/` (I prefer this to putting images in `static/`). The comp110 writeup is accessible via [jessewei.dev/teaching/comp110](https://jessewei.dev/teaching/comp110).
+My [Teaching](/teaching) page has a list layout because `teaching/` doesn't have an `index.md`. The `comp110/` directory is a single because it has an `index.md`. It's accessible by [jessewei.dev/teaching/comp110](https://jessewei.dev/teaching/comp110). It also contains an `img/` directory that's accessible from `index.md`. The images could go in `/static/`, but I prefer bundling them with the page.
+
+It's possible to have a list layout within a list layout, and [jessewei.dev/teaching/act](https://jessewei.dev/teaching/act) is an example. However, it must have an `_index.md` file (note the underscore) since it's a non-leaf.
+
+See [Page Bundles](https://gohugo.io/content-management/page-bundles/) for more details.
 
 ### $\LaTeX{}$
 
