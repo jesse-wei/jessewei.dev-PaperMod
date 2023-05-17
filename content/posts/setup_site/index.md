@@ -479,15 +479,15 @@ PaperMod automatically uses the Google Analytics script if `env` is `production`
 {{- end -}}
 ```
 
-### GitHub workflows
-
-#### htmltest
+### htmltest
 
 I added a GH workflow for automatically checking links in my site.
 
 {{< figure src="img/htmltest.jpg" caption="htmltest GH action output" alt="htmltest GH action output" align="center">}}
 
 To enable, see `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5].
+
+#### Getting rid of garbage output
 
 There was originally >100 lines of garbage output. htmltest complained that the site logo's link at the top left had no alt text, and my LinkedIn link in social icons in the footer returned non-OK exit status 999. Since the header and footer are in all pages, this caused a lot of errors, which made the output unreadable.
 
@@ -517,7 +517,9 @@ As you can tell by the comments, this is suboptimal and can lead to false negati
 
 [^9]: This would ignore any URL with `#center` suffix, not just image URLs.
 
-Lastly, instead of `continue-on-error: true` from resource [^5], I use `if: always()`.
+#### Make GH Actions display red X on failure
+
+Instead of `continue-on-error: true` from resource [^5], I use `if: always()`.
 
 ```yml
 - name: Test HTML
@@ -536,3 +538,16 @@ Lastly, instead of `continue-on-error: true` from resource [^5], I use `if: alwa
 ```
 
 `if: always()` will cause logging to occur even if Test HTML fails. `continue-on-error: true` does the same. However, `continue-on-error: true` would cause GH Actions to display a green checkmark when Test HTML fails, which is misleading.
+
+#### IgnoreExternalBrokenLinks
+
+I added this to `.htmltest.yml`:
+
+```yml
+# This does not "ignore" the broken links, but it does not fail the action
+# From the htmltest README:
+# When true produces a warning, rather than an error, for broken external links.
+IgnoreExternalBrokenLinks: true
+```
+
+With a lot of external links, it's unlikely that all external links will work during any one run. Maybe there'll be a timeout or bad HTML response code, etc.
