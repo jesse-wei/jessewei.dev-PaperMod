@@ -13,21 +13,23 @@ tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfo
 
 ## Introduction
 
-This post was written with two audiences in mind: people who are new to Hugo and people with Hugo experience. If you're new to Hugo, then I recommend reading this post from start to finish. If you have experience with Hugo, then I recommend skimming. Specifically, I would read [Clone/fork](#clonefork) for setup instructions and then skip over the [Hugo/PaperMod overview](#overview-of-hugo-and-papermod) to get to [My website](#my-website), which describes specific features of my website. Please see the Table of Contents above if you haven't already.
-
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
 In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website.
 
-## Credit
+### Audience
+
+This post was written with two audiences in mind: people who are new to Hugo and people with Hugo experience. If you're new to Hugo, then I recommend reading this post from start to finish. If you have experience with Hugo, then I recommend skimming. Specifically, I would read [Clone/fork](#clonefork) for setup instructions. Then skip over the [Hugo/PaperMod overview](#overview-of-hugo-and-papermod) to get to [My website](#my-website), which describes specific features of my website. Please see the Table of Contents above if you haven't already.
+
+### Credit
 
 This post is inspired by Konstantin's similarly-titled [blog post](https://kpwn.de/2021/09/how-to-set-up-this-blog/).
 
 ## Resources
 
-Before proceeding, I'd like to share five excellent resources that I used and reference throughout this post. The top three are crucial because they cover Hugo and PaperMod. The bottom two describe very specific features that I reference in [My website](#my-website).
+Before proceeding, I'd like to share five excellent resources that I used and reference throughout this post. The top three are crucial because they cover Hugo and PaperMod. The bottom two describe very specific features that I reference in [My website](#my-website), so don't worry about those yet.
 
-My goal is to make the rest of this post self-contained, but if something doesn't make sense, please use the first three resources.
+My goal is to make the rest of this post self-contained (and link to brief external resources). If something doesn't make sense, please use the first three resources.
 
 * [^1] [Hugo Quick Start](https://gohugo.io/getting-started/quick-start)
   * Super quick to read and follow along, < 5 min.
@@ -84,13 +86,15 @@ Skip or skim this section if you're already familiar with Hugo and PaperMod (e.g
 
 ### Repo structure
 
-Here's the structure of the repository. I omit unimportant stuff, and certainly changes will be made, but this is all the important stuff:
+Please read [Hugo's directory structure](https://gohugo.io/getting-started/directory-structure/) and at least the top part of [Hugo's content organization](https://gohugo.io/content-management/organization/) for a general overview of Hugo's directory structure. I'll describe more in-depth below.
+
+Here's the structure of my repository. I omit unimportant stuff and stuff I don't use, and certainly changes will be made, but this is all the important stuff:
 
 ```text
 jessewei.dev
-├── assets              Overrides PaperMod/assets
+├── assets                  Overrides PaperMod/assets. Contains mostly CSS, some JS
 │   └── css
-├── config.yml          Site-wide configuration file
+├── config.yml              Site-wide configuration file
 ├── content
 │   ├── about.md
 │   ├── act
@@ -102,7 +106,7 @@ jessewei.dev
 │   ├── projects
 │   ├── search.md
 │   └── teaching
-├── layouts             Overrides PaperMod/layouts
+├── layouts                 Overrides PaperMod/layouts
 │   ├── _default
 │   │   └── single.html
 │   └── partials
@@ -112,7 +116,7 @@ jessewei.dev
 │       ├── header.html
 │       ├── index_profile.html
 │       └── social_icons.html
-├── static              Images, etc.
+├── static                  Images, etc.
 │   ├── SAPsim_still_cropped.jpg
 │   ├── SAPsim_still_full.jpg
 │   └── ...
@@ -120,7 +124,7 @@ jessewei.dev
     └── PaperMod
 ```
 
-There are 4 crucial parts of the repo.
+There are 4 crucial parts of the repo: config, content, layouts and assets, and static.
 
 ### `config.yml`
 
@@ -132,19 +136,20 @@ This is the directory where site content (posts) goes.
 
 Site content should be Markdown files.
 
-The front matter of a Markdown file contains metadata about the post. For example, the front matter of this post is (TODO: update)
+The front matter of a Markdown file contains metadata about the post. For example, the front matter of this post is
 
 ```md
 ---
-title: "How to Set Up This Website"
+title: "Overview of Hugo/PaperMod and Setting Up This Site"
 date: 2023-05-14T20:13:59-04:00
-draft: true
+draft: false
 cover:
     image: img/hugo_logo_wide.svg
     alt: "Hugo logo"
     caption: "Hugo logo"
-summary: "This post details the steps I took and decisions I made in making my website using Hugo with the PaperMod theme."
-tags: []
+    hidden: false
+summary: "This post provides an overview of Hugo (PaperMod theme) and details the steps I took in setting up this website."
+tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfolio"]
 ---
 ```
 
@@ -247,11 +252,11 @@ A portion of `single.html` is below.
 <!-- Rest of code omitted -->
 ```
 
-Notice this code goes in the `"main"` block from line 17 of `baseof.html`. The code is quite intuitive, so you should be able to see how this code (in addition to front matter and site variables) causes certain elements to appear at the top of this page.
+Notice this code goes in the `"main"` block from line 17 of `baseof.html`. You could inspect element this page to confirm. The code is quite intuitive, so you should be able to see how this code (in addition to front matter and site variables) causes certain elements to appear at the top of this page.
 
 #### Changing layout
 
-You should rarely have to modify the `layout` of a page. Most pages are singles. You can see an example of a list layout at my [projects](/projects/) page. However, I did not specify this layout manually: It's automatically a list layout because `projects/` has directories but no `index.md` file.
+You should rarely have to manually set the `layout` of a page. Most pages are singles. You can see an example of a list layout at my [projects](/projects/) page. However, I did not specify this layout manually: It's automatically a list layout because `projects/` has directories but no `index.md` file.
 
 ```text
 content/projects
@@ -333,7 +338,7 @@ Resource 2 describes how to deploy to Netlify. Here's a [timestamp](https://yout
 
 ## My website
 
-Now I'll describe features of my website.
+Now I'll describe specific features of my website.
 
 ### config.yml
 
@@ -374,11 +379,11 @@ The conditional there requires the site param `math` to be enabled. If so, then 
 
 I enabled comments using [giscus](https://giscus.app).
 
-There are comments at the bottom of almost every page.
-
 I followed the directions on the giscus site to install giscus in my repo and pasted code from the giscus website into `layouts/partials/comments.html`. I also added `comments: true` to config.
 
-In addition, comments show up in [GitHub Discussions](https://github.com/jesse-wei/jessewei.dev/discussions). Make sure to [enable Discussions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository#) in your GitHub repo.
+As you can see, there are comments at the bottom of almost every page. PaperMod automatically disables comments in the index profile, search, and archives layouts. I manually disabled comments in my [Privacy policy](/privacy) page in the front matter with `comments: false`.
+
+Comments show up in [GitHub Discussions](https://github.com/jesse-wei/jessewei.dev/discussions). Make sure to [enable Discussions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository#) in your GitHub repo.
 
 ### Social icons in footer
 
@@ -408,7 +413,7 @@ I removed `target=_blank` and `rel="noopener noreferrer"` because [links should 
 
 I added a privacy policy page and a link to it in the footer.
 
-Lastly, I removed "Powered by Hugo and PaperMod" in the homepage specifically.
+Lastly, I removed "Powered by Hugo and PaperMod" in the homepage specifically to keep it minimal
 
 ### Single
 
@@ -436,7 +441,7 @@ Notice the code block doesn't work, and spacing is messed up :(
 
 I disabled [highlight.js](https://highlightjs.org) (default) and enabled Hugo Chroma following the [steps in PaperMod documentation](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#using-hugos-syntax-highlighter-chroma). This required a few changes in `config.yml` and `assets/css/extended/*.css`.
 
-I want to point out that I disabled line numbers by default for readability. Most code blocks you've seen so far have not had line numbers.
+I disabled line numbers by default for readability. Most code blocks you've seen so far have not had line numbers.
 
 However, you can enable line numbers for a specific code block, as shown in [baseof](#baseof), by adding `{lineNos=true}` to the code block. [^7]
 
@@ -519,4 +524,4 @@ Lastly, instead of `continue-on-error: true` from resource [^5], I use `if: alwa
   if: always()
 ```
 
-`if: always()` will cause logging to occur even if Test HTML fails. `continue-on-error: true` would do the same. However, `continue-on-error: true` would cause GH Actions to display a green checkmark when Test HTML fails, which is misleading.
+`if: always()` will cause logging to occur even if Test HTML fails. `continue-on-error: true` does the same. However, `continue-on-error: true` would cause GH Actions to display a green checkmark when Test HTML fails, which is misleading.
