@@ -13,8 +13,6 @@ tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfo
 
 ## Introduction
 
-[this is a fake link](https://brokenlinksldfjlskdjfskajdf.com)
-
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
 In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website.
@@ -488,6 +486,14 @@ I added a GH workflow for automatically checking links in my site.
 {{< figure src="img/htmltest.jpg" caption="htmltest GH action output" alt="htmltest GH action output" align="center">}}
 
 To enable, see `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5].
+
+#### Behavior
+
+Here is the behavior of the workflow after making the modifications below.
+
+If an internal URL (e.g., to page or image) doesn't work, htmltest will error and the workflow will fail, causing a red X to appear on GH Actions.
+
+If an external URL doesn't work, htmltest will warn, but the workflow will not fail. That is, an external link could be "broken," and a green checkmark will be shown on GH Actions. This is fine because with a lot of external links, it's unlikely that all will work in any single run. There could be a timeout or non-200 HTML response code, etc.. Getting a red X when just a single external link breaks is annoying. htmltest does still warn, so I manually check GH actions every now and then.
 
 #### Getting rid of garbage output
 
