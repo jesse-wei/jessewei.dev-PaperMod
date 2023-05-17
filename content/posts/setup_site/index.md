@@ -13,6 +13,8 @@ tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfo
 
 ## Introduction
 
+[this is a fake link](https://brokenlinksldfjlskdjfskajdf.com)
+
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
 In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website.
