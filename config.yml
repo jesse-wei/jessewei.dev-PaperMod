@@ -163,10 +163,11 @@ menu:
       name: Teaching
       url: /teaching/
       weight: 3
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 4
+    # Hardcoded search in layouts/partials/header.html. Don't add search to menu here.
+    # - identifier: search
+    #   name: Search
+    #   url: /search/
+    #   weight: 4
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
