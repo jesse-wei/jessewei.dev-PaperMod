@@ -481,13 +481,23 @@ Notice the code block doesn't work, and spacing is messed up :(
 
 {{< /excursion >}} -->
 
+### Links are Carolina blue on hover
+
+I modified CSS in the following CSS files in `assets/css/common/`: `archive`, `footer`, `header`, `main`, `post-entry`, and `post-single`.
+
+I also modified `assets/css/core/theme-vars.css`.
+
+For modifications, look for comments and the variable `carolina_blue`.
+
+Since I made links blue on hover, I removed underline on hover (the link is still underlined if it had an underline before hovering though).
+
 ### Syntax highlighting via Chroma
 
 I disabled [highlight.js](https://highlightjs.org) (default) and enabled Hugo Chroma following the [steps in PaperMod documentation](https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#using-hugos-syntax-highlighter-chroma). This required a few changes in `config.yml` and `assets/css/extended/*.css`.
 
 I disabled line numbers by default for readability. Most code blocks you've seen so far have not had line numbers.
 
-However, you can enable line numbers for a specific code block, as shown in [baseof](#baseof), by adding `{lineNos=true}` to the code block. [^7]
+However, you can enable line numbers for a specific code block, as shown in the [baseof](#baseof) code block, by adding `{lineNos=true}` to the code block. [^7]
 
 [^7]: You might also be able to enable it by default in a specific post by adding it to front matter, but this didn't work for me.
 
