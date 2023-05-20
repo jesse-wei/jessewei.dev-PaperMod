@@ -38,7 +38,8 @@
 
 button#theme-toggle {
     font-size: 26px;
-    margin: auto 4px;
+    /* 4 to 14 px after putting on RHS */
+    margin: auto 14px;
 }
 
 body.dark #moon {
