@@ -18,6 +18,7 @@
     --hljs-bg: rgb(28, 29, 33);
     --code-bg: rgb(245, 245, 245);
     --border: rgb(238, 238, 238);
+    --carolina_blue: #4B9CD3;
 }
 
 .dark {
@@ -38,4 +39,15 @@
 
 .dark.list {
     background: var(--theme);
+}
+
+/* Carolina blue and underline on hover */
+a:hover {
+    color: var(--carolina_blue);
+    /* text-decoration: underline;
+    text-underline-offset: 3px; */
+}
+
+svg:hover {
+    color: var(--carolina_blue);
 }
