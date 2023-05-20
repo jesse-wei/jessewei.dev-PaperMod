@@ -69,9 +69,15 @@
     font-size: 12px;
 }
 
-.post-content a,
-.toc a:hover {
+/* Separated this off from .toc a:hover */
+.post-content a {
     box-shadow: 0 1px 0;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+/* No underline on ToC hover */
+.toc a:hover {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
@@ -392,13 +398,17 @@ h6:hover .anchor {
 
 /* Small adjustment, underline the span when hovering over the nav button
    Not just when hovering over the span */
-.paginav .next:hover span:not(.title) {
+
+/* Actually nah, just don't underline.
+   But if I were to underline, this code would be fine. */
+
+/* .paginav .next:hover span:not(.title) {
     box-shadow: 0 1px 0;
 }
 
 .paginav .prev:hover span:not(.title) {
     box-shadow: 0 1px 0;
-}
+} */
 
 
 .paginav .next {
