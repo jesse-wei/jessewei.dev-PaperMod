@@ -30,11 +30,16 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
       # TODO: Add cache step here
-      - name: Build Hugo
+      - name: Build Hugo website
         # Put the build output where the following steps can find it
         # GITHUB_WORKSPACE
-        run: hugo -d $GITHUB_WORKSPACE/dist
+        run: ./scripts/build
+        shell: bash
       - name: Test HTML
         # MODIFICATION: Don't use continue-on-error (see below)
         # https://github.com/wjdp/htmltest-action/

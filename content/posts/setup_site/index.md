@@ -15,9 +15,9 @@ tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfo
 
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
-In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website. All modifications are shown via `diff` output as HTML pages in [PaperMod diff](https://jessewei.dev/posts/papermod_diff/) [^10].
+In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website. All modifications are shown via `diff` output as HTML pages in [PaperMod diff](../papermod_diff) [^10].
 
-[^10]: [PaperMod_diff](https://jessewei.dev/posts/papermod_diff/)
+[^10]: [PaperMod_diff](../papermod_diff)
 
 ### Audience
 
@@ -50,7 +50,7 @@ My goal is to make the rest of this post self-contained (and link to brief exter
 
 [^5]: [Check links in Hugo with htmltest](https://robb.sh/posts/check-links-in-hugo-with-htmltest/)
 
-As mentioned earlier, I also created [PaperMod diff](https://jessewei.dev/posts/papermod_diff/) [^10] to show modifications I made to the theme in a readable way. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
+As mentioned earlier, I also created [PaperMod diff](../papermod_diff) [^10] to show modifications I made to the theme in a readable way. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
 
 ## Setup
 
@@ -418,9 +418,9 @@ content/teaching
     └── review
 ```
 
-My [Teaching](/teaching) page has a list layout because `teaching/` doesn't have an `index.md`. The `comp110/` directory is a single because it has an `index.md`. It's accessible by [jessewei.dev/teaching/comp110](https://jessewei.dev/teaching/comp110). It also contains an `img/` directory that's accessible from `index.md`. The images could go in `/static/`, but I prefer bundling them with the page.
+My [Teaching](/teaching) page has a list layout because `teaching/` doesn't have an `index.md`. The `comp110/` directory is a single because it has an `index.md`. It's accessible by [/teaching/comp110](../../teaching/comp110). It also contains an `img/` directory that's accessible from `index.md`. The images could go in `/static/`, but I prefer bundling them with the page.
 
-It's possible to have a list layout within a list layout, and [jessewei.dev/teaching/act](https://jessewei.dev/teaching/act) is an example. However, notice `act/` must have an `_index.md` file (note the underscore) since it's a non-leaf.
+It's possible to have a list layout within a list layout, and [/teaching/act](../../teaching/act/) is an example. However, notice `act/` must have an `_index.md` file (note the underscore) since it's a non-leaf.
 
 See [Page Bundles](https://gohugo.io/content-management/page-bundles/) for more details.
 

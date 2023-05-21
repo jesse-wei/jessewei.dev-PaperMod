@@ -1,7 +1,7 @@
 # Configuration file for .github/workflows/htmltest.yml
 # Source: https://github.com/robb-romans/robb-sh-hugo/blob/main/.htmltest.yml
-# I made some additions
-DirectoryPath: "dist"
+# I made some modifications
+DirectoryPath: "public"
 # Hugo's directory structure triggers this:
 IgnoreDirectoryMissingTrailingSlash: true
 
