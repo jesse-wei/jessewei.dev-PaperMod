@@ -55,7 +55,7 @@ for directory in DIRECTORIES_TO_CHECK:
                 og_file.unlink()
 
 with cd(OUTPUT_DIR):
-    # Generate index.html of generated files recursively
+    # Generate index.html files in directories recursively
     os.system("python3 ../helpers/generate_directory_index_caddystyle.py -r")
 
     # Add some explanatory text at the end of the homepage

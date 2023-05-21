@@ -6,7 +6,7 @@ cover:
     image: img/hugo_logo_wide.svg
     alt: "Hugo logo"
     caption: "Hugo logo"
-    hidden: false
+    hidden: true
 summary: "This post provides an overview of Hugo (PaperMod theme) and details the steps I took in setting up this website."
 tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfolio"]
 ---
@@ -50,7 +50,7 @@ My goal is to make the rest of this post self-contained (and link to brief exter
 
 [^5]: [Check links in Hugo with htmltest](https://robb.sh/posts/check-links-in-hugo-with-htmltest/)
 
-As mentioned earlier, I also created [PaperMod diff](../papermod_diff/) [^10] to show modifications made. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
+As mentioned earlier, I also created [PaperMod diff](../papermod_diff/) [^10] to show modifications I made to the theme in a readable way. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
 
 ## Setup
 
@@ -326,7 +326,7 @@ See the [PaperMod documentation](https://adityatelange.github.io/hugo-PaperMod/p
 
 ### Shortcodes
 
-I want to briefly mention [shortcodes](https://gohugo.io/content-management/shortcodes/). Quite a few of them are [built in to Hugo](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) and PaperMod, and they're very convenient.
+I want to mention [shortcodes](https://gohugo.io/content-management/shortcodes/). Quite a few of them are [built in to Hugo](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes) and PaperMod, and they're very convenient.
 
 I'll show a few examples. Note that when I show the code, I put a space between `{` and `<` so that the shortcode is parsed as text and not executed. To use it, remove that space.
 
@@ -388,6 +388,10 @@ The latest version of my `config.yml` is [here](https://github.com/jesse-wei/jes
 
 I think I use reasonable values, and I use comments to explain decisions I consider non-obvious. I'll explain some specific decisions I made in this file in the below sections as they come up.
 
+### PaperMod diff
+
+I created PaperMod diff [^10] using the scripts in [scripts/](https://github.com/jesse-wei/jessewei.dev/tree/main/scripts). `diff.py` runs `diff` between corresponding files, `helpers/generate_directory_index_caddystyle.py` creates `index.html` files recursively, and `netlify` wraps `diff.py` to deploy its output to Netlify (see [Deploy](#deploy)). `helpers/cd.py` is also used.
+
 ### Content
 
 This section is a continuation of [Specifying layout of a page](#specifying-layout-of-a-page).
@@ -416,7 +420,7 @@ content/teaching
 
 My [Teaching](/teaching) page has a list layout because `teaching/` doesn't have an `index.md`. The `comp110/` directory is a single because it has an `index.md`. It's accessible by [jessewei.dev/teaching/comp110](https://jessewei.dev/teaching/comp110). It also contains an `img/` directory that's accessible from `index.md`. The images could go in `/static/`, but I prefer bundling them with the page.
 
-It's possible to have a list layout within a list layout, and [jessewei.dev/teaching/act](https://jessewei.dev/teaching/act) is an example. However, it must have an `_index.md` file (note the underscore) since it's a non-leaf.
+It's possible to have a list layout within a list layout, and [jessewei.dev/teaching/act](https://jessewei.dev/teaching/act) is an example. However, notice `act/` must have an `_index.md` file (note the underscore) since it's a non-leaf.
 
 See [Page Bundles](https://gohugo.io/content-management/page-bundles/) for more details.
 
