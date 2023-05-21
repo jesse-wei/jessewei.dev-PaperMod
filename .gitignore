@@ -2,3 +2,5 @@ content/teaching/comp311/review/*.pdf
 resources/
 public/
 tmp/
+content/posts/PaperMod_diff
+scripts/PaperMod_diff
