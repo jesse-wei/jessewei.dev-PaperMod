@@ -11,12 +11,15 @@ layouts/ and themes/{THEME}/layouts.
 Run this script from the root of the project. Output will be in scripts/{THEME}_diff.
 Jesse's Netlify build script runs this script and copies the output to posts/ to be published.
 
-This script requires colordiff and ansi2html to be installed."""
+This script requires ansi2html to be installed.
+This can be done with ``pip3 install ansi2html``"""
 
 __author__ = "Jesse Wei <jesse@cs.unc.edu>"
 
 from pathlib import Path
 from helpers.cd import cd
+# Netlify's Python environment doesn't allow list[Path], etc.
+from typing import List
 import os
 
 THEME: str = "PaperMod"
@@ -24,7 +27,7 @@ THEME_DIR: Path = Path("themes") / THEME
 OUTPUT_DIR: Path = Path("scripts") / f"{THEME}_diff"
 if not OUTPUT_DIR.exists():
     OUTPUT_DIR.mkdir(parents=True)
-DIRECTORIES_TO_CHECK: list[Path] = [Path("assets"), Path("layouts")]
+DIRECTORIES_TO_CHECK: List[Path] = [Path("assets"), Path("layouts")]
 
 for directory in DIRECTORIES_TO_CHECK:
     for path in directory.rglob("*"):
@@ -41,8 +44,8 @@ for directory in DIRECTORIES_TO_CHECK:
                 temp_file_created = True
                 og_file.touch()
 
-            # Generate diff html file
-            os.system(f"colordiff {og_file} {path} | ansi2html > {output_file.with_suffix('.html')}")
+            # Generate HTML file (with color) from diff (with color)
+            os.system(f"diff --color {og_file} {path} | ansi2html > {output_file.with_suffix('.html')}")
 
             if temp_file_created:
                 # Remove the temp file
