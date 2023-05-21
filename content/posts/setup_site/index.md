@@ -17,9 +17,6 @@ To make this website, I used the static site generator [Hugo](https://gohugo.io/
 
 In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website. All modifications are shown via `diff` output as HTML pages in [PaperMod diff](../papermod_diff) [^10].
 
-[broken external link](https://thislinkdoesnotexist2309482394.com)
-[broken internal link](../doesntexist)
-
 [^10]: [PaperMod_diff](../papermod_diff)
 
 ### Audience
