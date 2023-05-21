@@ -1,20 +1,16 @@
 #!/bin/bash
 
 # This is Jesse's script that runs during Netlify deployment.
-# The build command in Site settings > Build & deploy > Build command is
+# My build command in Site settings > Build & deploy > Build command is
 # chmod +x scripts/netlify;./scripts/netlify
 # It is run from the root of the project.
 
 # Create https://jessewei.dev/posts/PaperMod_diff
 pip3 install ansi2html
-# Test color in Netlify
-RED='\033[0;31m'
-NC='\033[0m' # No Color
-printf "I ${RED}love${NC} Stack Overflow\n"
-printf "I ${RED}love${NC} Stack Overflow\n" | ansi2html > content/posts/test/index.html
-diff --color=always README.md config.yml
 chmod +x scripts/diff.py
+# Outputs to scripts/PaperMod_diff
 ./scripts/diff.py
-mv scripts/PaperMod_diff content/posts
+# Move output to content/ to deploy on site. Use -f (--force) to overwrite without prompting
+mv -f scripts/PaperMod_diff content/posts
 
 hugo

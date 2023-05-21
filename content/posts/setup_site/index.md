@@ -15,7 +15,9 @@ tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfo
 
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
-In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website.
+In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website. All modifications are shown via `diff` output as HTML pages in [PaperMod diff](../PaperMod_diff/) [^10].
+
+[^10]: [PaperMod_diff](../PaperMod_diff)
 
 ### Audience
 
@@ -47,6 +49,8 @@ My goal is to make the rest of this post self-contained (and link to brief exter
 [^4]: [Konstantin's How to Set Up This Blog](https://github.com/KwnyPwny/hugo-blog/tree/main/layouts/shortcodes)
 
 [^5]: [Check links in Hugo with htmltest](https://robb.sh/posts/check-links-in-hugo-with-htmltest/)
+
+As mentioned earlier, I also created [PaperMod diff](../PaperMod_diff/) [^10] to show modifications made. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
 
 ## Setup
 
@@ -116,6 +120,7 @@ jessewei.dev
 │       ├── header.html
 │       ├── index_profile.html
 │       └── social_icons.html
+├── scripts                 My scripts
 ├── static                  Images, etc.
 │   ├── SAPsim_still_cropped.jpg
 │   ├── SAPsim_still_full.jpg
@@ -161,7 +166,7 @@ For a list of variables you can use, see [Variables | Front Matter](https://adit
 
 The files in these directories override the files in `themes/PaperMod/layouts/` and `themes/PaperMod/assets/`, respectively. If the path of a file in `layouts/` exactly matches that of a file in `themes/PaperMod/layouts/`, then your site will use the file in `layouts/` instead of the one in `themes/PaperMod/layouts/`. Same for `assets/`.
 
-Essentially, `themes/PaperMod/layouts/` and `themes/PaperMod/assets/` specify defaults. If you want to make a change, override the default. However, don't modify the `PaperMod` submodule directly because that might cause merge conflicts if you pull updates.
+Essentially, `themes/PaperMod/layouts/` and `themes/PaperMod/assets/` specify defaults. If you want to make a change, override the default in your own repo.
 
 `layouts/` contains HTML files that specify the structure of pages.
 
@@ -370,6 +375,8 @@ See [above](#logo) for an example of a figure. Here's the code that generates it
 ### Deploy
 
 Resource 2 describes how to deploy to Netlify. Here's a [timestamp](https://youtu.be/hjD9jTi_DQ4?t=2230) for that portion of the video.
+
+I made a small change. My build process involves slightly more than just `hugo` since I also have to build PaperMod_diff [^10]. So, I use [scripts/netlify](https://github.com/jesse-wei/jessewei.dev/blob/main/scripts/netlify). My build command in Site settings > Build & deploy > Build command is `chmod +x scripts/netlify;./scripts/netlify`.
 
 ## My website
 
