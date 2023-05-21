@@ -15,9 +15,9 @@ tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfo
 
 To make this website, I used the static site generator [Hugo](https://gohugo.io/) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. I use [Netlify](https://www.netlify.com) to host.
 
-In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website. All modifications are shown via `diff` output as HTML pages in [PaperMod diff](../PaperMod_diff/) [^10].
+In this post, I provide an overview of Hugo/PaperMod and describe the modifications I made to the original theme in setting up this website. All modifications are shown via `diff` output as HTML pages in [PaperMod diff](../papermod_diff/) [^10].
 
-[^10]: [PaperMod_diff](../PaperMod_diff)
+[^10]: [PaperMod_diff](../papermod_diff)
 
 ### Audience
 
@@ -50,7 +50,7 @@ My goal is to make the rest of this post self-contained (and link to brief exter
 
 [^5]: [Check links in Hugo with htmltest](https://robb.sh/posts/check-links-in-hugo-with-htmltest/)
 
-As mentioned earlier, I also created [PaperMod diff](../PaperMod_diff/) [^10] to show modifications made. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
+As mentioned earlier, I also created [PaperMod diff](../papermod_diff/) [^10] to show modifications made. In short, to modify a file from the theme, you create a copy of the file and make edits in the copy, but this makes it hard to see what was modified. So, PaperMod diff shows `diff`s between the files.
 
 ## Setup
 
