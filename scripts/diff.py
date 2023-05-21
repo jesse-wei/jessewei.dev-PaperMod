@@ -45,7 +45,7 @@ for directory in DIRECTORIES_TO_CHECK:
                 og_file.touch()
 
             # Generate HTML file (with color) from diff (with color)
-            os.system(f"diff --color {og_file} {path} | ansi2html > {output_file.with_suffix('.html')}")
+            os.system(f"diff --color=always {og_file} {path} | ansi2html > {output_file.with_suffix('.html')}")
 
             if temp_file_created:
                 # Remove the temp file

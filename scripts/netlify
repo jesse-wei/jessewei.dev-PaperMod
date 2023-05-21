@@ -12,7 +12,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 printf "I ${RED}love${NC} Stack Overflow\n"
 printf "I ${RED}love${NC} Stack Overflow\n" | ansi2html > content/posts/test/index.html
-diff --color README.md config.yml
+diff --color=always README.md config.yml
 chmod +x scripts/diff.py
 ./scripts/diff.py
 mv scripts/PaperMod_diff content/posts
