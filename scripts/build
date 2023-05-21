@@ -11,7 +11,9 @@ chmod +x scripts/diff.py
 # Outputs to scripts/PaperMod_diff
 ./scripts/diff.py
 # Move output to content/ to deploy on site.
-rm -r content/posts/papermod_diff
+if [ -d "content/posts/papermod_diff" ]; then
+    rm -rf content/posts/papermod_diff
+fi
 mv scripts/PaperMod_diff content/posts/papermod_diff
 
 hugo

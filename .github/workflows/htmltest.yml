@@ -30,11 +30,12 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
+      # MODIFICATION: I need to set up Python because scripts/build uses pip
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.x"
-      # TODO: Add cache step here
+      # MODIFICATION: hugo -d $GITHUB_WORKSPACE/dist -> run: ./scripts/build
       - name: Build Hugo website
         # Put the build output where the following steps can find it
         # GITHUB_WORKSPACE
