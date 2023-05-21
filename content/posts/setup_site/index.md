@@ -376,7 +376,7 @@ See [above](#logo) for an example of a figure. Here's the code that generates it
 
 Resource 2 describes how to deploy to Netlify. Here's a [timestamp](https://youtu.be/hjD9jTi_DQ4?t=2230) for that portion of the video.
 
-I made a small change. My build process involves slightly more than just `hugo` since I also have to build PaperMod_diff [^10]. So, I use [scripts/netlify](https://github.com/jesse-wei/jessewei.dev/blob/main/scripts/netlify). My build command in Site settings > Build & deploy > Build command is `chmod +x scripts/netlify;./scripts/netlify`.
+I made a small change. My build process involves slightly more than just `hugo` since I also have to build PaperMod_diff [^10]. So, I use [scripts/build](https://github.com/jesse-wei/jessewei.dev/blob/main/scripts/build). My build command in Site settings > Build & deploy > Build command is `chmod +x scripts/build;./scripts/build`.
 
 ## My website
 
@@ -390,7 +390,7 @@ I think I use reasonable values, and I use comments to explain decisions I consi
 
 ### PaperMod diff
 
-I created PaperMod diff [^10] using the scripts in [scripts/](https://github.com/jesse-wei/jessewei.dev/tree/main/scripts). `diff.py` runs `diff` between corresponding files, `helpers/generate_directory_index_caddystyle.py` creates `index.html` files recursively, and `netlify` wraps `diff.py` to deploy its output to Netlify (see [Deploy](#deploy)). `helpers/cd.py` is also used.
+I created PaperMod diff [^10] using the scripts in [scripts/](https://github.com/jesse-wei/jessewei.dev/tree/main/scripts). `diff.py` runs `diff` between corresponding files, `helpers/generate_directory_index_caddystyle.py` creates `index.html` files recursively, and `build` wraps `diff.py` to deploy its output to Netlify (see [Deploy](#deploy)). `helpers/cd.py` is also used.
 
 ### Content
 

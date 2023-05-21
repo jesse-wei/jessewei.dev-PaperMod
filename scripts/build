@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# This is Jesse's script that runs during Netlify deployment.
+# This is my build script that runs during Netlify deployment.
 # My build command in Site settings > Build & deploy > Build command is
-# chmod +x scripts/netlify;./scripts/netlify
+# chmod +x scripts/build;./scripts/build
 # It is run from the root of the project.
 
 # Create https://jessewei.dev/posts/PaperMod_diff
