@@ -3,7 +3,7 @@
 
 # [jessewei.dev](https://jessewei.dev)
 
-Made using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme.
+Made using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com).
 
 My [old website](https://github.com/jesse-wei/jessewei.dev_old) was raw HTML/CSS 💀. This is a nice change of pace.
 
@@ -19,8 +19,14 @@ cd jessewei.dev
 hugo server
 ```
 
-`--recurse-submodules` will clone the PaperMod [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). In addition, you can clone with `--depth=1` to save disk space.
+`--recurse-submodules` will clone the PaperMod [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). Clone with `--depth=1` to save space.
 
 ## How I set up this site
 
 See [Overview of Hugo/PaperMod and Setting Up This Site](https://jessewei.dev/posts/setup_site/).
+
+## PaperMod diff
+
+My [PaperMod diff](https://jessewei.dev/posts/papermod_diff/) page shows the changes I made to the PaperMod theme using `diff` output.
+
+It's [automated](scripts/). I describe the setup of the page in the link above.

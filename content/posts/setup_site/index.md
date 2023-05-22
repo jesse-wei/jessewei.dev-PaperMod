@@ -392,6 +392,8 @@ I think I use reasonable values, and I use comments to explain decisions I consi
 
 I created PaperMod diff [^10] using the scripts in [scripts/](https://github.com/jesse-wei/jessewei.dev/tree/main/scripts). `diff.py` runs `diff` between corresponding files, `helpers/generate_directory_index_caddystyle.py` creates `index.html` files recursively, and `build` wraps `diff.py` to deploy its output to Netlify (see [Deploy](#deploy)). `helpers/cd.py` is also used.
 
+Do note that `content/posts/papermod_diff` is [gitignored](https://github.com/jesse-wei/jessewei.dev/blob/main/.gitignore). This is because if it weren't, then the content there would change and be shown on GitHub every time I modify `assets/` and/or `layouts/`, which is redundant and would make the commit history harder to read. My solution (gitignore the folder and generate it during the build process in Netlify) is a bit roundabout, but it's already implemented and works well.
+
 ### Content
 
 This section is a continuation of [Specifying layout of a page](#specifying-layout-of-a-page).

@@ -30,7 +30,7 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
-      # MODIFICATION: I need to set up Python because scripts/build uses pip
+      # MODIFICATION: Set up Python because scripts/build uses pip
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
