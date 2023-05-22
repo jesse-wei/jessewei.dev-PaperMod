@@ -5,7 +5,7 @@
 
 Made using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com).
 
-My [old website](https://github.com/jessedwei/jessewei.dev_old) was raw HTML/CSS 💀. This is a nice change of pace.
+My old website was raw HTML/CSS 💀. This is a nice change of pace.
 
 ## Deploy locally
 
@@ -18,6 +18,8 @@ git clone --recurse-submodules --no-single-branch https://github.com/jesse-wei/j
 cd jessewei.dev
 hugo server
 ```
+
+[scripts/build](scripts/build) is used for Netlify deployment.
 
 ## How I set up this site
 

@@ -1,12 +1,10 @@
 #!/bin/bash
 
-# This is my build script that runs during Netlify deployment.
-# My build command in Site settings > Build & deploy > Build command is
+# This is my build script that runs during Netlify deployment
+# My build command in Netlify > jessewei.dev > Site settings > Build & deploy > Build command is
 # chmod +x scripts/build;./scripts/build
-# It is run from the root of the project.
 
-# Create https://jessewei.dev/posts/papermod_diff
-# Install ansi2html if not installed
+# Install ansi2html for scripts/diff.py if not installed
 if [[ ! $(which ansi2html) ]]; then
     if [[ ! $(which python) ]]; then
         python3 -m pip install ansi2html
@@ -14,14 +12,15 @@ if [[ ! $(which ansi2html) ]]; then
         python -m pip install ansi2html
     fi
 fi
-
+# Create papermod_diff pages
 chmod +x scripts/diff.py
-# Outputs to scripts/PaperMod_diff
+# diff.py outputs to scripts/PaperMod_diff
 ./scripts/diff.py
-# Move output to content/ to deploy on site.
 if [ -d "content/posts/papermod_diff" ]; then
     rm -rf content/posts/papermod_diff
 fi
+# Move diff.py output to content/ to deploy on site
 mv scripts/PaperMod_diff content/posts/papermod_diff
 
+# Build website content and output into public/
 hugo
