@@ -57,6 +57,13 @@ params:
   # Note from https://github.com/adityatelange/hugo-PaperMod/issues/702 that post must have date to be archived
   ShowAllPagesInArchive: true
 
+  # Necessary for post nav links to show up on /posts and /projects
+  # https://github.com/adityatelange/hugo-PaperMod/issues/940
+  mainSections:
+    - posts
+    - projects
+    - teaching
+
   assets:
     # Disables highlight.js, using Hugo Chroma instead
     # https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
