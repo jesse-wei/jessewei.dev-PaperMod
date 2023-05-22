@@ -84,7 +84,7 @@ params:
     # Needs to be explicitly set
     enabled: true
     title: Jesse Wei
-    subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[Read more](/about)**"
+    subtitle: "{CS Master's student, Researcher, Serial COMP TA} @ [UNC](https://unc.edu). **[More about me](/about)**"
     imageUrl: "/me.jpg"
     imageWidth: 150
     imageHeight: 150

@@ -1,9 +1,8 @@
 {{- if not ( .Param "hideFooter") }}
 <footer class="footer" style="padding-top: 18px; padding-bottom: 18px">
 
-    <!-- Don't display social icons in homepage's footer
-    To check that a page is the homepage, check for equality of the site title and page title -->
-    {{- if ne .Site.Title .Title }}
+    <!-- No social icons in footer of profile mode homepage (icons are already in page content) -->
+    {{- if not (and site.Params.profileMode.enabled .IsHome) }}
     {{- partial "social_icons.html" site.Params.socialIcons -}}
     {{- end }}
 
