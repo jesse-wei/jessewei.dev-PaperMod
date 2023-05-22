@@ -5,8 +5,16 @@
 # chmod +x scripts/build;./scripts/build
 # It is run from the root of the project.
 
-# Create https://jessewei.dev/posts/PaperMod_diff
-pip install ansi2html
+# Create https://jessewei.dev/posts/papermod_diff
+# Install ansi2html if not installed
+if [[ ! $(which ansi2html) ]]; then
+    if [[ ! $(which python) ]]; then
+        python3 -m pip install ansi2html
+    else
+        python -m pip install ansi2html
+    fi
+fi
+
 chmod +x scripts/diff.py
 # Outputs to scripts/PaperMod_diff
 ./scripts/diff.py

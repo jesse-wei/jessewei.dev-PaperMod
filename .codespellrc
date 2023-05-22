@@ -1,0 +1,3 @@
+[codespell]
+skip=*.pdf,*.svg,*.js,themes/*,scripts/helpers/generate_directory_index_caddystyle.py,assets/css/extended/monokai.css
+ignore-words-list=tht,oll,nd

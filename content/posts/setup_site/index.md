@@ -448,7 +448,7 @@ I added social icons to the footer, as in resource [^4]. I sort of follow what i
 
 As described there, adding social icons to footer messes with CSS spacing values. For example, a scrollbar appeared on the homepage and Search page (haven't solved this and don't plan to) even though there's enough room for both header and footer to be visible without scrolling. This issue is described more in-depth in resource [^4], under problem 2.
 
-In short, I modified CSS in 4 files. `layouts/partials/footer.html`, `layouts/partials/social_icons.html`, `assets/css/core/theme-vars.css`, and `assets/css/common/profile-mode.css`. The comments in each file describe the changes I made. Most comments in `social_icons.html` are for htmltest, described [below](#htmltest), so ignore those for now.
+In short, I modified CSS in 4 files. `layouts/partials/footer.html`, `layouts/partials/social_icons.html`, `assets/css/core/theme-vars.css`, and `assets/css/common/profile-mode.css`. The comments in each file describe the changes I made. Most comments in `social_icons.html` are for htmltest, described [below](#ci), so ignore those for now.
 
 I disabled footer social icons on the homepage because the homepage already has social icons.
 
@@ -535,21 +535,21 @@ PaperMod automatically uses the Google Analytics script if `env` is `production`
 {{- end -}}
 ```
 
-### htmltest
+### CI
 
-I added a GH workflow for automatically checking links in my site.
+I added a GH workflow for checking links in my site and spellcheck.
 
 {{< figure src="img/htmltest.jpg" caption="htmltest GH action output" alt="htmltest GH action output" align="center">}}
 
-To enable, see `.github/workflows/htmltest.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5], with some modifications that are described in comments in the files. In particular, I want to note that I run my `scripts/build` in `htmltest.yml` instead of just `hugo`, as in the original file.
+See `.github/workflows/ci.yml` and its configuration file `.github/.htmltest.yml`. This follows resource [^5], with some modifications. In particular, I want to note that I run my `scripts/build` in `ci.yml` instead of just `hugo`, as in the original file.
 
 #### Behavior
 
-Here is the behavior of the workflow after making the modifications below.
+Here is the intended behavior of the htmltest job after making the modifications below.
 
-If an internal URL (e.g., to page or image) doesn't work, htmltest will error and the workflow will fail, causing a red X to appear on GH Actions.
+If an internal link (e.g., a page or image) doesn't work, the workflow will fail, causing a red X to appear on GH Actions.
 
-If an external URL doesn't work, htmltest will warn, but the workflow will not fail. That is, an external link could be "broken," and a green checkmark will be shown on GH Actions. This is fine because with a lot of external links, it's unlikely that all will work in any single run. There could be a timeout or non-200 HTML response code, etc.. Getting a red X when just a single external link breaks is annoying. htmltest does still warn, so I manually check GH actions every now and then.
+If an external link doesn't work, htmltest will warn, but the workflow will not fail. That is, an external link could be "broken," and a green checkmark will be shown on GH Actions. This is fine because when using a lot of external links, it's unlikely that all will work in any single run. There could be a timeout or non-200 HTML response code, etc.. Getting a red X when just a single external link breaks is annoying. htmltest does still warn, so I manually check GH actions every now and then.
 
 #### Getting rid of garbage output
 
@@ -587,14 +587,11 @@ Instead of `continue-on-error: true` from resource [^5], I use `if: always()`.
 
 ```yml
 - name: Test HTML
-  # MODIFICATION: Don't use continue-on-error (see below)
   # https://github.com/wjdp/htmltest-action/
   uses: wjdp/htmltest-action@master
   with:
-    # For consistency, use the same config file as for local builds
     config: ./.github/.htmltest.yml
 - name: Archive htmltest results
-  # MODIFICATION
   # Archive result even if Test HTML fails
   # Use if: always() instead of continue-on-error, as in the original file
   # Source: https://stackoverflow.com/questions/62045967/github-actions-is-there-a-way-to-continue-on-error-while-still-getting-correct

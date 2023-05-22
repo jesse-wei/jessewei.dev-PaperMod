@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d745180-286f-4084-bd0e-046e2c5d22ef/deploy-status)](https://app.netlify.com/sites/cheerful-mousse-b9d87b/deploys)
-[![htmltest](https://github.com/jesse-wei/jessewei.dev/actions/workflows/htmltest.yml/badge.svg)](https://github.com/jesse-wei/jessewei.dev/actions/workflows/htmltest.yml)
+[![CI](https://github.com/jesse-wei/jessewei.dev/actions/workflows/ci.yml/badge.svg)](https://github.com/jesse-wei/jessewei.dev/actions/workflows/ci.yml)
 
 # [jessewei.dev](https://jessewei.dev)
 
