@@ -71,12 +71,7 @@ params:
     # disableFingerprinting: true
 
     # https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-faq/#adding-custom-favicons
-    # favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, safari-pinned-tab.svg supported
-    # favicon: "favicon.ico"
-    # favicon16x16: "favicon-16x16.png"
-    # favicon32x32: "favicon-32x32.png"
-    # apple_touch_icon: "apple-touch-icon.png"
-    # safari_pinned_tab: "safari-pinned-tab.svg"
+    # static/ {favicon.ico, favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, safari-pinned-tab.svg} automatically detected
 
   # Logo and name shown on top left of site
   label:
@@ -105,9 +100,13 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: |
+      Welcome to my blog
+      Multi-line string with \n separating them
 
   socialIcons:
+    - name: cv
+      url: "/WeiJesseResumePublic.pdf"
     - name: github
       url: "https://github.com/jesse-wei"
     - name: linkedin

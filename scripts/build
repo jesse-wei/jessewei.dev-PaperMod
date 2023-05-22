@@ -18,5 +18,11 @@ fi
 # Move diff.py output to content/ to deploy on site
 mv scripts/PaperMod_diff content/posts/papermod_diff
 
+# Get latest version of resume and put in static/ in Netlify or CI
+if [[ ! -z "${NETLIFY}" ]] || [[ ! -z "${CI}" ]]; then
+    chmod +x scripts/resume
+    ./scripts/resume
+fi
+
 # Build website content and output into public/
 hugo

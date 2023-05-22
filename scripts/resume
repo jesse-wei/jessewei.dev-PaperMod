@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# This downloads the latest version of my resume and puts it into /static to be deployed
+# Runs only during Netlify deployment and CI (see scripts/build), so $RESUME_LATEST is set
+# Dependencies: unzip
+
+# Environment variable in Netlify and set in GH Actions ci.yml
+wget $RESUME_LATEST
+unzip WeiJesseResume.zip
+# Put public version of resume (no phone number) on website
+mv WeiJesseResumePublic.pdf static/WeiJesseResumePublic.pdf

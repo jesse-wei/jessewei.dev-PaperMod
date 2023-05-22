@@ -31,6 +31,9 @@ jobs:
       - name: Build Hugo website
         run: ./scripts/build
         shell: bash
+        env:
+          # Link to latest version of resume, used in scripts/resume
+          RESUME_LATEST: ${{ secrets.RESUME_LATEST }}
       - name: Test HTML
         # https://github.com/wjdp/htmltest-action/
         uses: wjdp/htmltest-action@master

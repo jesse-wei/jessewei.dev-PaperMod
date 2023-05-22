@@ -8,7 +8,7 @@ See https://jessewei.dev/posts/papermod_diff for deployed output.
 Run this script from the root of the project. Output will be in scripts/{THEME}_diff (configurable).
 This script is wrapped by ``scripts/build``, which moves the output to ``content/`` to be deployed.
 
-This script requires ansi2html. ``pip3 install ansi2html``."""
+Dependencies: ansi2html. ``pip3 install ansi2html``."""
 
 __author__ = "Jesse Wei <jesse@cs.unc.edu>"
 
