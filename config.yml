@@ -127,8 +127,8 @@ params:
     hiddenInSingle: true
 
   editPost:
-    URL: "https://github.com/jesse-wei/jessewei.dev/tree/main/content"
-    Text: "Source"
+    URL: "https://github.com/jesse-wei/jessewei.dev/edit/main/content"
+    Text: "Suggest edit"
     appendFilePath: true
 
   # For search

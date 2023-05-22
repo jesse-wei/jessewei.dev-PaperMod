@@ -6,10 +6,10 @@
 
 # Install ansi2html for scripts/diff.py if not installed
 if [[ ! $(which ansi2html) ]]; then
-    if [[ ! $(which python) ]]; then
-        python3 -m pip install ansi2html
-    else
+    if [[ $(which python) ]]; then
         python -m pip install ansi2html
+    else
+        python3 -m pip install ansi2html
     fi
 fi
 # Create papermod_diff pages
