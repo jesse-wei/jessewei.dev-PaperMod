@@ -14,7 +14,7 @@
 
 
     <!-- Don't display Powered by Hugo & PaperMod on homepage -->
-    {{- if ne .Site.Title .Title }}
+    {{- if not .IsHome }}
     <span>
         <!-- Add separator character -->
         •
