@@ -41,11 +41,9 @@
     background: var(--theme);
 }
 
-/* Carolina blue and underline on hover */
+/* Change color on hover */
 a:hover {
     color: var(--carolina_blue);
-    /* text-decoration: underline;
-    text-underline-offset: 3px; */
 }
 
 svg:hover {

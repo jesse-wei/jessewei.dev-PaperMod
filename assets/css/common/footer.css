@@ -24,13 +24,7 @@
 .footer a {
     color: inherit;
     /* No underline in words of footer */
-    /* border-bottom: 1px solid var(--secondary); */
 }
-
-/* theme-vars a:hover already underlines */
-/* .footer a:hover {
-    border-bottom: 1px solid var(--carolina_blue);
-} */
 
 .top-link {
     visibility: hidden;

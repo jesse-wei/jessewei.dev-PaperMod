@@ -19,8 +19,6 @@ cd jessewei.dev
 hugo server
 ```
 
-`--recurse-submodules` will clone the PaperMod [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules). Clone with `--depth=1` to save space.
-
 ## How I set up this site
 
 See [Overview of Hugo/PaperMod and Setting Up This Site](https://jessewei.dev/posts/setup_site/).

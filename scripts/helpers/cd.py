@@ -3,10 +3,8 @@
 Change cwd within Python like so
 
 os.chdir('/home')
-
 with cd('/tmp'):
     # ...
-
 # Directory is now back to '/home'"""
 
 from contextlib import contextmanager

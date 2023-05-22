@@ -43,9 +43,11 @@
     font-size: 14px;
 }
 
-/* Make archive h3 titles Carolina Blue when hovered
-   Style the h3 that is 2 children before the hovered a
-   Source: https://tobiasahlin.com/blog/previous-sibling-css-has/ */
+/*
+    Change color of archive h3 titles when hovered
+    Style the h3 that is 2 children before the hovered a
+    Source: https://tobiasahlin.com/blog/previous-sibling-css-has/
+*/
 h3.archive-entry-title:has(+ * + a.entry-link:hover) {
     color: var(--carolina_blue);
 }

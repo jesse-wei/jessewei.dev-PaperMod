@@ -69,7 +69,10 @@
     font-size: 12px;
 }
 
-/* Separated this off from .toc a:hover */
+/*
+    Separated this off from .toc a:hover
+    .post-content a gets underline
+*/
 .post-content a {
     box-shadow: 0 1px 0;
     box-decoration-break: clone;
@@ -326,12 +329,7 @@
     background: var(--code-bg);
 }
 
-/* Separated these two since a:hover already has color: carolina_blue from theme_vars */
-/* .post-tags a:hover,
-.paginav a:hover {
-    background: var(--border);
-    color: var(--carolina_blue);
-} */
+/* Separated .post-tags a:hover and .paginav a:hover */
 
 .post-tags a:hover {
     background: var(--border);
@@ -396,20 +394,10 @@ h6:hover .anchor {
     width: 50%;
 }
 
-/* Small adjustment, underline the span when hovering over the nav button
-   Not just when hovering over the span */
-
-/* Actually nah, just don't underline.
-   But if I were to underline, this code would be fine. */
-
-/* .paginav .next:hover span:not(.title) {
-    box-shadow: 0 1px 0;
-}
-
-.paginav .prev:hover span:not(.title) {
-    box-shadow: 0 1px 0;
-} */
-
+/*
+Don't underline .paginav .next:hover and .paginav .prev:hover
+Since the text already changes color
+*/
 
 .paginav .next {
     margin-inline-start: auto;

@@ -43,12 +43,12 @@
     border: 1px solid var(--border);
 }
 
-/* Make post headers carolina_blue on post hover */
+/* Change color of post titles in list on hover */
 .post-entry:hover .entry-header h2 {
     color: var(--carolina_blue);
 }
 
-/* Make search page entries carolina_blue on hover */
+/* Change color of search page entries on hover */
 .post-entry:hover header.entry-header {
     color: var(--carolina_blue);
 }

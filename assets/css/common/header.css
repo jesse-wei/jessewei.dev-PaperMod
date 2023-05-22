@@ -68,6 +68,7 @@ body:not(.dark) #sun {
 #menu .active {
     font-weight: 500;
     border-bottom: 2px solid currentColor;
+    /* Change color of #menu .active */
     color: var(--carolina_blue);
 }
 
