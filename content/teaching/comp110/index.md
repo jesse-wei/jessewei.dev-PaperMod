@@ -8,7 +8,7 @@ draft: false
 #     caption: "COMP 110 logo"
 #     hidden: false
 #     hiddenInSingle: false
-summary: "UTA in 22S, 21F, and 21S. Good times."
+summary: "UTA in 22S, 21F, and 21S."
 tags: ["COMP 110", "Introduction to Programming", "Python", "UNC"]
 weight: 3
 ---

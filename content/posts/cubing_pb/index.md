@@ -38,4 +38,4 @@ My current 3x3 PB is 9.04s. Here's a video of my reconstruction of it.
 |R U R' U' R' F R F'|OLL(CP) [^2]|
 |U'|AUF|
 
-[^2]: Accidental
+[^2]: Lucky

@@ -13,6 +13,8 @@ tags: ["Arduino", "Hardware"]
 tocopen: false
 ---
 
+Quote from post summary is from [Eric](https://eric-unc.tech).
+
 {{< youtube hia_4dOh098 >}}
 
 ## Code

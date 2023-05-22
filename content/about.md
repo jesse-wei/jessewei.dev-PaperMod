@@ -19,10 +19,4 @@ I was a head UTA for COMP311 (23S, 22F). I was a UTA for COMP210 ([22Su](https:/
 
 I live in [Apex](https://www.apexnc.org), North Carolina. I lived in [Lumberton](https://www.lumbertonnc.gov), North Carolina, for 10 years.
 
-A fun fact about me: I used to speedcube.
-
-{{< rawhtml >}}
-<p align="center">
-<iframe width="233" height="239" src="https://www.youtube.com/embed/QsaT23CZIpM" title="Jesse's PB (9.04s)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</p>
-{{< /rawhtml >}}
+A fun fact about me: I used to [speedcube](/posts/cubing_pb).
