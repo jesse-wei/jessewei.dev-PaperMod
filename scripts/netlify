@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# This is my build script that runs during Netlify deployment (Ubuntu container)
+# It installs dependencies and wraps the actual build script (scripts/build)
+# My build command in Netlify > jessewei.dev > Site settings > Build & deploy > Build command is
+# chmod +x scripts/netlify;./scripts/netlify
+# Note that Netlify doesn't allow sudo, so dependencies here have to be installed without sudo
+
+if [[ ! $(which ansi2html) ]]; then
+    if [[ $(which python) ]]; then
+        python -m pip install ansi2html
+    else
+        python3 -m pip install ansi2html
+    fi
+fi
+
+if [[ ! $(which unzip) ]]; then
+    apt-get download unzip
+    dpkg -x unzip*.deb unzip
+    export PATH=$PATH:$(pwd)/unzip/usr/bin
+fi
+
+chmod +x scripts/build
+./scripts/build

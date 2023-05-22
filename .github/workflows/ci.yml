@@ -3,6 +3,7 @@ name: CI
 on: [push, pull_request, workflow_call]
 
 jobs:
+  # Test links in website
   # Source: https://github.com/robb-romans/robb-sh-hugo/blob/main/.github/workflows/run-htmltest.yml
   htmltest:
     runs-on: ubuntu-latest
@@ -26,6 +27,7 @@ jobs:
       - name: Download dependencies
         run: |
           python -m pip install ansi2html
+          sudo apt-get install unzip
       - name: Build Hugo website
         run: ./scripts/build
         shell: bash

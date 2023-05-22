@@ -5,7 +5,7 @@ files in the Hugo theme specified in variable ``THEME`` and the overriding ones 
 
 See https://jessewei.dev/posts/papermod_diff for deployed output.
 
-Run this script from the root of the project. Output will be in scripts/{THEME}_diff.
+Run this script from the root of the project. Output will be in scripts/{THEME}_diff (configurable).
 This script is wrapped by ``scripts/build``, which moves the output to ``content/`` to be deployed.
 
 This script requires ansi2html. ``pip3 install ansi2html``."""
@@ -33,7 +33,7 @@ HTML_AT_END_OF_INDEX_FILE: List[str] = [
     '<p>Both scripts are <a href="https://github.com/jesse-wei/jessewei.dev/tree/main/scripts">here</a>.</p>\n',
     '<p>Setup is further described <a href="https://jessewei.dev/posts/setup_site/#papermod-diff">here</a>.</p>\n',
 ]
-"""HTML text to be appended (right before </main>) to the generated index.html file."""
+"""HTML text to be appended (right before </main>) to the generated root index.html file."""
 
 for directory in DIRECTORIES_TO_CHECK:
     for path in directory.rglob("*"):
@@ -66,9 +66,9 @@ with cd(OUTPUT_DIR):
     # Add some explanatory text at the end of the homepage
     with open("index.html", "r") as homepage:
         contents = homepage.readlines()
-    content_end_index: int = contents.index("    </div>\n")
+    content_end_index: int = contents.index("</main>\n")
     for html_text in reversed(HTML_AT_END_OF_INDEX_FILE):
-        contents.insert(content_end_index + 1, html_text)
+        contents.insert(content_end_index, html_text)
     with open("index.html", "w") as homepage:
         contents = "".join(contents)
         homepage.write(contents)

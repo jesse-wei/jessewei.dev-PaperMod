@@ -1,17 +1,13 @@
 #!/bin/bash
 
-# This is my build script that runs during Netlify deployment
-# My build command in Netlify > jessewei.dev > Site settings > Build & deploy > Build command is
-# chmod +x scripts/build;./scripts/build
+# Script for building website
+# Assumes dependencies are already installed when called
+# Dependencies: ansi2html, unzip
+# Runs in 3 places: Netlify deployment (Ubuntu container), GitHub Actions (Ubuntu container), and locally (macOS)
+# scripts/netlify wraps this script and installs dependencies during Netlify deployment (sudo not allowed)
+# ci.yml calls this script and installs most dependencies using sudo apt-get
+# Locally, I have all dependencies already so not a concern
 
-# Install ansi2html for scripts/diff.py if not installed
-if [[ ! $(which ansi2html) ]]; then
-    if [[ $(which python) ]]; then
-        python -m pip install ansi2html
-    else
-        python3 -m pip install ansi2html
-    fi
-fi
 # Create papermod_diff pages
 chmod +x scripts/diff.py
 # diff.py outputs to scripts/PaperMod_diff
