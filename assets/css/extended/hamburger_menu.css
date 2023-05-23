@@ -26,6 +26,8 @@
 .menu .active {
     font-weight: 500;
     border-bottom: 2px solid currentColor;
+    /* Change color of #menu .active to carolina_blue */
+    color: var(--carolina_blue);
 }
 
 @media screen and (max-width: 768px) {
