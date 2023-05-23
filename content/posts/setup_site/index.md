@@ -9,6 +9,7 @@ cover:
     hidden: true
 summary: "This post provides an overview of Hugo (PaperMod theme) and details the steps I took in setting up this website."
 tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfolio"]
+math: true
 ---
 
 ## Introduction
