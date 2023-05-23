@@ -20,7 +20,8 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Jesse Wei
-  description: "Jesse Wei's personal website"
+  # This is shown when website is posted in Discord and other socials
+  description: "Computer Science MS student at UNC. Welcome to my website!"
   keywords: [Jesse Wei, Blog, Portfolio, UNC, Computer Science, Mathematics, CS, University of North Carolina at Chapel Hill]
   # author: ["Me", "You"] # multiple authors
   author: "Jesse Wei"
