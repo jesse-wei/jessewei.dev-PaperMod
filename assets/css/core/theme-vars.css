@@ -46,12 +46,3 @@ deletes --hljs-bg definitions, but this breaks the scrollbar, at minimum, so I d
 .dark.list {
     background: var(--theme);
 }
-
-/* Change color on hover */
-a:hover {
-    color: var(--carolina_blue);
-}
-
-svg:hover {
-    color: var(--carolina_blue);
-}

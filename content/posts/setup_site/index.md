@@ -503,7 +503,22 @@ Notice the code block doesn't work, and spacing is messed up :(
 
 I modified CSS in the following CSS files in `assets/css/common/`: `archive`, `footer`, `header`, `main`, `post-entry`, and `post-single`.
 
-I also modified `assets/css/core/theme-vars.css`.
+For example, `main.css` has these important lines:
+
+```css
+/* Change color on hover */
+a:hover {
+    color: var(--carolina_blue);
+}
+
+a.anchor:hover {
+    color: var(--carolina_blue) !important;
+}
+
+svg:hover {
+    color: var(--carolina_blue);
+}
+```
 
 For modifications, look for comments and the variable `carolina_blue`.
 

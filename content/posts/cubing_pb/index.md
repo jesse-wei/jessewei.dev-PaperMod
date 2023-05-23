@@ -35,5 +35,6 @@ My current 3x3 PB is 9.04s. Here's a video of my reconstruction of it.
 |U R U2' R' U2' f R f'|2<sup>nd</sup> pair|
 |U2' y' R' U R|3<sup>rd</sup> pair|
 |y' U2' R U2' R' U R U R'|4<sup>th</sup> pair|
-|R U R' U' R' F R F'|OLL + PLL skip|
+|R U R' U' R' F R F'|OLL|
+||PLL skip|
 |U'|AUF|
