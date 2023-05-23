@@ -430,7 +430,7 @@ See [Page Bundles](https://gohugo.io/content-management/page-bundles/) for more 
 
 I enabled $\LaTeX{}$ via [KaTeX](https://katex.org/) in `layouts/partials/extend_head.html`.
 
-The conditional there requires the site param `math` to be enabled. If so, then setting the param `math` in front matter to `false` will disable KaTeX for that page.
+I followed [Math Typesetting](https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/) from PaperMod documentation. Specifically, the code in `extend_head.html` is from [Issue #236](https://github.com/adityatelange/hugo-PaperMod/issues/236#issuecomment-778936434).
 
 ### Comments
 

@@ -4,6 +4,7 @@ date: 2022-05-01T12:00:00-04:00
 draft: false
 summary: "$e^{ix} = \\cos x + i \\sin x$. $e^{i\\pi} + 1 = 0$."
 tags: ["Math", "LaTeX"]
+math: true
 ---
 
 ## Proof 1: By [Taylor series](https://en.wikipedia.org/wiki/Taylor_series)

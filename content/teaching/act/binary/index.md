@@ -4,6 +4,7 @@ date: 2021-11-01T12:00:00-04:00
 draft: false
 summary: "Binary counting system. Unrelated to ACT but nowhere else to put this post."
 tags: ["ACT", "LaTeX"]
+math: true
 ---
 
 Before we talk about binary, let's first go over the base-10 decimal system.

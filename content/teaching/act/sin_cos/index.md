@@ -4,6 +4,7 @@ date: 2022-06-04T12:00:00-04:00
 draft: false
 summary: "Cool geometric and algebraic symmetries. Several embedded Desmos graphs."
 tags: ["ACT", "Math", "LaTeX"]
+math: true
 ---
 
 ## Geometry

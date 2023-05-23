@@ -5,6 +5,7 @@ draft: false
 summary: "Some Desmos links for learning geometric concepts."
 ShowReadingTime: false
 tags: ["ACT", "Math"]
+math: true
 ---
 
 Some Desmos links for learning geometric concepts.
