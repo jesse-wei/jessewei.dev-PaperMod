@@ -192,11 +192,12 @@ markup:
     # (https://highlightjs.readthedocs.io/en/latest/line-numbers.html).
     # Therefore, I disable it by default.
     # Note: It's possible to enable it on a specific code block by specifying
-    # ```{lineNos=true}
+    # ``` {lineNos=true}
     # ```
     lineNos: false
     lineNumbersInTable: true
-    noClasses: true
+    # false means use external CSS file
+    noClasses: false
     noHl: false
     style: monokai
     tabWidth: 4

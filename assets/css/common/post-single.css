@@ -1,3 +1,9 @@
+/*
+Made some of my own modifications
+For code blocks to follow the theme color, followed
+https://github.com/adityatelange/hugo-PaperMod/pull/143/files#diff-12ad2b661fa0eda6278867e1a9f6e4debd09ba3cb2e09410ead9e2f459d9cbdd
+*/
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
@@ -165,6 +171,7 @@
 
 .post-content .highlight:not(table) {
     margin: 10px auto;
+    /* Uhh, not deleting this */
     background: var(--hljs-bg) !important;
     border-radius: var(--radius);
     direction: ltr;
@@ -212,8 +219,7 @@
     display: block;
     margin: auto 0;
     padding: 10px;
-    color: rgb(213, 213, 214);
-    background: var(--hljs-bg) !important;
+    /* Removed this */
     border-radius: var(--radius);
     overflow-x: auto;
     word-break: break-all;

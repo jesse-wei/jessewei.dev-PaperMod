@@ -37,7 +37,8 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   button_value = digitalRead(BUTTON);
-  if (button_value == 0){  // button not pressed, based on my implementation of hardware
+  // button not pressed, based on my hardware implementation
+  if (button_value == 0){
     digitalWrite(LED1, HIGH);
     digitalWrite(LED2, HIGH);
   } else {

@@ -1,3 +1,9 @@
+/*
+Made some of my own modifications
+Note: https://github.com/adityatelange/hugo-PaperMod/pull/143/files#diff-12ad2b661fa0eda6278867e1a9f6e4debd09ba3cb2e09410ead9e2f459d9cbdd
+deletes --hljs-bg definitions, but this breaks the scrollbar, at minimum, so I don't do that
+*/
+
 :root {
     --gap: 24px;
     --content-gap: 20px;
