@@ -1,0 +1,68 @@
+/* Source: https://github.com/adityatelange/hugo-PaperMod/discussions/943 */
+
+/* START hamburger menu */
+
+#menu-trigger {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    margin: auto var(--gap);
+    list-style: none;
+    word-break: keep-all;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.menu li+li {
+    margin-inline-start: var(--gap);
+}
+
+.menu a {
+    font-size: 16px;
+}
+
+.menu .active {
+    font-weight: 500;
+    border-bottom: 2px solid currentColor;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        list-style: none;
+        position: absolute;
+        right: 0;
+        z-index: 5;
+        margin-bottom: var(--gap);
+        padding: var(--gap);
+        background: var(--code-bg);
+        border-radius: var(--radius);
+        border: 2px solid var(--tertiary);
+        line-height: 2.5;
+        margin: calc(var(--header-height) - var(--gap)) var(--gap);
+        display: block;
+    }
+
+    .list .menu {
+        background: var(--entry);
+    }
+
+    .menu li+li {
+        margin-inline-start: 0;
+    }
+
+    #menu-trigger {
+        font-size: 30px;
+        position: relative;
+        display: block;
+        float: right;
+        margin: auto var(--gap);
+    }
+
+    .menu.hidden {
+        display: none;
+    }
+}
+
+/* END hamburger menu */
