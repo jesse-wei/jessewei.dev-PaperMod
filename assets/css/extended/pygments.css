@@ -1,4 +1,8 @@
-/* hugo gen chromastyles --style=pygments > assets/css/extended/pygments.css *
+/*
+Light mode code theme.
+hugo gen chromastyles --style=pygments > assets/css/extended/pygments.css
+*/
+
 /* Background */ .bg { }
 /* PreWrapper */ .chroma { }
 /* Other */ .chroma .x {  }
