@@ -6,7 +6,7 @@ cover:
     image: img/rubiks_541.jpg
     alt: "COMP541 Rubik's cube project matching in-real-life cube"
     caption: "COMP541 Rubik's cube project matching IRL cube"
-summary: "1900 MIPS assembly instructions running on a SystemVerilog processor built from spit and toothpicks in COMP 541 (Digital Logic). Grade: 100%; extra credit: $\\frac{4}{5}$."
+summary: "1900 MIPS assembly instructions running on a SystemVerilog processor built from spit and toothpicks in COMP 541 (Digital Logic). Grade: 100%; extra credit: 4/5."
 tags: ["MIPS Assembly", "SystemVerilog", "COMP 541", "Digital Logic", "UNC", "Rubik's"]
 tocopen: false
 ---

@@ -201,5 +201,5 @@ markup:
     # false means use external CSS file
     noClasses: false
     noHl: false
-    style: monokai
+    # style: monokai
     tabWidth: 4
