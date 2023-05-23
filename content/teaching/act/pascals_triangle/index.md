@@ -4,7 +4,6 @@ date: 2022-05-28T12:00:00-04:00
 draft: false
 summary: "Pascal's triangle and binomial coefficients."
 tags: ["ACT", "Math", "LaTeX"]
-math: true
 ---
 
 Consider the following question: In the polynomial expansion of $(x+y)^5$, what is the coefficient of the $x^2y^3$ term? You could expand this out as$$(x+y)(x+y)(x+y)(x+y)(x+y)$$

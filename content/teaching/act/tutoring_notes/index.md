@@ -4,7 +4,6 @@ date: 2022-06-04T12:00:00-04:00
 draft: false
 summary: "Notes from ACT tutoring sessions."
 tags: ["ACT", "Tutoring"]
-math: true
 ---
 
 * 2022-06-04 (G&L)

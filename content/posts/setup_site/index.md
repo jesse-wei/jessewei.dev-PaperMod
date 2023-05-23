@@ -9,7 +9,6 @@ cover:
     hidden: true
 summary: "This post provides an overview of Hugo (PaperMod theme) and details the steps I took in setting up this website."
 tags: ["Hugo", "PaperMod", "Markdown", "HTML", "CSS", "Blog", "Website", "Portfolio"]
-math: true
 ---
 
 ## Introduction
@@ -435,7 +434,11 @@ See [Page Bundles](https://gohugo.io/content-management/page-bundles/) for more 
 
 I enabled $\LaTeX{}$ via [KaTeX](https://katex.org/) in `layouts/partials/extend_head.html`.
 
-I followed [Math Typesetting](https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/) from PaperMod documentation. Specifically, the code in `extend_head.html` is from [Issue #236](https://github.com/adityatelange/hugo-PaperMod/issues/236#issuecomment-778936434).
+I followed [Math Typesetting](https://adityatelange.github.io/hugo-PaperMod/posts/math-typesetting/) from PaperMod documentation. Specifically, the code in `extend_head.html` is mostly from [Issue #236](https://github.com/adityatelange/hugo-PaperMod/issues/236#issuecomment-778936434).
+
+I modified the condition for loading the KaTeX script. The site param `math` must be true. Then KaTeX will be loaded by default in all pages. Setting the local param `math` to `false` in front matter will cause that page to not load KaTeX.
+
+I think having to opt-in is super annoying, so I'd rather enable it globally and be able to opt-out.
 
 ### Comments
 

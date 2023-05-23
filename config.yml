@@ -50,8 +50,8 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
-  # Don't enable KaTeX on every page globally; instead, set the local param math on pages that use KaTeX
-  math: false
+  # Enable KaTeX on every page globally. See https://jessewei.dev/posts/setup_site/#latex
+  math: true
   # Without this, archive doesn't show all pages
   # See https://github.com/adityatelange/hugo-PaperMod/issues/912
   # And https://github.com/adityatelange/hugo-PaperMod/commit/fc87fc3a29e8e515dff866159601a734e3ad4a2f

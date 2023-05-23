@@ -5,7 +5,6 @@ draft: false
 summary: "Some math-related GitHub gists."
 ShowReadingTime: false
 tags: ["Math", "LaTeX"]
-math: true
 ---
 
 Some math-related GitHub gists.
