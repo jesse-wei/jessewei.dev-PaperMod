@@ -1,6 +1,11 @@
-<!-- Source: https://giscus.app
-The site generates all of the arguments here.-->
-<script src="https://giscus.app/client.js"
+<!-- Script source: https://giscus.app
+The site generates all of the arguments used in the script.-->
+<!-- Toggle comment theme when theme toggles source:
+https://github.com/adityatelange/adityatelange.github.io/discussions/2#discussioncomment-3003309 -->
+<!-- I changed "dark" theme to "transparent_dark" -->
+
+<div class="giscus_comments">
+    <script src="https://giscus.app/client.js"
         data-repo="jesse-wei/jessewei.dev"
         data-repo-id="R_kgDOJhJgPg"
         data-category="Comments"
@@ -10,9 +15,28 @@ The site generates all of the arguments here.-->
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="top"
-        data-theme="dark"
+        data-theme="preferred_color_scheme"
         data-lang="en"
         data-loading="lazy"
         crossorigin="anonymous"
         async>
+    </script>
+</div>
+
+<script async>
+    // set theme based on localStorage pref-theme
+    document.querySelector("div.giscus_comments > script").setAttribute('data-theme', localStorage.getItem('pref-theme') ? localStorage.getItem('pref-theme') : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'transparent_dark' : 'light'))
+    // change theme on theme toggle click
+    document.querySelector('#theme-toggle').addEventListener('click', () => {
+        let g = document.querySelector('iframe.giscus-frame')
+        if (g) {
+            g.contentWindow.postMessage({
+                giscus: {
+                    setConfig: {
+                        theme: localStorage.getItem('pref-theme') ? ((localStorage.getItem('pref-theme') === 'dark') ? 'light': 'transparent_dark') : (document.body.className.includes("dark") ? 'light' : 'transparent_dark')
+                    }
+                }
+            }, 'https://giscus.app');
+        }
+    })
 </script>
