@@ -40,6 +40,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: false
   ShowRssButtonInSectionTermList: false
+  # See markup.tableOfContents for configuration
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -182,6 +183,11 @@ pygmentsUseClasses: true
 # Source: https://gohugo.io/getting-started/configuration-markup/#highlight
 # Parameter meanings: https://gohugo.io/functions/highlight/
 markup:
+  tableOfContents:
+    # Without this, Hugo ToC doesn't show h4 and higher
+    # https://github.com/alex-shpak/hugo-book/issues/52
+    endLevel: 6
+
   highlight:
     anchorLineNos: false
     codeFences: true

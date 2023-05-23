@@ -46,3 +46,7 @@ deletes --hljs-bg definitions, but this breaks the scrollbar, at minimum, so I d
 .dark.list {
     background: var(--theme);
 }
+
+/* Fixes scrollbar on Safari */
+/* Source: https://github.com/adityatelange/hugo-PaperMod/issues/654 */
+::-webkit-scrollbar{ background: var(--theme); }
