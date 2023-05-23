@@ -171,8 +171,7 @@ https://github.com/adityatelange/hugo-PaperMod/pull/143/files#diff-12ad2b661fa0e
 
 .post-content .highlight:not(table) {
     margin: 10px auto;
-    /* Uhh, not deleting this */
-    background: var(--hljs-bg) !important;
+    /* Deleted this, fixes https://github.com/jesse-wei/jessewei.dev/issues/18#issuecomment-1558471532 */
     border-radius: var(--radius);
     direction: ltr;
 }
