@@ -1,4 +1,5 @@
 /*
+Dark mode code theme.
 This file was generated with hugo gen chromastyles --style=dracula > assets/css/extended/dracula.css
 Then use Prettier to format
 Then use VSCode find and replace regex to add .dark to all classes
