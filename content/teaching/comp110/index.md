@@ -13,6 +13,8 @@ tags: ["COMP 110", "Introduction to Programming", "Python", "UNC"]
 weight: 3
 ---
 
+The course was later renamed to "Introduction to Programming and Data Science".
+
 ## Course description
 
 Introduces students to programming and data science from a computational perspective. With an emphasis on modern applications in society, students gain experience with problem decomposition, algorithms for data analysis, abstraction design, and ethics in computing. No prior programming experience expected. Foundational concepts include data types, sequences, boolean logic, control flow, functions/methods, classes/objects, input/output, data organization, transformations, and visualizations.

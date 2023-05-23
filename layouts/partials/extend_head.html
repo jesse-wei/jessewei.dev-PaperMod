@@ -15,3 +15,25 @@
 );"></script>
 {{ end }}
 <!-- End KaTeX support. -->
+
+<!-- Image zoom effect -->
+<!-- Source: https://adityatelange.in/blog/hugo-image-zoom-in/#sample-image-with-zoom-in-effect -->
+<style>
+    @media screen and (min-width: 769px) {
+        /* .post-content is a class which will be present only on single pages
+            and not lists and section pages in Hugo */
+        .post-content input[type="checkbox"]:checked ~ label > img {
+            transform: scale(1.6);
+            cursor: zoom-out;
+            position: relative;
+            z-index: 999;
+        }
+
+        .post-content img.zoomCheck {
+            transition: transform 0.15s ease;
+            z-index: 999;
+            cursor: zoom-in;
+        }
+    }
+</style>
+<!-- End image zoom effect -->
