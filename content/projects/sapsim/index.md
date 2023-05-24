@@ -11,7 +11,7 @@ tags: ["Python", "SAP", "CLI", "COMP 311", "Computer Organization", "UNC"]
 tocopen: false
 ---
 
-![SAPsim demo](img/SAPsim_demo.gif)
+![SAPsim demo](img/SAPsim_demo.gif#center)
 
 ## Links
 
