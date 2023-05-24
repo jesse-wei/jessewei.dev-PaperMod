@@ -293,11 +293,6 @@ https://github.com/adityatelange/hugo-PaperMod/pull/143/files#diff-12ad2b661fa0e
     font-weight: 500;
 }
 
-/* .toc .inner {
-    margin: 0 20px;
-    padding: 10px 20px;
-} */
-
 .toc li ul {
     margin-inline-start: var(--gap);
 }
@@ -458,6 +453,11 @@ https://github.com/reorx/hugo-PaperModX/blob/master/assets/css/common/post-singl
         right: 15px;
         width: 265px;
     }
+    /* Don't color the active link if ToC isn't on the side */
+    .toc li a.active {
+        /* Modification, color link instead of changing background color, less distracting */
+        color: var(--carolina_blue);
+    }
 }
 
 .toc details summary {
@@ -487,12 +487,8 @@ https://github.com/reorx/hugo-PaperModX/blob/master/assets/css/common/post-singl
     border-radius: 5px;
     display: block;
 }
-.toc li a.active {
-    background-color: var(--carolina_blue);
-}
-.toc li a:hover {
-    text-decoration: underline;
-}
+
+/* Removed .toc li a:hover because my a:hover already makes the link blue */
 
 .toc summary:focus {
     outline: 0;
