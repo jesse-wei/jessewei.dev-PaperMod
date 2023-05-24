@@ -109,8 +109,8 @@ params:
       Multi-line string with \n separating them
 
   socialIcons:
-    - name: cv
-      url: "/WeiJesseResumePublic.pdf"
+    # - name: cv
+    #   url: "/WeiJesseResumePublic.pdf"
     - name: github
       url: "https://github.com/jesse-wei"
     - name: linkedin
