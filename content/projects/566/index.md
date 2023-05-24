@@ -11,7 +11,6 @@ cover:
 summary: "Newton, Lagrange, and barycentric interpolation. Point distributions (e.g., Chebyshev). MATH566 (Intro to Numerical Analysis) group project #2."
 ShowReadingTime: false
 tags: ["Numerical Analysis", "Math", "MATH 566", "UNC"]
-tocopen: false
 ---
 
 ## Paper

@@ -8,7 +8,6 @@ cover:
     caption: "MIPS Emulator running my Rubik's project"
 summary: "MIPS assembly emulator for simulating COMP 541 (Digital Logic) final projects at UNC. Simulates memory-mapped I/O devices, including VGA display, accelerometer, and keyboard."
 tags: ["Java", "JavaFX", "SceneBuilder", "FXML", "GUI", "MIPS Assembly", "COMP 541", "Digital Logic", "UNC"]
-tocopen: false
 ---
 
 {{< youtube eTbEvDOiIdI >}}
