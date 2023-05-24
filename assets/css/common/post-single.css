@@ -293,10 +293,10 @@ https://github.com/adityatelange/hugo-PaperMod/pull/143/files#diff-12ad2b661fa0e
     font-weight: 500;
 }
 
-.toc .inner {
+/* .toc .inner {
     margin: 0 20px;
     padding: 10px 20px;
-}
+} */
 
 .toc li ul {
     margin-inline-start: var(--gap);
@@ -420,4 +420,80 @@ h1>a>svg {
 img.in-text {
     display: inline;
     margin: auto;
+}
+
+/*
+Begin side/hover ToC
+https://github.com/reorx/hugo-PaperModX/blob/master/assets/css/common/post-single.css
+*/
+
+.toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--code-bg);
+    border-radius: var(--radius);
+    padding: 0.4em 0;
+}
+
+.toc.side {
+    font-size: .8em;
+}
+
+@media screen and (min-width: 1350px) {
+    .toc.side {
+        position: fixed;
+        top: 118px;
+        z-index: 1;
+        max-height: calc(100% - 150px);
+        overflow: auto;
+    }
+    .toc.side::-webkit-scrollbar-thumb {
+        border: 5px solid var(--code-bg);
+    }
+    .toc.side.left {
+        left: 15px;
+        width: 250px;
+    }
+    .toc.side.right {
+        right: 15px;
+        width: 265px;
+    }
+}
+
+.toc details summary {
+    cursor: pointer;
+    margin-inline-start: 15px;
+}
+
+.toc .details {
+    display: inline;
+    font-weight: 500;
+}
+
+.toc .inner {
+    padding: 10px 15px 5px 35px;
+}
+
+.toc ul {
+    margin: 0;
+    padding: 0;
+}
+.toc li ul {
+    margin-inline-start: 20px;
+}
+.toc li a {
+    line-height: 1.5em;
+    padding: 3px 5px;
+    border-radius: 5px;
+    display: block;
+}
+.toc li a.active {
+    background-color: var(--carolina_blue);
+}
+.toc li a:hover {
+    text-decoration: underline;
+}
+
+.toc summary:focus {
+    outline: 0;
 }

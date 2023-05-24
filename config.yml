@@ -50,6 +50,8 @@ params:
   hideSummary: false
   showtoc: true
   tocopen: true
+  # New, from PaperModX
+  TocSide: left
   # Enable KaTeX on every page globally. See https://jessewei.dev/posts/setup_site/#latex
   math: true
   # Without this, archive doesn't show all pages

@@ -1,6 +1,6 @@
 {{- if not ( .Param "hideFooter") }}
+<!-- Added fixed padding -->
 <footer class="footer" style="padding-top: 18px; padding-bottom: 18px">
-
     <!-- No social icons in footer of profile mode homepage (icons are already in page content) -->
     {{- if not (and site.Params.profileMode.enabled .IsHome) }}
     {{- partial "social_icons.html" site.Params.socialIcons -}}
@@ -11,7 +11,6 @@
     {{- else }}
     <span>&copy; {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a></span>
     {{- end }}
-
 
     <!-- Don't display Powered by Hugo & PaperMod on homepage -->
     {{- if not .IsHome }}
@@ -153,3 +152,17 @@
     });
 </script>
 {{- end }}
+
+{{/* Clear ToC Scroll */}}
+{{/* Source: https://github.com/reorx/hugo-PaperModX/blob/master/layouts/partials/footer.html */}}
+<script>
+  if (window.scrollListeners) {
+    // console.log('disable toc scroll', scrollListeners)
+    for (const listener of scrollListeners) {
+      window.removeEventListener('scroll', listener)
+    }
+  }
+  window.scrollListeners = []
+</script>
+
+{{/* End ToC Scroll */}}
