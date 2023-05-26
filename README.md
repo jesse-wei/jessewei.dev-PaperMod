@@ -5,15 +5,15 @@
 
 See my [blog post](https://jessewei.dev/blog/2023/papermod/) about why I switched to [al-folio](https://github.com/alshedivat/al-folio).
 
-The source for my website's code is at [https://github.com/jesse-wei/jesse-wei.github.io](https://github.com/jesse-wei/jesse-wei.github.io). [https://jessewei.dev](https://jessewei.dev) points there.
+My [website](https://jessewei.dev)'s source code is at [https://github.com/jesse-wei/jesse-wei.github.io](https://github.com/jesse-wei/jesse-wei.github.io).
 
 ---
 
 ## jessewei.dev-PaperMod
 
-This website should still be deployed at [https://main--cheerful-mousse-b9d87b.netlify.app](https://main--cheerful-mousse-b9d87b.netlify.app).
+This website is still deployed at [https://main--cheerful-mousse-b9d87b.netlify.app](https://main--cheerful-mousse-b9d87b.netlify.app). It's still fully functional.
 
-It was made using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com).
+I made this website using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com). jessewei.dev used to point to this website. Any comment in this repo using jessewei.dev is deprecated and should use the https://main--cheerful-mousse-b9d87b.netlify.app link instead.
 
 ## Deploy locally
 
