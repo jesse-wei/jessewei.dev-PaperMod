@@ -11,9 +11,9 @@ The source for my website's code is at [https://github.com/jesse-wei/jesse-wei.g
 
 ## jessewei.dev-PaperMod
 
-My old website made using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com).
+This website should still be deployed at [https://main--cheerful-mousse-b9d87b.netlify.app](https://main--cheerful-mousse-b9d87b.netlify.app).
 
-This website should still be deployed at [https://cheerful-mousse-b9d87b.netlify.app](https://cheerful-mousse-b9d87b.netlify.app).
+It was made using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com).
 
 ## Deploy locally
 
@@ -35,6 +35,6 @@ See my [blog post](https://jessewei.dev/blog/2023/papermod/).
 
 ## PaperMod diff
 
-My auto-generated [PaperMod diff](https://main--cheerful-mousse-b9d87b.netlify.app/posts/papermod_diff/) page shows the changes I made to the PaperMod theme using `diff` output.
+My auto-generated [PaperMod diff](https://main--cheerful-mousse-b9d87b.netlify.app/posts/papermod_diff) page shows the changes I made to the PaperMod theme using `diff` output.
 
 I describe how I set up the page in the link above.
