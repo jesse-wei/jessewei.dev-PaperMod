@@ -65,8 +65,8 @@ First, follow the steps [here](https://gohugo.io/installation/) to install Hugo.
 Run these commands.
 
 ```sh
-git clone --recurse-submodules --no-single-branch https://github.com/jesse-wei/jessewei.dev.git
-cd jessewei.dev
+git clone --recurse-submodules --no-single-branch https://github.com/jesse-wei/jessewei.dev-PaperMod.git
+cd jessewei.dev-PaperMod
 hugo server
 ```
 
@@ -97,7 +97,7 @@ Please read [Hugo's directory structure](https://gohugo.io/getting-started/direc
 Here's the structure of my repository. I omit unimportant stuff and stuff I don't use, and certainly changes will be made, but this is all the important stuff:
 
 ```text
-jessewei.dev
+jessewei.dev-PaperMod
 ├── assets                  Overrides PaperMod/assets. Contains mostly CSS, some JS
 │   └── css
 ├── config.yml              Site-wide configuration file
@@ -380,7 +380,7 @@ Resource 2 describes how to deploy to Netlify. Here's a [timestamp](https://yout
 
 The build process is incredibly simple. In the video, the only command you input for the build process is `hugo`.
 
-My build process involves slightly more than just `hugo` since I also have to build PaperMod_diff [^10]. So, I use [scripts/netlify](https://github.com/jesse-wei/jessewei.dev/blob/main/scripts/netlify). My build command in Site settings > Build & deploy > Build command is `chmod +x scripts/netlify;./scripts/netlify`.
+My build process involves slightly more than just `hugo` since I also have to build PaperMod_diff [^10]. So, I use [scripts/netlify](https://github.com/jesse-wei/jessewei.dev-PaperMod/blob/main/scripts/netlify). My build command in Site settings > Build & deploy > Build command is `chmod +x scripts/netlify;./scripts/netlify`.
 
 You can probably ignore that unless you also want to set up a PaperMod_diff page.
 
@@ -390,15 +390,15 @@ Now I'll describe specific features of my website.
 
 ### config.yml
 
-The latest version of my `config.yml` is [here](https://github.com/jesse-wei/jessewei.dev/blob/main/config.yml).
+The latest version of my `config.yml` is [here](https://github.com/jesse-wei/jessewei.dev-PaperMod/blob/main/config.yml).
 
 I think I use reasonable values, and I use comments to explain decisions I consider non-obvious. I'll explain some specific decisions I made in this file in the below sections as they come up.
 
 ### PaperMod diff
 
-I created PaperMod diff [^10] using the scripts in [scripts/](https://github.com/jesse-wei/jessewei.dev/tree/main/scripts). `diff.py` runs `diff` between corresponding files, `helpers/generate_directory_index_caddystyle.py` creates `index.html` files recursively, and `build` wraps `diff.py` to deploy its output to Netlify (see [Deploy](#deploy)). `helpers/cd.py` is also used.
+I created PaperMod diff [^10] using the scripts in [scripts/](https://github.com/jesse-wei/jessewei.dev-PaperMod/tree/main/scripts). `diff.py` runs `diff` between corresponding files, `helpers/generate_directory_index_caddystyle.py` creates `index.html` files recursively, and `build` wraps `diff.py` to deploy its output to Netlify (see [Deploy](#deploy)). `helpers/cd.py` is also used.
 
-Do note that `content/posts/papermod_diff` is [gitignored](https://github.com/jesse-wei/jessewei.dev/blob/main/.gitignore). This is because if it weren't, then the content there would change and be shown on GitHub every time I modify `assets/` and/or `layouts/`, which is redundant and would make the commit history harder to read. My solution (gitignore the folder and generate it during the build process in Netlify) is a bit roundabout, but it's already implemented and works well.
+Do note that `content/posts/papermod_diff` is [gitignored](https://github.com/jesse-wei/jessewei.dev-PaperMod/blob/main/.gitignore). This is because if it weren't, then the content there would change and be shown on GitHub every time I modify `assets/` and/or `layouts/`, which is redundant and would make the commit history harder to read. My solution (gitignore the folder and generate it during the build process in Netlify) is a bit roundabout, but it's already implemented and works well.
 
 ### Content
 
@@ -450,7 +450,7 @@ I followed the directions on the giscus site to install giscus in my repo and pa
 
 As you can see, there are comments at the bottom of almost every page. PaperMod automatically disables comments in the index profile, search, and archives layouts. I manually disabled comments in my [Privacy policy](/privacy) page in the front matter with `comments: false`.
 
-Comments show up in [GitHub Discussions](https://github.com/jesse-wei/jessewei.dev/discussions). Make sure to [enable Discussions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository#) in your GitHub repo.
+Comments show up in [GitHub Discussions](https://github.com/jesse-wei/jessewei.dev-PaperMod/discussions). Make sure to [enable Discussions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/enabling-or-disabling-github-discussions-for-a-repository#) in your GitHub repo.
 
 ### Social icons in footer
 

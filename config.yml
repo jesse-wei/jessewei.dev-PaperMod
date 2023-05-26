@@ -52,7 +52,7 @@ params:
   tocopen: true
   # New, from PaperModX
   TocSide: left
-  # Enable KaTeX on every page globally. See https://jessewei.dev/posts/setup_site/#latex
+  # Enable KaTeX on every page globally. See blog post about setting up site
   math: true
   # Without this, archive doesn't show all pages
   # See https://github.com/adityatelange/hugo-PaperMod/issues/912
@@ -71,7 +71,7 @@ params:
     # Disables highlight.js, using Hugo Chroma instead
     # https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
     # Note: Do not enable this. May not work correctly due to some code theme changes made in or around
-    # https://github.com/jesse-wei/jessewei.dev/commit/bcadfdde8e12a2a9f9ed853f9939695797b31739
+    # https://github.com/jesse-wei/jessewei.dev-PaperMod/commit/bcadfdde8e12a2a9f9ed853f9939695797b31739
     disableHLJS: true
     # disableFingerprinting: true
 

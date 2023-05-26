@@ -13,7 +13,7 @@ My [website](https://jessewei.dev)'s source code is at [https://github.com/jesse
 
 This website is still deployed at [https://main--cheerful-mousse-b9d87b.netlify.app](https://main--cheerful-mousse-b9d87b.netlify.app). It's still fully functional.
 
-I made this website using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com). jessewei.dev used to point to this website. Any comment in this repo using jessewei.dev is deprecated and should use the https://main--cheerful-mousse-b9d87b.netlify.app link instead.
+I made this website using [Hugo](https://gohugo.io) with the [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme. Deployed on [Netlify](https://www.netlify.com). jessewei.dev used to point to this website. Any comment in this repo using jessewei.dev is deprecated and should instead be https://main--cheerful-mousse-b9d87b.netlify.app for a link to my website or jessewei.dev-PaperMod in a link to the repo.
 
 ## Deploy locally
 

@@ -2,7 +2,7 @@
 
 # This is my build script that runs during Netlify deployment (Ubuntu container)
 # It installs dependencies and wraps the actual build script (scripts/build)
-# My build command in Netlify > jessewei.dev > Site settings > Build & deploy > Build command is
+# My build command in Netlify > Site settings > Build & deploy > Build command is
 # chmod +x scripts/netlify;./scripts/netlify
 # Note that Netlify doesn't allow sudo, so dependencies here have to be installed without sudo
 
