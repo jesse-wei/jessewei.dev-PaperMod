@@ -139,7 +139,7 @@ params:
     hiddenInSingle: true
 
   editPost:
-    URL: "https://github.com/jesse-wei/jessewei.dev/edit/main/content"
+    URL: "https://github.com/jesse-wei/jessewei.dev-PaperMod/edit/main/content"
     Text: "Suggest edit"
     appendFilePath: true
 
