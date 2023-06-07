@@ -10,3 +10,5 @@ tags: ["ACT", "Tutoring"]
 ---
 
 [Guide to ACT](https://docs.google.com/document/d/1p9AaWGGZ07w8vFwpbZ-Y0MmDiw9Vn2i_PkcQfsEvq88)
+
+ACT® is a registered trademark belonging to ACT, Inc. ACT, Inc. is not involved with or affiliated with me, nor does ACT, Inc. endorse or sponsor any of the products or services offered by me.

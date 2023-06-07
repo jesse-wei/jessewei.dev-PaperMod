@@ -6,6 +6,8 @@ summary: "Notes from tutoring sessions for the ACT."
 tags: ["ACT", "Tutoring"]
 ---
 
+ACT® is a registered trademark belonging to ACT, Inc. ACT, Inc. is not involved with or affiliated with me, nor does ACT, Inc. endorse or sponsor any of the products or services offered by me.
+
 * 2022-06-04 (G&L)
   * [Math E25](https://drive.google.com/file/d/1Rv-uoJf2GoVGSzVr3pSjbZOVe8qzdlh4/view?usp=sharing)
   * [Sine and cosine symmetries](../sin_cos)
