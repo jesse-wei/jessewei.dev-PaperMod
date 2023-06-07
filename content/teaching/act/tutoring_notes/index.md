@@ -1,8 +1,8 @@
 ---
-title: "ACT Tutoring Notes"
+title: "Tutoring Notes"
 date: 2022-06-04T12:00:00-04:00
 draft: false
-summary: "Notes from ACT tutoring sessions."
+summary: "Notes from tutoring sessions for the ACT."
 tags: ["ACT", "Tutoring"]
 ---
 
